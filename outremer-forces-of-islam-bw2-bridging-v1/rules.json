@@ -1,0 +1,490 @@
+{
+  "forces": {
+    "name": "Forces of Islam",
+    "abilities": [
+      {
+        "name": "Armenian",
+        "effect": "If a Group with the Armenian Ability fails a Morale Check and would be Broken as a result, it may immediately re-roll the test provided the Group has more models than Morale Penalties.",
+        "points": 1
+      },
+      {
+        "name": "Evade",
+        "effect": "May use an unused action to move their movement value away from an Attacker after they have been charged.",
+        "points": 2
+      },
+      {
+        "name": "Faith",
+        "effect": "Ignore the Morale Penalty score when making Morale checks.",
+        "points": 1
+      },
+      {
+        "name": "Ghazi",
+        "effect": "If a Group with this Ability is Charged and chooses an Attack Back Reaction, resolve these attacks based on the number of models in the Group at that point. Casualties suffered during the Melee are therefore ignored when the Group attacks back.",
+        "points": 1
+      },
+      {
+        "name": "Glancing Attack",
+        "effect": "When making a move or run action, the Group may make an Attack Roll against an enemy Group for each model which passes within 1\" of the enemy Group. The target Group may not attack back as a reaction.",
+        "points": 1
+      },
+      {
+        "name": "Horse Archer",
+        "effect": "May move full distance and shoot but have a -1 penalty to all Attack Dice rolls. May only be taken by a mounted Group.",
+        "points": 1
+      },
+      {
+        "name": "Massed Ranks",
+        "effect": "This Group has a coherency of 3\" rather than the usual 2\" for infantry.",
+        "points": 1
+      },
+      {
+        "name": "Pride",
+        "effect": "A Commander and his Command Group must be mounted, unless there are strong scenario-specific reasons for him to dismount.",
+        "points": 0
+      },
+      {
+        "name": "Shower Shooting",
+        "effect": "If shooting with a Composite Bow while stationary, the Group may choose to re-roll all of its Attack dice (whether successful or not). The second result must be used.",
+        "points": 2
+      },
+      {
+        "name": "Steppe Archery",
+        "effect": "A Group with this Ability may make a normal Move and may still shoot with a Composite Bow. Reduce the Composite Bow\u2019s Long range to 12\u201d. In addition, the Group may interrupt its movement at any point to resolve its Shoot Action; the remaining movement is then used, in any direction.",
+        "points": 2
+      },
+      {
+        "name": "Trained Archers",
+        "effect": "A Group with this Ability may move 3\" and shoot at Long Range.",
+        "points": 1
+      }
+    ],
+    "askars": [
+      {
+        "name": "Turkic",
+        "effect": "When charged, unarmoured cavalry in your retinue may make a Morale check. If successful they may make a free Evade Reaction."
+      },
+      {
+        "name": "Mamluk",
+        "effect": "Groups mounted on Barded Horses in your retinue gain +2 Attack dice when Inspired but do not receive any bonus Defence dice."
+      },
+      {
+        "name": "Ismai'li",
+        "effect": "A Retinue with this Commander may take one Assassin group upgrade per 500 points."
+      },
+      {
+        "name": "Khurasanian",
+        "effect": "Command range is increased by 3\" when issuing orders to Groups in your Retinue."
+      },
+      {
+        "name": "Fatimid",
+        "effect": "Groups of infantry archers ignore the first friendly Group within 6\" when Drawing Line of Sight with a Bow or Composite Bow. The friendly group does not block Line of Sight for the shooting Group."
+      },
+      {
+        "name": "Kurdish",
+        "effect": "Mounted Groups in Command range when they declare a Charge gain the Close Ranks Ability for free provided they do not have any Morale Penalties."
+      }
+    ],
+    "units": [
+      {
+        "name": "Emir",
+        "tier": 3,
+        "experience": {
+          "Green": 33,
+          "Irregular": 36,
+          "Regular": 39,
+          "Veteran": 42
+        },
+        "stats": {
+          "Move": "6\"",
+          "Attack": "Varies",
+          "Defend": "7+",
+          "Morale": "Varies",
+          "Actions": 3
+        },
+        "inherentAbilities": [
+          "Commander",
+          "Pride"
+        ],
+        "weapons": [
+          "Sword",
+          "Mace"
+        ],
+        "armour": [
+          "Mail",
+          "Padded",
+          "Lamellar and Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ],
+        "mount": [
+          "Horse",
+          "Barded Horse"
+        ],
+        "commandGroupUpgrades": [
+          "Bannerman",
+          "Musician",
+          "Muezzin"
+        ],
+        "commandGroup": [
+          "Ghulams",
+          "Mamluks",
+          "Faris"
+        ]
+      },
+      {
+        "name": "Sayyid",
+        "tier": 2,
+        "experience": {
+          "Green": 23,
+          "Irregular": 26,
+          "Regular": 29,
+          "Veteran": 32
+        },
+        "stats": {
+          "Move": "6\"",
+          "Attack": "Varies",
+          "Defend": "7+",
+          "Morale": "Varies",
+          "Actions": 2
+        },
+        "inherentAbilities": [
+          "Commander",
+          "Pride"
+        ],
+        "weapons": [
+          "Sword",
+          "Mace"
+        ],
+        "armour": [
+          "Mail",
+          "Padded",
+          "Lamellar and Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ],
+        "mount": [
+          "Horse",
+          "Barded Horse"
+        ],
+        "commandGroupUpgrades": [
+          "Pennant",
+          "Musician",
+          "Muezzin"
+        ],
+        "commandGroup": [
+          "Ghulams",
+          "Mamluks",
+          "Faris"
+        ]
+      },
+      {
+        "name": "Warrior",
+        "tier": 1,
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "stats": {
+          "Move": "6\"",
+          "Attack": "Varies",
+          "Defend": "7+",
+          "Morale": "Varies",
+          "Actions": 1
+        }
+      },
+      {
+        "name": "Ghulams",
+        "experience": {
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Kwa Wa Farr",
+          "Weapon Choice",
+          "Horse Archer"
+        ],
+        "weapons": [
+          "Composite Bow",
+          "Spear",
+          "Sword",
+          "Mace",
+          "Sabre"
+        ],
+        "armour": [
+          "Lamellar",
+          "Lamellar and Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ],
+        "mount": [
+          "Horse",
+          "Barded Horse"
+        ],
+        "special": "Khurusanian Mounted Archers should replace Horse Archer with Shower Shooting for +1 point"
+      },
+      {
+        "name": "Faris",
+        "experience": {
+          "Irregular": 11,
+          "Regular": 14,
+          "Veteran": 17
+        },
+        "inherentAbilities": [
+          "Kwa Wa Farr",
+          "Weapon Choice"
+        ],
+        "weapons": [
+          "Javelin",
+          "Sword",
+          "Mace",
+          "Spear"
+        ],
+        "armour": [
+          "Padded",
+          "Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ],
+        "mount": [
+          "Horse",
+          "Barded Horse"
+        ],
+        "special": "Kurdish Heavy Cavalry should replace Weapon Choice with Counter Charge for +2 points"
+      },
+      {
+        "name": "Mamluk",
+        "experience": {
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Kwa Wa Farr",
+          "Weapon Choice",
+          "Horse Archer"
+        ],
+        "weapons": [
+          "Composite Bow",
+          "Sword",
+          "Mace",
+          "Spear"
+        ],
+        "armour": [
+          "Mail",
+          "Lamellar and Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ],
+        "mount": [
+          "Barded Horse"
+        ]
+      },
+      {
+        "name": "Horse Archers",
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Kwa Wa Farr",
+          "Weapon Choice",
+          "Horse Archer"
+        ],
+        "weapons": [
+          "Composite Bow"
+        ],
+        "armour": [
+          "Lamellar",
+          "Lamellar and Mail"
+        ],
+        "shield": [
+          "Small Shield"
+        ],
+        "mount": [
+          "Horse"
+        ],
+        "special": [
+          "Turkic Horse Archers replace Horse Archer with Evade and Steppe Archery for +3 points",
+          "Khurusanian Horse Archers replace Horse Archer with Shower shooting for +1 points"
+        ]
+      },
+      {
+        "name": "Light Cavalry",
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Kwa Wa Farr",
+          "Glancing Attack"
+        ],
+        "weapons": [
+          "Javelin",
+          "Spear",
+          "Sword"
+        ],
+        "armour": [
+          "Padded",
+          "Mail"
+        ],
+        "shield": [
+          "Small Shield"
+        ],
+        "mount": [
+          "Horse",
+          "Camel"
+        ]
+      },
+      {
+        "name": "Muslim Warriors",
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Massed Ranks"
+        ],
+        "weapons": [
+          "Spear",
+          "Sword"
+        ],
+        "armour": [
+          "Padded",
+          "Mail"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield",
+          "Large Shield"
+        ]
+      },
+      {
+        "name": "Muslim Archers",
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Massed Ranks"
+        ],
+        "weapons": [
+          "Composite Bow",
+          "Bow",
+          "Sling",
+          "Javelin"
+        ],
+        "armour": [
+          "Padded"
+        ]
+      },
+      {
+        "name": "'Abid Infantry",
+        "experience": {
+          "Green": 9,
+          "Irregular": 12,
+          "Regular": 15,
+          "Veteran": 18
+        },
+        "inherentAbilities": [
+          "Trained Archers"
+        ],
+        "weapons": [
+          "Bow",
+          "Spear",
+          "Javelin",
+          "Sword"
+        ],
+        "armour": [
+          "Padded"
+        ],
+        "shield": [
+          "Small Shield",
+          "Medium Shield"
+        ]
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Composite Bow",
+        "attackModifier": {
+          "Long": "-1 to Attack rolls",
+          "Short": "No modifier"
+        },
+        "effect": "RANGED - 20\" Long range, 6\" Short range. MOVE AND SHOOT - Can move 3\" and shoot at short range. RECURVE BOW - Targets wearing Mail suffer a -1 modifier to Defence rolls.",
+        "points": 2
+      },
+      {
+        "name": "Naptha Grenades",
+        "effect": "RANGED - 10\" Long range. DANGEROUS - A result of 1 will cause a hit against this group. NAPTHA - If a Casualty is caused to friend or foe that Group must make an immediate Morale Check, if failed the group becomes Broken. May not be used in Melee. FIRE HAZARD - A natural 10 will cause a fire; place a special action token where the target group was. The area 1\" around this token is Impassable and blocks Line of Sight. During the Housekeeping phase, roll d10: if the result is 4+ the fire dissipates, if not it remains in play.",
+        "points": 1
+      },
+      {
+        "name": "Naptha Siphon",
+        "effect": "RANGED - 12\" Long range. DANGEROUS - A result of 1 will cause a hit against this group. NAPTHA - If a Casualty is caused to friend or foe that Group must make an immediate Morale Check, if failed the group becomes Broken. May not be used in Melee. FIRE HAZARD - A natural 10 will cause a fire; place a special action token where the target group was. The area 1\" around this token is Impassable and blocks Line of Sight. During the Housekeeping phase, roll d10: if the result is 4+ the fire dissipates, if not it remains in play. SIPHON - Target reduces Shield rolls by -1.",
+        "points": 5
+      },
+      {
+        "name": "Sabre",
+        "attackModifier": "+1 to Attack Rolls",
+        "effect": "SLASHING - Target suffers -1 to Defence rolls if unarmoured or wearing Padded Armour.",
+        "points": 2
+      }
+    ],
+    "armour": [
+      {
+        "name": "Lamellar",
+        "attackModifier": "-1\" Move",
+        "effect": "+1 Defence Reroll 1 Defence Rolls of 1 against ranged attacks.",
+        "points": 1
+      },
+      {
+        "name": "Lamellar and Mail",
+        "attackModifier": "-2\" Move",
+        "effect": "+2 Defence Reroll 1 Defence Rolls of 1 against ranged attacks.",
+        "points": 3
+      }
+    ],
+    "mounts": [
+      {
+        "name": "Camel",
+        "attackModifier": "+2 Movement",
+        "effect": "Ignores penalties for Difficult Terrain.",
+        "points": 3
+      }
+    ],
+    "commandGroupUpgrades": [
+      {
+        "name": "Muezzin",
+        "effect": "Increase the range in which a Commander's Morale may be used by other Groups by 6\", reduced by -1\" for each Morale Penalty the Command Group has.",
+        "points": 5
+      }
+    ]
+  },
+  "factions": [
+    {
+      "name": "Bandits and Bedouin",
+      "notes": "The Bandits and Bedouin faction, found on pages 89\u201390 of the Outremer book, is used as written and requires no additional modification for use with The Barons\u2019 War Second Edition. All options presented in the original supplement remain valid. Players should reference the original pages directly when building and fielding this retinue. The Bandits and Bedouin faction traits on page 90 of the Outremer book remain unchanged. Replace selecting General Abilities from page 91 of the Outremer book with selecting from the abilities list in The Barons' War Second Edition rulebook on pages 115-118."
+    }
+  ]
+}

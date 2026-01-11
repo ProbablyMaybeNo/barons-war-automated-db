@@ -1,0 +1,1521 @@
+{
+  "core_rules": {
+    "gameplay": {
+      "dice": {
+        "types": [
+          "d10",
+          "d6"
+        ],
+        "usage": {
+          "d10": "Resolve most game actions",
+          "d6": "Determine Charge distances and mark Morale Penalties"
+        },
+        "rules": [
+          "High numbers are good, low numbers are bad",
+          "Natural roll of 0 (10) always succeeds, 1 always fails",
+          "Re-rolls allowed once, second score stands",
+          "Round all fractions up"
+        ]
+      },
+      "measurements": {
+        "unit": "inches",
+        "rules": [
+          "Distances can be measured at any time",
+          "Distances measured from edge of one base to another"
+        ]
+      },
+      "line_of_sight": {
+        "rules": [
+          "Drawn from center of one base to another",
+          "Groups block LoS",
+          "Terrain may block LoS",
+          "Higher Ground allows seeing over blocking terrain"
+        ]
+      },
+      "groups": {
+        "rules": [
+          "No facing, can see in every direction",
+          "Must be kept at least 1\u201d apart unless Charging"
+        ]
+      },
+      "morale": {
+        "penalties": {
+          "max": 6,
+          "effect": "Each penalty is a -1 to Morale or Order tests"
+        }
+      }
+    },
+    "components": {
+      "miniatures": {
+        "scale": "28mm",
+        "base_sizes": {
+          "infantry": "25mm round",
+          "mounted": "25mm x 50mm pill-shaped"
+        }
+      },
+      "tokens": {
+        "types": [
+          "Move/Run",
+          "Combat",
+          "Defend",
+          "Command",
+          "Special"
+        ],
+        "status_markers": [
+          "Weary",
+          "Broken"
+        ]
+      },
+      "terrain": {
+        "requirements": [
+          "Clearly defined edges",
+          "Affects movement, LoS, and defense"
+        ]
+      }
+    },
+    "roll_off": {
+      "description": "Players roll a d10 to determine outcomes such as initiative. Highest roll wins, ties are rerolled.",
+      "modifiers": "Apply any relevant modifiers to all rolls."
+    },
+    "gamesmanship": {
+      "responsibilities": [
+        "Place Action tokens for each Group's Action or Reaction.",
+        "Update Morale Penalties for casualties.",
+        "Add Status markers for Broken or Weary Groups.",
+        "Ensure markers and penalties move with the Group."
+      ],
+      "group_coherency": {
+        "description": "Warriors must remain within Group Coherency to avoid penalties.",
+        "distance": "Groups must stay at least 1\u201d apart unless in melee."
+      }
+    },
+    "warriors_characteristics": {
+      "movement": "Distance a Warrior can move in inches over Open Terrain.",
+      "attack": "Base score needed on a d10 to successfully Attack.",
+      "defence": "Base score needed on a d10 to Defend against an attack.",
+      "morale": "Base score needed on a d10 to pass a Morale or Order Check.",
+      "actions": "Number of Actions a group can use per round."
+    },
+    "experience_levels": {
+      "veteran": "Expert warriors with improved Attack and Morale.",
+      "regular": "Trained and capable fighters.",
+      "irregular": "Troops with basic training.",
+      "green": "Untried, raw recruits."
+    },
+    "warrior_profiles": {
+      "points": "Cost to recruit a Warrior.",
+      "abilities": "Special rules inherent or purchasable for Warriors.",
+      "equipment": "Weapons, Armour, Shield, and Mount options.",
+      "mount": "Classification for mounted Warriors."
+    },
+    "groups": {
+      "description": "Warriors are organized into Groups with identical stats, equipment, and Abilities.",
+      "coherency": "Groups must remain within Coherency."
+    },
+    "commanders": {
+      "description": "Commanders are warriors with the Commander Ability, providing leadership and tactical advantages.",
+      "abilities": [
+        "Groups within Command range and LoS of a friendly Commander may use the Commander\u2019s Morale instead of their own when making Morale checks.",
+        "A Commander may use Command Actions on friendly Groups within Command range and LoS.",
+        "If a Commander is in base contact with an enemy in Melee, he may spend unused Actions to add extra d10 to his Attack or Defence Dice pool."
+      ],
+      "retinue_leader": {
+        "description": "The Retinue Leader is the overall leader on the battlefield with additional effects.",
+        "abilities": [
+          "May use Command Actions on friendly Groups within Command range and LoS.",
+          "The score on the d10 for Initiative is reduced by 1 for every Morale Penalty the Retinue Leader has.",
+          "May spend up to two Actions during the Initiative phase to roll additional d10 for Initiative."
+        ],
+        "consequences": [
+          "Whenever a friendly Group is destroyed or removed by fleeing, the Retinue Leader takes a Morale Penalty.",
+          "If the Retinue Leader is removed as a casualty, another Commander must pass a Morale check to become the new Retinue Leader or the game ends in Sudden Death."
+        ]
+      },
+      "command_range": {
+        "description": "The Commander Ability operates within a Command range, normally extending to any friendly Group within 6\u201d and LoS of the Commander\u2019s base.",
+        "exceptions": [
+          "A Broken Commander has no Command Range."
+        ]
+      },
+      "multiple_actions": {
+        "description": "Commanders and their Command Groups typically have two or more Actions, allowing them to perform multiple tasks.",
+        "usage": [
+          "Use Actions directly, as Command Actions, or as Special Actions to generate extra Initiative, Attack or Defence dice."
+        ]
+      },
+      "command_actions": {
+        "description": "Command Actions allow Commanders to issue Orders to a friendly group within Command Range and LoS.",
+        "limitations": [
+          "Groups can only use a single Command Action per round.",
+          "Command Groups may not receive Command Actions from a different Commander."
+        ],
+        "order_checks": {
+          "description": "To use a Command Action, the target group must take an Order check against its own Morale value.",
+          "success": "If successful, the group is issued a Command token and may choose an Action or a Reaction.",
+          "failure": "If failed, the Command Action ends and the target group does nothing."
+        }
+      },
+      "command_groups": {
+        "description": "Each Commander leads their own Command Group, activating and taking tests as one Group.",
+        "upgrades": {
+          "description": "Command Group upgrades such as banner bearers, musicians, and priests can be purchased.",
+          "effects": "Measured from the edge of the base of the upgraded Warrior."
+        },
+        "combat": {
+          "description": "Commanders generate separate Attack dice pools in combat based on their position.",
+          "melee": [
+            "If in base contact with an enemy, generate a separate Attack dice pool.",
+            "If within 1\u201d of a friendly Warrior in base contact, add an additional Attack dice to the Command Group\u2019s pool.",
+            "If neither, generate no Attack dice."
+          ],
+          "ranged": "Commanders generate a separate Attack dice pool using their own Attack value."
+        },
+        "fallen_commanders": {
+          "description": "If a Commander is killed, their Command Group must pass a Morale check or become Broken.",
+          "consequences": [
+            "The Command Group is treated as a normal Group for the rest of the game.",
+            "Command Group upgrades affecting Command range and Orders have no further effect."
+          ]
+        }
+      }
+    },
+    "game_round": {
+      "description": "Each Round comprises three steps: Initiative, Activations, and Housekeeping.",
+      "activations": "Players alternate selecting a Group and giving it an Action.",
+      "duration": "Typically five rounds."
+    },
+    "activations": {
+      "actions": [
+        "Move",
+        "Run",
+        "Combat",
+        "Defend",
+        "Command",
+        "Special",
+        "Rally"
+      ],
+      "reactions": {
+        "combat": "Respond to Combat Actions with own Combat Action.",
+        "defend": "Defend or take cover if targeted.",
+        "command": "Attempt a Reaction using a Command Action."
+      }
+    },
+    "ranged_combat": {
+      "description": "Shooting at the enemy with missile weapons.",
+      "reactions": "Target Group may Defend or Shoot Back."
+    },
+    "melee_combat": {
+      "description": "Charging into base contact allows Melee attacks.",
+      "reactions": "Target Group may Defend, Shoot Back, or Attack Back."
+    },
+    "defend_action_reaction": {
+      "action": {
+        "description": "Gives a Group a +2 bonus to its Defence rolls in the next Combat and removes one Morale Penalty.",
+        "procedure": "Move Warriors into base contact to represent protection."
+      },
+      "reaction": {
+        "description": "Gives a +2 bonus to Defence rolls in the Combat which triggered it.",
+        "procedure": "Move Warriors into base contact to represent protection."
+      }
+    },
+    "morale": {
+      "morale_checks": {
+        "procedure": "Roll a d10 and compare to Morale characteristic",
+        "success": "Equal or higher than Morale",
+        "failure": "Less than Morale",
+        "natural_rolls": {
+          "0": "Always a success",
+          "1": "Always a failure"
+        },
+        "modifiers": {
+          "morale_penalty": "-1 per Morale Penalty"
+        },
+        "commander_morale": {
+          "usage": "Can use Commander's Morale if within range and LoS",
+          "restrictions": "Only for Morale checks, not Order checks"
+        }
+      },
+      "order_checks": {
+        "procedure": "Roll a d10 and compare to Morale characteristic",
+        "success": "Equal or higher than Morale",
+        "failure": "Less than Morale",
+        "natural_rolls": {
+          "0": "Always a success",
+          "1": "Always a failure"
+        },
+        "modifiers": {
+          "morale_penalty": "-1 per Morale Penalty"
+        },
+        "restrictions": "Must use own Morale, not Commander's"
+      },
+      "morale_penalties": {
+        "effects": {
+          "modifier": "-1 to Morale and Order checks per penalty",
+          "melee_modifier": "Group with most penalties suffers a penalty, fewest gains a bonus"
+        },
+        "maximum": 6,
+        "exceeding_maximum": "Test Morale immediately, become Broken if failed",
+        "tracking": "Use a six-sided dice to track penalties"
+      },
+      "ignoring_morale_penalties": "Some Abilities allow ignoring penalties in specific situations"
+    },
+    "broken": {
+      "conditions": [
+        "Failing a Morale check in specific circumstances",
+        "Losing a Combat Action with half or more original Warriors lost",
+        "Commander killed in Combat Action",
+        "Friendly Group within 6\u201d removed",
+        "6 Morale Penalties and required to take more"
+      ],
+      "effects": {
+        "marker": "Place a Broken marker",
+        "movement": "Immediate Move using full basic Movement"
+      },
+      "movement_rules": {
+        "combat_action": "Move directly away from opponent",
+        "enemy_group": "Move directly away from enemy",
+        "other_reasons": "Move towards player\u2019s table edge",
+        "in_building": "Receive Broken marker, not moved"
+      },
+      "combat_modifications": {
+        "reactions": "May not make Reactions",
+        "melee_attacks": "Automatically hit",
+        "ranged_attacks": "Roll to hit as normal",
+        "defence_rolls": "Make Defence rolls, no Shield rolls",
+        "morale_checks": "Do not take Morale checks"
+      }
+    },
+    "rally_action": {
+      "compulsory_activation_phase": {
+        "procedure": "Test Morale",
+        "success": "Given a Weary marker, take an Action",
+        "failure": "Remain Broken, Run towards table edge"
+      },
+      "new_activations_phase": {
+        "procedure": "Order check to use Command Action, then Morale check",
+        "success": "Given a Weary marker, take an Action"
+      }
+    },
+    "weary": {
+      "description": "Exertions like a Run Action or Rallying leave Warriors Weary.",
+      "effects": "Weary Groups suffer a -1 penalty on all d10 dice rolls."
+    },
+    "compulsory_activation_phase": {
+      "description": "Groups not wholly in a player\u2019s control, such as Broken groups, must be activated before others in this phase.",
+      "compulsory_actions": [
+        {
+          "condition": "Broken",
+          "action": "Attempt to Rally. If failed, Run towards the nearest friendly table edge."
+        },
+        {
+          "condition": "Out of Coherency",
+          "action": "Take a Move Action to move back into Coherency."
+        },
+        {
+          "condition": "Specific Abilities",
+          "action": "May dictate actions. Can be overridden by passing a Morale check."
+        }
+      ]
+    },
+    "cover": {
+      "description": "If half or more of a Group\u2019s Warriors are wholly inside Area Terrain offering Cover, the Group gains a bonus to its Defence rolls.",
+      "soft_cover_bonus": "+1",
+      "hard_cover_bonus": "+2"
+    },
+    "defence_dice": {
+      "description": "Every successful hit from an Attack Dice pool generates one d10 Defence dice.",
+      "procedure": "Each Defence dice which equals or beats the Warrior\u2019s Defence value cancels a hit. Shield rolls may be made for failed Defence dice not scoring a natural 1."
+    },
+    "defence_roll": {
+      "description": "The score needed to cancel a successful Attack.",
+      "modifiers": "May be modified by Weapons, Armour, and Cover."
+    },
+    "defender": {
+      "description": "The target of a Combat Action."
+    },
+    "defensive_position": {
+      "description": "If half or more of a Group is in base contact with an Obstacle, it gains a +2 bonus to Defence rolls against attacks drawing LoS across the Defensive Position."
+    },
+    "dice_rolls": {
+      "description": "Combat outcomes are determined by rolling d10. A natural roll of 0 (10) is always a success, and a natural roll of 1 is always a failure."
+    },
+    "experience": {
+      "description": "Warriors can be Green, Irregular, Regular, or Veteran, affecting stats and points cost."
+    },
+    "failed_charge": {
+      "description": "When a Charge fails to make contact, each Warrior moves forward by their Charge distance.",
+      "procedure": "Move in a straight line by Movement plus d6\u201d, modified by Terrain."
+    },
+    "forced_back": {
+      "description": "At the end of Combat, the losing Group is Forced Back 1\u201d per casualty.",
+      "drawn_combat": "Both sides Forced Back 1\u201d per casualty.",
+      "no_casualties": "Attacker Forced Back 1\u201d, defender remains.",
+      "trapped": "If movement is blocked, the Group takes an automatic casualty."
+    },
+    "higher_ground": {
+      "description": "Terrain at least 2\u201d above the tabletop has a Height value.",
+      "benefits": "Each point of Height allows ignoring one instance of Hindering or one Group blocking LoS."
+    },
+    "hindered": {
+      "description": "Shooting through Hindering Terrain imposes a -1 penalty on Attack rolls."
+    },
+    "housekeeping": {
+      "description": "Tidies up the battlefield for the next Round.",
+      "actions": "Remove Action tokens, adjust Morale Penalties, remove Weary markers."
+    },
+    "line_of_sight": {
+      "description": "LoS is a straight line from the center of one Warrior\u2019s base to another.",
+      "requirements": "LoS is needed to Run, Shoot, or Charge."
+    },
+    "morale_checks": {
+      "description": "Groups test Morale to avoid becoming Broken or to override instinctive behavior.",
+      "procedure": "Roll d10 to equal or beat the Group\u2019s Morale value."
+    },
+    "morale_melee_modifier": {
+      "description": "In Melee, the side with fewer Morale Penalties gains an advantage."
+    },
+    "morale_penalties": {
+      "description": "Stress and combat fatigue measured with Morale Penalties.",
+      "effects": "Each Penalty imposes a -1 on Morale and Order checks."
+    },
+    "mount": {
+      "description": "Cavalry Warriors ride a Mount, modifying Movement and possibly conferring other benefits."
+    },
+    "move_action": {
+      "description": "Allows Warriors to move up to their Movement stat in inches.",
+      "modifiers": "Movement may be modified by Armour, Mounts, and Terrain."
+    },
+    "movement": {
+      "description": "A Warrior\u2019s Movement stat shows the distance it can move in inches."
+    },
+    "new_activations_phase": {
+      "description": "Main part of the game Round where players alternate activating Groups.",
+      "actions": "Groups take Actions like Move, Run, Shoot, Charge."
+    },
+    "order_checks": {
+      "description": "A Group wishing to use a Command Action must pass an Order check.",
+      "procedure": "Roll d10 to equal or beat its own Morale value."
+    },
+    "points_value": {
+      "description": "Everything in a Retinue has a Points value to keep the game balanced."
+    },
+    "rally": {
+      "description": "A Broken Group must attempt to Rally.",
+      "procedure": "Pass a Morale check to become Weary and take an Action. Fail and Run to the nearest friendly table edge."
+    },
+    "reaction": {
+      "description": "When targeted, a Group may make a Reaction if it has an Action available."
+    },
+    "regroup": {
+      "description": "A Group winning Melee Combat may Regroup during Combat Resolution.",
+      "benefit": "Allows a free Move Action."
+    },
+    "retinue": {
+      "description": "A body of Warriors in service of their lord.",
+      "composition": "Stats, equipment, and Abilities recorded in a Retinue list."
+    },
+    "retinue_leader": {
+      "description": "One Commander must be nominated as the Retinue Leader.",
+      "command_actions": "Can make friendly Groups take extra Actions within Command range and LoS."
+    },
+    "run_action": {
+      "description": "Allows a Group to move by double its Movement value in a straight line.",
+      "condition": "Must have LoS to the destination point."
+    },
+    "shield_roll": {
+      "description": "If the Warrior has a Shield, failed Defence dice not scoring a natural 1 may be rolled as Shield rolls.",
+      "success": "Each successful Shield roll cancels an attack."
+    },
+    "sudden_death": {
+      "description": "If the Retinue Leader is removed, another Commander must pass a Morale check to take over.",
+      "failure": "If no Commander can take over, the game ends in Sudden Death."
+    },
+    "tabletop": {
+      "description": "The area a game is played over, standard size is 4\u2019 by 3\u2019."
+    },
+    "terrain": {
+      "description": "Plays an important role in providing Cover, Defensive Positions, and blocking LoS.",
+      "types": "Open, Area, Building, or Obstacle."
+    },
+    "trait": {
+      "description": "Each faction has distinctive Traits reflecting historical fighting styles."
+    },
+    "warrior": {
+      "description": "Each model on the tabletop is a Warrior, organized into Groups."
+    },
+    "warrior_profile": {
+      "description": "Core information for each Warrior includes stats, equipment, Abilities, and points cost."
+    }
+  },
+  "keywords": [
+    "Morale Penalties",
+    "Action Tokens",
+    "Status Markers",
+    "Line of Sight (LoS)"
+  ],
+  "combat_actions_and_reactions": {
+    "description": "Charge, Shoot, Attack Back, Reaction Shooting and Shoot Back are collectively known as Combat Actions and Reactions. They involve the same Combat steps and are marked with the Combat Action token. Other Combat Reactions permitted by certain rules, Abilities and Traits include Brace and Counter Charge.",
+    "order_of_actions": "When a player activates a group, they declare the Action and target. Place an Action token by the Group. If targeted, the Group may React if it has an available Action. Reactions occur in response to a Combat Action. Both Action and Reaction are resolved as part of the activation of the player who made the Action."
+  },
+  "compulsory_actions": {
+    "description": "Players do not always have a choice about what Action a Group takes when it activates. When a Group subject to Compulsory Action is activated, it must take the specified Action.",
+    "broken_groups": "Must take a Rally Action, testing their Morale to remove Broken status. Broken Groups are subject to Compulsory Activation at the start of the round.",
+    "groups_out_of_coherency": "Must make a Move Action to bring the Group back into Coherency. If not possible, move as close to Coherency as possible.",
+    "specific_abilities": "Abilities, Traits or special rules may dictate what a Group must do when it activates, e.g., Charge the nearest enemy. A Morale test can override this."
+  },
+  "actions_per_round": {
+    "description": "Every Warrior\u2019s profile shows how many Actions they can take per round. Most groups can carry out a single Action or Reaction per round.",
+    "commanders": "Commanders can use Command Actions to give Orders to other groups, enabling them to take an extra Reaction or a second Action.",
+    "weary": "Taking a second Action or Reaction makes a group Weary. Place a Weary marker as soon as the group declares its second Action or Reaction.",
+    "action_limit": "No Group may take more than two Actions or Reactions during a single Round."
+  },
+  "bonus_actions_and_reactions": {
+    "description": "Occasionally a Group can take a bonus Action or Reaction, usually due to an Ability, Trait, Command Group upgrade or special rule. This means the Group can take the specified Action or Reaction without using their own Action or requiring a Command Action.",
+    "weary": "Unless otherwise specified, bonus Actions count towards the total number of Actions the Group can take, becoming Weary after using a second Action."
+  },
+  "movement_actions": {
+    "description": "Moving groups around the tabletop is vital. The Movement column in the Warrior profile indicates the basic distance in inches which the group can move.",
+    "move_action": "The Group moves by its Movement distance in inches, modified by armour, mounts and Terrain, in any direction(s) it wishes, turning freely.",
+    "run_action": "The Group moves up to double its Movement distance in inches, modified by armour, mounts and Terrain, but must move in a straight line. The Group becomes Weary.",
+    "combat_action_melee": "The Group which initiates a Melee Combat makes a Charge move.",
+    "combat_action_ranged": "Some weapons permit a Group to move before shooting."
+  },
+  "group_coherency": {
+    "description": "Groups must finish any Move or Run Action in Coherency. They are not expected to keep in Coherency while moving or when they make a Charge move.",
+    "coherency_distance": "Coherency distance is 2\u201d for Infantry Groups and 3\u201d for Cavalry Groups.",
+    "out_of_coherency": "A Group is out of Coherency if not all Warriors are within Coherency distance. It is subject to Compulsory Action and suffers a penalty to Defence rolls."
+  },
+  "restrictions_on_movement": {
+    "other_groups": "Groups may not pass or finish their movement closer than 1\u201d to any enemy Group, except when making a Charge move.",
+    "terrain": "Terrain affects movement. Passable terrain has no impact, Difficult Terrain reduces movement by a quarter, Very Difficult Terrain prevents Running, and Impassable Terrain cannot be moved through."
+  },
+  "line_of_sight": {
+    "run_moves": "Run moves are made in a straight line, and Warriors must be able to see and draw LoS to their destination. Warriors can see and draw LoS through other Warriors from the same Group."
+  },
+  "combat_actions": {
+    "ranged_combat": {
+      "shoot_action": {
+        "steps": [
+          {
+            "step": "Move and Shoot",
+            "description": "Some ranged weapons permit a warrior to move a certain distance and then Shoot. This is resolved as part of the Combat Action. Unless otherwise noted, a group follows the rules for a Move Action and may not Run. In many cases the group's potential Movement distance is reduced so they can aim and shoot. Sometimes a group can move but then suffers a penalty to its shooting. This will be specified in the relevant weapon\u2019s rules."
+          },
+          {
+            "step": "Declare Target",
+            "description": "The attacking Group must nominate an enemy Group as the target of its Combat Action. This must normally be the closest enemy Group within range and LoS. Follow steps 2 (Check LoS) and 3 (Measure Range) to establish what the closest enemy Group is, and whether any other enemy Groups might be potential targets."
+          },
+          {
+            "step": "Check LoS",
+            "description": "Check how many Warriors in the attacking group have LoS to at least one warrior in the defending group. This means drawing a straight line from the centre of the Warrior\u2019s base to the centre of the target\u2019s base and checking whether LoS is clear. Remember that a Warrior can \u201csee\u201d and draw LoS through other Warriors from the same Group, but not Warriors from any other Group."
+          },
+          {
+            "step": "Measure Range",
+            "description": "Measure the range between each attacking Warrior who can draw LoS to the closest Warrior of the defending group they can draw LoS to. Distance is measured from the edge of one base to the edge of the other."
+          }
+        ]
+      }
+    },
+    "melee_combat": {
+      "charge_action": {
+        "steps": [
+          {
+            "step": "Declare Target",
+            "description": "The attacking Group must nominate an enemy Group as the target of its Combat Action. This must normally be the closest enemy Group within range and LoS."
+          },
+          {
+            "step": "Check LoS",
+            "description": "Check how many Warriors in the attacking group have LoS to at least one warrior in the defending group. This means drawing a straight line from the centre of the Warrior\u2019s base to the centre of the target\u2019s base and checking whether LoS is clear."
+          },
+          {
+            "step": "Establish Charge Distance",
+            "description": "Determine the distance the attacking Group needs to move to make contact with the defending Group."
+          },
+          {
+            "step": "Move into Contact",
+            "description": "Move the attacking Group into base contact with the defending Group."
+          }
+        ]
+      }
+    },
+    "resolve_attack": {
+      "steps": [
+        {
+          "step": "Roll Attack Dice",
+          "description": "The Group rolls its Attack dice, followed by Defence rolls and Shield rolls. Bonus Attacks may follow."
+        },
+        {
+          "step": "Defender Reaction",
+          "description": "If the defending Group has chosen an Attack Back Reaction, this is resolved in the same way."
+        }
+      ]
+    },
+    "combat_resolution": {
+      "steps": [
+        {
+          "step": "Apply Morale Penalties",
+          "description": "Apply Morale Penalties for casualties and determine who has won."
+        },
+        {
+          "step": "Forced Back Moves",
+          "description": "Make Forced Back moves and (for the victor) a Regroup move, followed by Morale checks."
+        }
+      ]
+    }
+  },
+  "attack_dice": {
+    "generation": "Each Warrior who is eligible to fight in a Combat Action generates one Attack dice. Groups may gain bonus Attack dice or lose Attack dice.",
+    "attack_value": "Each Warrior\u2019s profile specifies its Attack Value, which varies depending on their level of experience. A lower Attack Value makes it easier to score hits.",
+    "modifiers": "The score on the Attack dice may be subject to modifiers. For example, certain Weapons, Abilities and Traits may confer bonuses or penalties to the score. Each piece of Hindering Terrain inflicts a -1 penalty."
+  },
+  "defence_dice": {
+    "generation": "When a Group takes hits in a Combat Action, you roll one Defence dice for every successful hit. You may gain bonus Defence dice as a result of Abilities or equipment.",
+    "defence_value": "All humans have a basic Defence Value of 7+.",
+    "modifiers": "The score on the Defence dice may be subject to modifiers. Wearing Armour confers a bonus to the score on the Defence dice. When attacked, a Defend Action or Reaction, being in Cover, occupying a Defensive Position or being on Higher Ground confer further bonuses to the roll."
+  },
+  "shield_rolls": {
+    "description": "A Group equipped with Shields gains a special Shield roll. A Warrior who fails a Defence roll during a Combat Action might still block the attack with their shield. Make a Shield roll on a d10: the score required depends on the type of shield used. If their Defence dice scored a natural 1, no Shield rolls are permitted.",
+    "modifiers": "The score on the Shield roll may be subject to modifiers, for example from Weapons, Abilities and Traits or if the Group is Weary."
+  },
+  "combat_modifiers": {
+    "broken_groups": {
+      "description": "Combat Actions against Broken Groups are modified as follows:",
+      "modifications": [
+        "Broken Groups may not make Reactions.",
+        "Melee combat attacks against Broken Warriors automatically hit - there is no need to roll the Attack dice. Ranged attacks must roll to hit as normal.",
+        "Broken Groups make Defence rolls against hits inflicted, but may not make Shield rolls.",
+        "Broken groups do not take Morale checks as a result of Combat Actions - they are already Broken."
+      ]
+    }
+  },
+  "rules": {
+    "line_of_sight": {
+      "description": "Rules for determining Line of Sight (LoS) in the game.",
+      "rules": [
+        "LoS cannot be drawn through enemy Groups.",
+        "Groups cannot draw LoS to Run, Shoot or Charge through enemy Groups.",
+        "Groups cannot move through friendly Groups and so cannot draw LoS to Run or Charge.",
+        "Groups cannot draw LoS through other friendly Groups when Shooting."
+      ]
+    },
+    "combat_reactions": {
+      "melee_reactions": [
+        {
+          "name": "Attack Back",
+          "description": "Allows the Group to fight back in Melee."
+        },
+        {
+          "name": "Defend",
+          "description": "Move the Warriors into base contact around the closest to the enemy, giving the Group a +2 bonus to its Defence rolls."
+        },
+        {
+          "name": "Reaction Shooting",
+          "description": "If equipped with missile weapons and the attacking group cannot reach them using their basic Movement."
+        }
+      ],
+      "shooting_reactions": [
+        {
+          "name": "Defend",
+          "description": "Move the Warriors into base contact around the closest to the enemy, giving the Group a +2 bonus to its Defence rolls. The attacker re-checks LoS and Range after this repositioning."
+        },
+        {
+          "name": "Shoot Back",
+          "description": "If equipped with missile weapons which have sufficient range to hit the attacker. Measure Range to check this."
+        }
+      ]
+    },
+    "morale_melee_modifier": {
+      "description": "Modifiers to morale during melee based on the difference in morale penalties between attacker and defender.",
+      "effects": [
+        {
+          "condition": "Attacker has more Morale Penalties",
+          "difference": "4+",
+          "effect": "Defender gains +1 Defence Dice. Attacker must pass a Morale check to Charge."
+        },
+        {
+          "condition": "Attacker has more Morale Penalties",
+          "difference": "2 or 3",
+          "effect": "Defender gains +1 Defence Dice."
+        },
+        {
+          "condition": "Attacker has more Morale Penalties",
+          "difference": "1",
+          "effect": "Defender may re-roll one failed Defence dice."
+        },
+        {
+          "condition": "Same Morale Penalties",
+          "difference": "0",
+          "effect": "No effect."
+        },
+        {
+          "condition": "Defender has more Morale Penalties",
+          "difference": "1",
+          "effect": "Attacker may re-roll one failed Attack dice."
+        },
+        {
+          "condition": "Defender has more Morale Penalties",
+          "difference": "2 or 3",
+          "effect": "Attacker gains +1 Attack Dice."
+        },
+        {
+          "condition": "Defender has more Morale Penalties",
+          "difference": "4+",
+          "effect": "Attacker gains +2 Attack Dice."
+        }
+      ]
+    },
+    "when_to_test_morale": {
+      "description": "Conditions under which Groups must test their Morale to avoid becoming Broken.",
+      "conditions": [
+        "If the Group loses a Combat Action and has suffered a cumulative total of half or more of its original number of Warriors.",
+        "If the Command Group\u2019s Commander is killed in a Combat Action, even if the Group won the Combat.",
+        "If a friendly Commander is killed within 6\u201d during a Combat Action.",
+        "If a friendly Group within 6\u201d is removed completely during a Combat Action.",
+        "At any time if a Group has 6 Morale Penalties and is required to take more.",
+        "If triggered by Abilities or other special rules."
+      ]
+    },
+    "terrain_types": {
+      "open_terrain": {
+        "description": "No special rules."
+      },
+      "area_terrain": {
+        "description": "Groups are in Area Terrain if half or more of their Warriors\u2019 bases are wholly inside the edges of the Area Terrain base."
+      },
+      "buildings": {
+        "description": "Area Terrain. Groups may use doors, windows etc as Defensive Positions if in base-to-base contact with the openings. Broken Groups inside a Building do not Move or Run."
+      },
+      "obstacles": {
+        "flat": "May be Crossed.",
+        "up_to_1_inch_high": "May be Crossed. Hindering Terrain, Defensive Position.",
+        "over_1_inch_high": "Blocks LoS. May only be crossed by Climbing / Ladders."
+      }
+    },
+    "terrain_effects": {
+      "terrain_and_movement": {
+        "passable": "No impact on movement.",
+        "difficult_terrain": "Reduces movement by a quarter.",
+        "very_difficult_terrain": "As Difficult Terrain, but Groups may not Run.",
+        "impassable_terrain": "May not be moved through or over.",
+        "crossing_obstacles": "Costs 2\" of movement for Infantry / 1\" for Cavalry."
+      },
+      "terrain_and_los": {
+        "clear": "No impact on LoS.",
+        "blocks_los": "May not draw LoS through the Terrain. May draw LoS into or out of Area Terrain which blocks LoS, but not through it.",
+        "hindering": "-1 to Attack rolls for each instance of Hindering."
+      },
+      "terrain_and_defence": {
+        "no_cover": "No impact on Defence.",
+        "soft_cover": "+1 to Defence rolls.",
+        "hard_cover": "+2 to Defence rolls.",
+        "defensive_position": "+2 to Defence rolls against attacks crossing the Terrain if half or more of the Group is in base contact with it."
+      }
+    },
+    "higher_ground": {
+      "ranged": {
+        "description": "Ranged attacks ignore one instance of Hindering per point of Height.",
+        "bonus": "If at least half the Warriors in the attacking Group are on Higher Ground than their target, the Group gains a +1 bonus to its Attack rolls."
+      },
+      "melee_attacker": {
+        "description": "If at least half the Warriors in the attacking Group are on Higher Ground than their target when it declares a Charge.",
+        "effects": [
+          "The attacking Group rolls an additional d6 to determine the Strength of the Charge and picks the highest result.",
+          "The attacking Group gains a +1 bonus to its Attack rolls."
+        ]
+      },
+      "melee_defender": {
+        "description": "If at least half the Warriors in the defending Group are on Higher Ground than their attacker when it declares a Charge.",
+        "effects": [
+          "The defending Group gains a +1 bonus to its Attack rolls.",
+          "The defending Group gains a +1 bonus to its Defence rolls."
+        ]
+      }
+    }
+  },
+  "combat": {
+    "remove_casualties": {
+      "melee_attack_dice_targeting_specific_warriors": "If a Melee Attack Dice pool targeted a specific Warrior in base contact (e.g. a Commander), any successful Attack dice which are not blocked with Defence and/or Shield rolls will cause the targeted Warrior to be removed as a casualty. Additional successful hits cause casualties on the Group.",
+      "melee_attack_dice_generated_by_specific_warriors": "If a Melee Attack Dice pool was generated by a specific Warrior in base contact (usually a Commander), successful Attack dice which are not blocked with Defence and/or Shield rolls should remove enemy Warriors in base contact first, if possible. If no enemy Warriors are in base contact, the enemy player may choose which Warriors to remove as casualties.",
+      "other_melee_casualties": "Casualties are chosen and removed by the defending player. Group Coherency must be maintained if possible.",
+      "shooting_casualties": "Casualties are chosen and removed by the defending player. Group Coherency must be maintained if possible. Warriors cannot be removed as casualties in Ranged combat if: No attacking Warrior could draw LoS to them; No attacking Warrior was in range of them. If all Warriors who are eligible to be removed as casualties have been removed, any additional hits have no effect."
+    },
+    "bonus_attacks": {
+      "description": "In some cases Groups may gain bonus Attacks during a Combat Action, for example due to Abilities. In some cases a Group which has chosen to Defend may generate bonus Attacks. Bonus Attacks are resolved as soon as casualties have been removed, but before the next step. Bonus Attacks generated through the initial attack (by either side) are therefore resolved before any Defender Reaction. Bonus attacks generated by a Defender Reaction are resolved before Combat Resolution. In the event that both attacker and defender generate Bonus Attacks, generate both Attack Dice pools, rolling the attacker\u2019s first.",
+      "bonus_attack_dice_pool": "If Bonus Attacks apply, the relevant Ability or special rule will indicate how many Attack dice are generated. The number of Bonus Attacks is not modified further."
+    },
+    "defender_reaction": {
+      "ranged_shoot_back": "In a Ranged Combat, if the defending Group has chosen a Shoot Back Reaction, once the attacking Group has completed the Ranged Combat and Resolving Attacks steps, the Shoot Back Reaction takes place. The defending Group carries out the Ranged Combat process with the roles reversed. What had been the defending Group are now the attackers. Treat the attacking Group as its only possible target: Check LoS and Measure Range (including checking Long and Short range); Take any necessary Morale check to shoot; Generate Attack Dice Pools; Resolve Attacks. The defending Group may have suffered casualties in the initial attack. If so, the slain Warriors do not generate Attack dice when they Shoot Back.",
+      "melee_attack_back": "In a Melee Combat, if the defending Group has chosen an Attack Back Reaction, once the attacking Group has completed the Melee and Resolving Attacks steps, the Attack Back Reaction takes place. Go straight to the Generate Attack Dice Pool step, and then Resolve Attacks. This is done exactly as described here, but with the roles reversed. What had been the defending Group are now the attackers and vice versa. An Attack Back Reaction does not count as Charging and Warriors are not moved. The defending Group may have suffered casualties in the initial attack. If so, the slain Warriors do not generate Attack dice when they Attack Back. Depending on which Warriors were removed, some of the defenders may be too far away to generate Attack dice. Morale Melee Modifier: apply the Morale Melee Modifier as calculated during the Melee Combat steps, i.e. ignoring any casualties inflicted since. When consulting the table, reverse the roles, with the initial attacker becoming the defender and vice versa."
+    },
+    "combat_resolution": {
+      "apply_morale_penalties": "Once all attacks are resolved, all Groups which have suffered casualties take one Morale Penalty per casualty. All casualties taken during the Combat Action count, including from Reactions and Bonus Attacks.",
+      "determine_victor": "Add up the number of casualties each side has caused to determine victory in the Combat Action. All casualties taken during the Combat Action count, including from Reactions and Bonus Attacks. The Group that has caused the most casualties wins the Combat Action. The opposing group is Forced Back and may be required to take a Morale check. If casualties are equal, the combat is a draw. Neither Group is required to take a Morale check for losing the combat. If one Group is wiped out, the surviving enemy automatically win.",
+      "forced_back": {
+        "description": "A Group which is Forced Back moves 1\u201d for every casualty they have taken in that combat. For example, a group that takes 2 casualties and is Forced Back will move back 2\u201d. Forced Back moves are made in the direction of the attack, using the straight line along which LoS was drawn (and/or along which a Charge move was made). The distance a Group is Forced Back is modified by Terrain as normal, to a minimum distance of 1\u201d. A Group can be Forced Back more than its basic Movement distance. In some cases it may not be possible to move the full Forced Back distance.",
+        "forced_back_into_difficult_terrain": "The distance a Group is Forced Back is modified by Difficult or Very Difficult Terrain (rounding fractions up).",
+        "forced_back_into_a_friendly_group": "If there is a friendly Group in the way of a Forced Back move, move it the minimum distance needed to allow the compulsory move to take place, and make sure both friendly groups finish at least 1\" apart.",
+        "forced_back_into_an_enemy_group": "If enemy warriors lie in the path of a Forced Back move or would be within 1\" of the group\u2019s final position, the group is Trapped. The Group is moved as far back as possible, remaining a minimum of 1\u201d from the enemy Group. The Group takes one automatic casualty. Casualties from being Trapped add Morale Penalties as normal.",
+        "forced_back_into_an_obstacle": "If an Obstacle lies in the path of a Forced Back Move, the Group may Cross it if they have sufficient movement distance available within the Forced Back move. If the Group does not have sufficient movement distance available within the Forced Back move, the Group is Trapped. It takes one automatic casualty and is then moved so it Crosses the Obstacle.",
+        "forced_back_into_a_building_or_impassable_terrain": "If a Building or Impassable Terrain lies in the path of a Forced Back move, the group is Trapped. Groups may not enter Buildings as part of a Forced Back move. The Group is moved as far back as possible. Warriors are permitted to touch the base of the Building or Impassable Terrain. The Group takes one automatic casualty.",
+        "forced_back_off_the_table": "Any Warrior whose base even partially leaves the table in a Forced Back move is removed from play, though does not cause the Group to take a Morale penalty. If an entire Group is Forced Back off the table, it is removed from play. Nearby friendly Groups are not required to test their Morale for the Group being destroyed - but it will cause the Retinue Leader to take a Morale Penalty."
+      },
+      "regroup_melee_only": "The winner of a Melee combat may take a free Move Action to regroup. If the combat is a draw, neither side may regroup. If the winner had a Defend Action or Reaction, it may not make a Regroup move. After the losing group has been Forced Back, the winner may move a Warrior from their group up to their basic Movement in inches (modified by Armour, Mounts and Terrain), and then move the remaining Warriors by up to their maximum basic Movement. All of the normal rules for a Move Action apply: The Group must end its Move in Coherency. Movement is modified by Terrain as normal. All Warriors in the Group must be at least 1\" away from any other groups (friend or foe). The intention behind this extra movement is to enable victorious groups to take objectives, grab cover and more importantly return to coherency after a frenetic melee.",
+      "morale_checks": "Once Forced Back and Regroup moves are complete, Groups may need to test their Morale as the adrenaline wears off and the psychological impact of the fighting sinks in. Groups must test their Morale to avoid becoming Broken in the following circumstances: If the Group loses a Combat Action and has lost a cumulative total of half or more of the original number of Warriors as casualties. If a Command Group\u2019s Commander is killed in a Combat Action, even if the Group won the Combat. If a friendly Group within 6\u201d is removed completely during a Combat Action. If a friendly Commander is killed within 6\u201d during a Combat Action. If a Group has 6 Morale Penalties and is required to take more. Remember that every Morale Penalty imposes a -1 modifier to Morale checks. If the score is equal or higher than the warriors\u2019 Morale, they have passed. If the score is less than the warriors\u2019 Morale, they have failed. The Group is given a Broken marker and immediately moves its full Movement (modified by Armour, Mounts and Terrain) directly away from their attacker; from the enemy Group which caused them to become Broken; or (if neither applies) towards the nearest friendly table edge. A natural 0 (10) is always a success and a natural 1 is always a failure. A Group may need to take more than one Morale check. If it fails one, it becomes Broken and does not need to test again (the warriors\u2019 nerve has already failed)."
+    }
+  },
+  "equipment": [
+    {
+      "name": "Sword",
+      "modifier": "+1 to Attack rolls",
+      "effect": "PARRY - Gains +1 to Shield rolls in Melee, or else a 9+ Shield roll in Melee if not equipped with a Shield.",
+      "type": "Weapon"
+    },
+    {
+      "name": "Padded",
+      "modifier": "-1\" Move",
+      "effect": "+1 Defence",
+      "type": "Armour"
+    },
+    {
+      "name": "Small Shield",
+      "modifier": "9+ Shield Roll",
+      "effect": "",
+      "type": "Shield"
+    },
+    {
+      "name": "Horse",
+      "modifier": "+3\" Move",
+      "effect": "",
+      "type": "Mount"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "CHIVALRY",
+      "effect": "The Group does not need to make a Morale check to charge Knights (or equivalent Warriors deemed to be knights) if they are not the closest target.",
+      "cost": 1
+    },
+    {
+      "name": "CRUELTY",
+      "effect": "Commander only. When the Commander makes Melee Attacks, enemy Warriors in base contact must re-roll one successful Defence dice caused by the Commander.",
+      "cost": 1
+    },
+    {
+      "name": "OLD SOLDIERS",
+      "effect": "The first time the Group is Charged in Melee each round, it may make a free Attack Back Reaction. This does not count towards the Group's maximum Actions.",
+      "cost": 2
+    },
+    {
+      "name": "Formidable",
+      "effect": "Able to shrug off wounds that would kill a normal warrior. Commander only. Ignore the first successful casualty suffered by this Commander\u2019s Command Group.",
+      "cost": 3
+    },
+    {
+      "name": "Glory Seekers",
+      "effect": "Gaining a \u2018reputation\u2019 is everything. Ignore the negative effects of Morale Penalties in Melee Combat.",
+      "cost": 2
+    },
+    {
+      "name": "Gutter Thug",
+      "effect": "Raised on the streets, winning is all that matters. Each successfully defended Attack in Melee generates a bonus Attack.",
+      "cost": 2
+    },
+    {
+      "name": "Holy Relic",
+      "effect": "Whatever terrors they face, these warriors will overcome them. When the Group removes Morale Penalties in the Housekeeping phase, it automatically removes 1 additional Morale Penalty.",
+      "cost": 1
+    },
+    {
+      "name": "Inspired Leader",
+      "effect": "Gleaming armour, fluttering banners and sheer reputation proclaim a heroic aura. Commander only. All friendly warriors with Line of Sight to this Commander gain +1 to Morale checks. This does stack with other bonuses.",
+      "cost": 2
+    },
+    {
+      "name": "Master Fletcher",
+      "effect": "Skilled fletchers make the best arrows. May only be chosen by groups armed with Bows or Crossbows. These Warriors increase their Long range by 5\".",
+      "cost": 2
+    },
+    {
+      "name": "Measured Shot",
+      "effect": "Taking extra time to aim can make all the difference. When the Group uses a Shoot Action, it gains 1 Attack dice provided the Group does not move.",
+      "cost": 2
+    },
+    {
+      "name": "Nimble",
+      "effect": "Used to hunting or poaching in the wild, no terrain is too difficult. May only be chosen by groups that are not equipped with armour. The Group treats Difficult Terrain as Passable and Very Difficult Terrain as Difficult. In addition the Group may Swim in Deep Rivers and Lakes.",
+      "cost": 1
+    },
+    {
+      "name": "Old Soldiers",
+      "effect": "Wily, gritty and battle worn, these warriors are the survivors of many conflicts. The first time the Group is Charged in Melee each round, it may make a free Attack Back Reaction. This does not count towards the Group's maximum Actions per Round.",
+      "cost": 2
+    },
+    {
+      "name": "Open Up",
+      "effect": "A feint and the foe\u2019s shield is misplaced. A flick of the wrist and it becomes a useless piece of wood. Opponents do not receive any bonuses for a Defence Action or Defend Reaction in Melee Combat.",
+      "cost": 1
+    },
+    {
+      "name": "Rage",
+      "effect": "Adrenaline flows and blocks the pain. If the Group Attacks Back in Melee, Warriors removed as casualties caused by the initial Attack still contribute Attack dice.",
+      "cost": 2
+    },
+    {
+      "name": "Raise Shields",
+      "effect": "As skilled with the shield as they are with the sword and spear. When the Group has a Defence Action or Reaction, it gains +2 to its Shield Rolls as well as Defence Rolls.",
+      "cost": 3
+    },
+    {
+      "name": "Robust",
+      "effect": "A stronger constitution, finer armour... or just chunkier than the average Commander? Commander only. It takes one extra successful hit to remove this Commander as a casualty.",
+      "cost": 2
+    },
+    {
+      "name": "Skirmisher",
+      "effect": "Harrying the enemy is their job. May only be chosen by groups that are not equipped with armour. The Group gains +1 to its Defence rolls against Ranged attacks. In addition the Group may Swim in Deep Rivers and Lakes.",
+      "cost": 2
+    },
+    {
+      "name": "Surefooted",
+      "effect": "Fleet of foot, these warriors will catch out the unwary. May re-roll the Strength of the Charge dice if the first result leaves the Group making a failed Charge.",
+      "cost": 1
+    },
+    {
+      "name": "Veteran Crusader",
+      "effect": "Back from over the sea, few men can imagine what he has seen. Commander Only. The Commander and his Command Group ignore their Morale Penalties when making Morale checks.",
+      "cost": 3
+    },
+    {
+      "name": "Weapon Choice",
+      "effect": "Skilled in multiple weapons. A Group may gain Weapon Choice by purchasing a Ranged Weapon in addition to a Melee Weapon (paying the full cost for both weapons). The Group may choose which weapon it wishes to use in each round. This will normally be when it makes its first Combat Action or Reaction. The Group must use the chosen weapon for the remainder of the round.",
+      "cost": 0
+    }
+  ],
+  "terrain": {
+    "types": [
+      {
+        "name": "Open Terrain",
+        "description": "Meadows, village commons, flat desert or scrubland \u2013 that neither impedes movement nor provides cover.",
+        "effects": {
+          "movement": "Passable",
+          "line_of_sight": "Clear",
+          "defence": "No Cover"
+        }
+      },
+      {
+        "name": "Area Terrain",
+        "description": "Wood, marsh, rocky ground, earth bank, ploughed or sown field, pigsty, a fordable river.",
+        "effects": {
+          "movement": "Difficult",
+          "line_of_sight": "Blocks LoS",
+          "defence": "Soft Cover"
+        }
+      },
+      {
+        "name": "Obstacles",
+        "description": "Walls, fences, hedges, ditches, carts, barricades, wells, haystacks.",
+        "effects": {
+          "movement": "Crossed",
+          "line_of_sight": "Blocks LoS",
+          "defence": "Defensive Position"
+        }
+      }
+    ],
+    "movement": {
+      "passable": "Movement across Passable Terrain is not restricted.",
+      "difficult": "Movement across Difficult Terrain is reduced by a quarter.",
+      "very_difficult": "Movement across Very Difficult Terrain is reduced by a quarter. Warriors may not Run in or through Very Difficult terrain.",
+      "impassable": "Impassable Terrain cannot be moved through or entered."
+    },
+    "building": {
+      "capacity": "One dismounted Warrior per square inch of floor",
+      "climb_roof": "Possible if figures can be balanced",
+      "line_of_sight": {
+        "blocks": true,
+        "rules": [
+          "Groups cannot draw LoS through the Building",
+          "Groups cannot draw LoS into and out of a Building",
+          "Groups cannot Run into a building",
+          "Groups cannot Run inside a building"
+        ]
+      },
+      "defensive_position": {
+        "entry_exit": "Doors, windows, or openings",
+        "base_contact": true,
+        "los": "Can draw LoS out and to the group"
+      },
+      "morale": {
+        "broken_marker": "Group inside a Building is not moved",
+        "rally_fail": "Broken Groups inside a Building are not moved"
+      }
+    },
+    "basic_terrain": [
+      {
+        "type": "Open",
+        "move": "Passable",
+        "los": "Clear",
+        "defence": "No Cover"
+      },
+      {
+        "type": "Roads",
+        "move": "Passable",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "+1 Movement if entire Move is on a Road"
+      },
+      {
+        "type": "Hill",
+        "move": "Passable",
+        "los": "Blocks LoS",
+        "defence": "No Cover",
+        "special_rules": "Higher Ground"
+      },
+      {
+        "type": "Bushes, Scrub",
+        "move": "Difficult",
+        "los": "Hindering",
+        "defence": "Soft Cover"
+      },
+      {
+        "type": "Marshes, Swamps",
+        "move": "Very Difficult",
+        "los": "Clear",
+        "defence": "No Cover / Soft Cover"
+      },
+      {
+        "type": "Walls, Fences, Hedges, Barricades",
+        "move": "Crossed",
+        "los": "Hindering",
+        "defence": "Defensive Position",
+        "special_rules": "Assumed to be 1\u201d wide and up to 1\u201d high"
+      },
+      {
+        "type": "High Walls",
+        "move": "Impassable",
+        "los": "Blocks LoS",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be over 1\u201d high"
+      },
+      {
+        "type": "Wood",
+        "move": "Difficult",
+        "los": "Blocks LoS",
+        "defence": "Soft Cover",
+        "special_rules": "Very Difficult for Cavalry"
+      },
+      {
+        "type": "Forest",
+        "move": "Very Difficult",
+        "los": "Blocks LoS",
+        "defence": "Hard Cover",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Ravines, Deep Pits",
+        "move": "Impassable",
+        "los": "Clear",
+        "defence": "No Cover"
+      }
+    ],
+    "waterway_terrain": [
+      {
+        "type": "Stream",
+        "move": "Crossed",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be 1\u201d wide"
+      },
+      {
+        "type": "Shallow River",
+        "move": "Difficult",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be at least 3\u201d wide"
+      },
+      {
+        "type": "Deep River",
+        "move": "Impassable",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be at least 4\u201d wide"
+      },
+      {
+        "type": "Pond",
+        "move": "Difficult",
+        "los": "Clear",
+        "defence": "No Cover"
+      },
+      {
+        "type": "Lake",
+        "move": "Impassable",
+        "los": "Clear",
+        "defence": "No Cover"
+      },
+      {
+        "type": "River Bank",
+        "move": "Passable",
+        "los": "Clear",
+        "defence": "No Cover / Soft Cover"
+      },
+      {
+        "type": "Ford",
+        "move": "Difficult",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Crosses River / Stream as Passable"
+      },
+      {
+        "type": "Bridge (no Parapet)",
+        "move": "Passable",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Crosses River / Stream as Passable"
+      },
+      {
+        "type": "Bridge with Parapet",
+        "move": "Passable",
+        "los": "Hindering",
+        "defence": "Hard Cover",
+        "special_rules": "Crosses River / Stream as Passable"
+      }
+    ],
+    "settlement_terrain": [
+      {
+        "type": "Fields - Ploughed / Muddy",
+        "move": "Difficult",
+        "los": "Clear",
+        "defence": "No Cover"
+      },
+      {
+        "type": "Fields - Standing Crops",
+        "move": "Difficult",
+        "los": "Hindering",
+        "defence": "Soft Cover"
+      },
+      {
+        "type": "Vineyards",
+        "move": "Difficult",
+        "los": "Blocks LoS",
+        "defence": "Soft Cover"
+      },
+      {
+        "type": "Ditch",
+        "move": "Crossed",
+        "los": "Clear",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be 1\u201d wide"
+      },
+      {
+        "type": "Walls, Fences, Hedges, Barricades",
+        "move": "Crossed",
+        "los": "Hindering",
+        "defence": "Defensive Position",
+        "special_rules": "Assumed to be up to 1\u201d high"
+      },
+      {
+        "type": "High Walls",
+        "move": "Impassable / Climbed",
+        "los": "Blocks LoS",
+        "defence": "No Cover",
+        "special_rules": "Assumed to be up to 1\u201d high"
+      },
+      {
+        "type": "Wooden Building",
+        "move": "May not Run",
+        "los": "Blocks LoS",
+        "defence": "Defensive Position",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Stone Building",
+        "move": "May not Run",
+        "los": "Blocks LoS",
+        "defence": "Defensive Position",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Church",
+        "move": "May not Run",
+        "los": "Blocks LoS",
+        "defence": "Defensive Position",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Ruined Wooden Building",
+        "move": "Difficult",
+        "los": "Clear / Hindering / Blocks LoS",
+        "defence": "Soft Cover",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Ruined Stone Building",
+        "move": "Difficult",
+        "los": "Clear / Hindering / Blocks LoS",
+        "defence": "Hard Cover",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Tents",
+        "move": "Difficult",
+        "los": "Blocks LoS",
+        "defence": "No Cover",
+        "special_rules": "Impassable to Cavalry"
+      },
+      {
+        "type": "Stone Crosses, Lone Trees",
+        "move": "Difficult",
+        "los": "Blocks LoS",
+        "defence": "Hard Cover"
+      }
+    ],
+    "terrain_special_rules": {
+      "church": "+1 to Attack dice for Groups with a Priest within 6\u201d",
+      "forest": "Must be placed along table edges",
+      "river_bank": "Edges of a stream, river, pond or lake",
+      "road": "+1 Movement if entire Move Action is on a Road",
+      "ruin": "Effect on LoS based on wall height",
+      "swimming": "Infantry with Nimble or Skirmishers can move through Deep Rivers and Lakes",
+      "waterway": "Must include at least one Bridge or Ford for every 2\u2019 width of the table"
+    }
+  },
+  "terrain_rules": {
+    "obstacles": {
+      "description": "Groups cannot cross Obstacles over 1\u201d in height without using Climbing or Ladders. Impassable to Cavalry.",
+      "movement_cost": "Relevant movement cost for crossing."
+    },
+    "steps_and_stairs": {
+      "description": "Treated as Open Terrain. No penalties to movement.",
+      "movement_cost": "Measure horizontal distance only."
+    },
+    "ladders": {
+      "description": "Movement measured diagonally. Impassable to Cavalry.",
+      "movement_cost": "At least one Warrior must reach top/bottom to continue."
+    },
+    "climbing": {
+      "description": "Vertical surfaces treated as Difficult Terrain.",
+      "movement_cost": "Cannot be left hanging part way."
+    },
+    "falling": {
+      "description": "Controlled fall up to 1\u201d. Uncontrolled fall over 1\u201d ends movement.",
+      "damage": "Automatic hit per point of Height fallen. No Shield rolls."
+    },
+    "terrain_and_los": {
+      "clear_terrain": "No impediment to shooting or LoS.",
+      "hindering_terrain": {
+        "description": "Can be seen over/through but hides behind.",
+        "penalty": "-1 to Attack dice if half or more of the group is Hindered."
+      },
+      "los_blocking_terrain": "Blocks LoS completely."
+    },
+    "higher_ground": {
+      "description": "Advantage of height for spotting enemies.",
+      "bonus": {
+        "ranged_attack": "+1 to Attack dice.",
+        "charge": "Roll extra d6 for Strength, +1 to Attack dice.",
+        "defence": "+1 to Defence dice."
+      }
+    },
+    "cover": {
+      "soft_cover": "+1 to Defence rolls.",
+      "hard_cover": "+2 to Defence rolls."
+    },
+    "defensive_positions": {
+      "bonus": "+2 to Defence rolls if attacked across Defensive Position.",
+      "forced_back": "Not Forced Back by Ranged attacks."
+    },
+    "buildings": {
+      "description": "Special Area Terrain. Blocks LoS.",
+      "entry": "Remove roof to place models inside. Impassable to Cavalry."
+    }
+  },
+  "objectives": {
+    "base_size": "40mm round",
+    "line_of_sight": "Decorative models do not block Line of Sight.",
+    "distance_measurement": "Measure from the edge of the Objective's base.",
+    "deployment": "Groups must be deployed a minimum of 3\" away from any Objective.",
+    "control": {
+      "condition": "Player with the most un-Broken Warriors within 3\" of the Objective's base at the end of a round.",
+      "marker": "Place a marker to indicate control.",
+      "movement": "Objectives may be moved if in base contact with a Warrior, who cannot generate Attack dice."
+    }
+  },
+  "deployment": {
+    "area": "Within 12\" of a chosen table edge.",
+    "order": "Players alternate selecting and placing Groups.",
+    "restrictions": "Groups must be in Coherency, not in Impassable Terrain, and not within 3\" of an Objective or enemy Warrior.",
+    "reserves": "Groups in Reserve enter during the Housekeeping phase of a subsequent round."
+  },
+  "game_flow": {
+    "start": "Roll to determine Initiative.",
+    "end": {
+      "rounds": "Maximum of six rounds.",
+      "sudden_death": "Occurs if no Commander can replace a fallen Retinue Leader."
+    },
+    "victory": {
+      "conditions": "Consult scenario briefing.",
+      "sudden_death": "Automatic loss unless specified otherwise.",
+      "points": "Calculate Victory Points for Warriors removed as casualties."
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Behind Enemy Lines",
+      "objectives": "Each player sets up one Objective in their deployment zone.",
+      "victory": "Control both Objectives at the end of any round."
+    },
+    {
+      "name": "The Prize",
+      "objectives": "Place an Objective in the centre of the table.",
+      "victory": "Player whose Warrior is carrying the Objective at the end of the fifth round wins."
+    },
+    {
+      "name": "Attrition",
+      "victory": "Calculate Victory Points for enemy Warriors removed as casualties. Highest total wins."
+    },
+    {
+      "name": "Field of Glory",
+      "objectives": "Place one Objective at the centre, each player places one additional Objective in their deployment area.",
+      "victory": "Control the most Objectives at the end of the fifth round."
+    },
+    {
+      "name": "Strategic Sites",
+      "objectives": "Each player places two Objectives on the table.",
+      "victory": "Score Objective Points each round for controlled Objectives. Most points at the end of the fifth round wins."
+    },
+    {
+      "name": "Tear it Down!",
+      "objectives": "Each player places three Objectives in their deployment area.",
+      "victory": "Burn and pillage all enemy Objectives first or have the most burned by the end of round 6."
+    },
+    {
+      "name": "Kill the Traitor",
+      "traitor": "Identify a Warrior as the Traitor.",
+      "victory": "First player to slay the opponent\u2019s Traitor wins."
+    },
+    {
+      "name": "Take and Hold",
+      "objectives": "Place one Objective at the centre, each player places one in their deployment area.",
+      "victory": "Score Objective Points each round for controlled Objectives. Most points at the end of the fifth round wins."
+    },
+    {
+      "name": "Glory Seeker",
+      "victory": "Calculate Victory Points for enemy Warriors removed as casualties. Enemy Commanders score double."
+    },
+    {
+      "name": "Hidden Treasures",
+      "objectives": "Place six Objectives on the table.",
+      "victory": "Control the hidden treasure Objective at the end of the fifth round."
+    },
+    {
+      "name": "Hero Slayer",
+      "victory": "Calculate Victory Points for enemy Warriors removed as casualties, doubling if the enemy Retinue Leader is removed."
+    },
+    {
+      "name": "Stop the Messenger",
+      "messenger": "Assign Message tokens to three Groups.",
+      "victory": "Messenger exits the table with the real Message."
+    },
+    {
+      "name": "Messengers",
+      "description": "Warriors with a Message token may be targeted in Melee combat by Warriors in base contact, in the same way as a Commander. To keep up the suspense, only reveal whether the real Messenger survived or escaped once the game has ended!",
+      "victory_conditions": {
+        "messenger_player": "Wins if the real Message leaves the table via their opponent\u2019s table edge.",
+        "opponent": "Wins if they stop the real messenger by removing them from the game.",
+        "draw": "If the real Message is still on the table at the end of the game."
+      },
+      "terrain": "Choice of Terrain will be particularly important if the messenger\u2019s Retinue includes a high proportion of mounted troops. Assume that the opponent has chosen a good place to launch an ambush."
+    },
+    {
+      "name": "Raid the Village",
+      "description": "Short on supplies, you have decided to raid a local village. However, when you arrive, you discover you weren't the only one to have this idea...",
+      "terrain": "Set up the terrain to represent a village which contains at least three buildings. One of these buildings must be in the central square of the table; the others must be placed at least 8\" from any other building. Add walls, animal pens, trees, and scatter to give it character.",
+      "objectives": [
+        "Place one Objective at the centre of the tabletop in the village.",
+        "Both players roll d10. Starting with the highest-scoring player, take turns to place an Objective anywhere in the village but more than 6\u201d from the edge of the table and at least 3\u201d from any other Objective, until six Objectives have been placed. These can be placed inside buildings if Warriors are capable of entering them."
+      ],
+      "victory_conditions": {
+        "end_of_fifth_round": "The player who controls the most Objectives wins.",
+        "immediate": "A player wins immediately if they control four or more Objectives at the end of any round."
+      }
+    },
+    {
+      "name": "Chosen Warriors",
+      "description": "Deeds of arms can make the greatest warriors into heroes whose names will be spoken in legend!",
+      "additional_points": {
+        "500-750": 100,
+        "750-1000": 150
+      },
+      "chosen_warriors": "The Chosen Warriors may not cost more than the additional points, including Abilities, Equipment and upgrades. They must be clearly identified at the start of the game.",
+      "victory_conditions": {
+        "end_of_round": "A player wins if they have removed all of the opposing Chosen Warriors as casualties.",
+        "major_victory": "If a player has removed all of the enemy Chosen Warriors as casualties and still have all their starting Chosen Warriors.",
+        "minor_victory": "If a player has removed all of the enemy Chosen Warriors as casualties and still have at least one of their own Chosen Warriors on the tabletop.",
+        "draw": [
+          "If both players wipe out all of the opposing Chosen Warriors in a single round.",
+          "If a player wipes out the opposing Chosen Warriors but their own Chosen Warriors have not engaged in Melee combat during the game."
+        ]
+      }
+    },
+    {
+      "name": "King of the Hill",
+      "description": "Your scouts report that the enemy is encamped on top of a hill in your territory. Now is your chance to surprise them!",
+      "terrain": "A hill must be placed in the middle of the table, filling the entire 1\u2019x 1\u2019 central square of the board.",
+      "deployment": {
+        "defender": "Set up at least half their Warriors in the camp with their Retinue Leader. The remaining Groups must be set up within 6\" of the base of the hill.",
+        "attacker": "Set up their Groups up to 6\" from any table edge and at least 6\u201d from any defending Warrior."
+      },
+      "victory_conditions": {
+        "end_of_round_five": "The winner is the player who has the most Warriors on the hill."
+      }
+    }
+  ],
+  "faction_traits": [
+    {
+      "name": "Cavalry Warfare: First Charge",
+      "effect": "The first time in each game that a Group of mounted Knights declares a Charge, it automatically gains the Close Ranks Ability provided it is not Weary and Charges at least 6\u201d."
+    },
+    {
+      "name": "Infantry Screen",
+      "effect": "When a Group of Mounted Knights declares a Charge, it can draw Line of Sight through a single friendly infantry Group. This Infantry Group must take an Order check: if it passes, the Knights may move completely through it and the Infantry take a Morale Penalty. If the Group fails, the Knights may still move completely through it but the Infantry Group takes 1d3 casualties (and Morale Penalties)."
+    }
+  ],
+  "inherent_abilities": [
+    {
+      "name": "Brace",
+      "effect": "May only be selected by infantry Groups with Spears or Bills / Polearms. When Charged by a mounted Group, the infantry may make a Brace Reaction. The Cavalry group cannot choose to Ride Down and must Charge as normal. The Braced Group will Attack Back, with any Warriors who are removed as casualties contributing Attack dice.",
+      "cost": 1
+    },
+    {
+      "name": "Chivalry",
+      "effect": "The Group does not need to take a Morale check to charge Knights (or equivalent Warriors deemed to be knights) if they are not the closest target.",
+      "cost": 1
+    },
+    {
+      "name": "Commander",
+      "effect": "Commander only. Must join a Group before deployment, creating a Command Group. Groups within Command range and LoS of a friendly Commander may use the Commander\u2019s Morale instead of their own when testing their Morale. A Commander may target one Command Action per round on a friendly Group within Command range and LoS, enabling the Group to make a Reaction (not an Action), provided it passes an Order check. If the Commander is in base contact with an enemy in Melee, he may spend unused Actions. Each Action allows the Commander to add an extra Attack or Defence dice in Melee. One Commander must be chosen to lead your Retinue, making him the Retinue Leader. The Retinue Leader may use Command Actions to give Actions to friendly Groups within Command Range and LoS.",
+      "cost": 2
+    },
+    {
+      "name": "Every Bloody Sunday",
+      "effect": "Can move up to 3\u201d and shoot with a Bow even if at Long range.",
+      "cost": 1
+    },
+    {
+      "name": "Faith",
+      "effect": "Ignore one Morale Penalty when making Morale (not Order) checks.",
+      "cost": 1
+    },
+    {
+      "name": "Live by the Sword",
+      "effect": "May re-roll one Melee Attack Dice against Groups who are not Knights (or their equivalent).",
+      "cost": 1
+    },
+    {
+      "name": "Marksman",
+      "effect": "May shoot a Crossbow more than once each round. If they make a second shot, it always counts as at Long range.",
+      "cost": 2
+    }
+  ],
+  "purchasable_abilities": [
+    {
+      "name": "Martial Respect",
+      "effect": "When a friendly Group takes a Morale check (not Order checks) within 6\" of a Group with this Ability, roll 2d10 and use the highest result.",
+      "cost": 1
+    },
+    {
+      "name": "Ride Down",
+      "effect": "When the mounted Knights Charge and are not Weary, they may choose to use Ride Down. If so, they gain +2 to their Attack rolls. During Combat Resolution, if the Group using Ride Down wins the combat, the defeated Group is not Forced Back. Instead, move each attacking Warrior directly forward by a number of inches equal to their full Movement value. If this movement would bring this group into base contact with a second enemy group, they make an immediate free Attack Action, counting as Charging but becoming Weary.",
+      "cost": 2
+    },
+    {
+      "name": "Sorry M\u2019Lord",
+      "effect": "If Broken and testing to Rally, ignore one additional Morale Penalty if within 6\" of a friendly Command Group.",
+      "cost": 1
+    },
+    {
+      "name": "Attack Back",
+      "effect": "If this Group is charged and wins the Combat Action by using a Reaction, after Combat Resolution is complete, the Group must activate and takes a Compulsory Action to Charge the defeated enemy Group and fight another Melee Combat. This is a free Action which does not count towards the Group's maximum Actions per round, though it causes the Group to become Weary as soon as it activates for the second Combat Action.",
+      "cost": 2
+    },
+    {
+      "name": "Born for War",
+      "effect": "Once per round, if the Group is Charged and does not have an available Action, it may take a free Defend or Attack Back Reaction. If the Group has an unused Action, it must be used first. Using this free Action does not count towards the Group's maximum Actions per round; it causes the Group to become Weary as soon as the Reaction is declared.",
+      "cost": 2
+    },
+    {
+      "name": "Brave",
+      "effect": "The Group adds +1 to all Morale (not Order) checks.",
+      "cost": 1
+    },
+    {
+      "name": "Bulwark",
+      "effect": "When an enemy Group targets this Group for a Combat Action, it may choose to gain +1 to Defence rolls for the duration of this round. If so, it cannot use a Combat Action to Charge or make a Ranged attack for the remainder of this round and the next round. It may use Reactions, including to Attack Back or Shoot Back.",
+      "cost": 1
+    },
+    {
+      "name": "Close Ranks",
+      "effect": "May only be chosen by a Group of mounted Knights. When the Knights declare a Charge against an infantry Group, provided they are not Weary and are at least 6\" from their target, they may Close Ranks. Immediately before the Defender declares their Reaction, the targeted infantry must take a Morale check. If failed, the Group becomes Broken and may not make a Reaction.",
+      "cost": 2
+    },
+    {
+      "name": "Counter Charge",
+      "effect": "May only be chosen by a group mounted on Horses or Barded Horses. If the Group is Charged by a Group of enemy Cavalry, they may make a Counter-Charge Reaction. During the Melee Combat, both Groups are treated as Charging. Both players make a simultaneous Charge move for one Warrior from each Group, until they come into base contact. Then move the remainder of the Groups, pairing off Warriors who can draw LoS to each other and will therefore meet in between.",
+      "cost": 2
+    },
+    {
+      "name": "Courageous",
+      "effect": "The Group automatically passes Morale Checks when testing for being Broken.",
+      "cost": 2
+    },
+    {
+      "name": "Cruelty",
+      "effect": "Commander only. When the Commander makes Melee Attacks, enemy Warriors in base contact must re-roll one successful Defence dice caused by the Commander\u2019s Attack Dice pool.",
+      "cost": 1
+    },
+    {
+      "name": "Drilled",
+      "effect": "Once per round a Group with this Ability may be activated and given a Defend Action (not a Reaction) as a free action. This does not count towards the total number of Actions which the Group can take.",
+      "cost": 2
+    },
+    {
+      "name": "Experienced Tactician",
+      "effect": "Commander only. May only be chosen by the Retinue Leader. When determining Initiative, the Retinue Leader rolls an additional d10 (without spending a Command Action) provided their Command Group has no Morale Penalties.",
+      "cost": 2
+    },
+    {
+      "name": "Faithful",
+      "effect": "The Group is treated as having a Shield Roll of 9 or 0 when not equipped with a Shield. If equipped with Shields this Ability has no effect.",
+      "cost": 2
+    },
+    {
+      "name": "Fear",
+      "effect": "Opponents must pass a Morale Check to Charge this Group.",
+      "cost": 1
+    },
+    {
+      "name": "Follow Me",
+      "effect": "Once per round when this Group activates for a Movement Action, a single friendly Group within 6\" may also be activated for a free Movement Action. This free Action counts towards the Group's maximum Actions. Both Groups must finish their movement within 6\" of each other.",
+      "cost": 2
+    }
+  ],
+  "chivalry": {
+    "effect": "Certain Groups have the Chivalry Ability. This means that they can Charge another Group with Chivalry even if they are not the closest eligible target. In addition, if both sides include Warriors with Chivalry, whenever a Warrior with the Chivalry Ability is removed in Melee Combat as a result of actions by another Warrior or Group with the Chivalry Ability, roll d10: on the score of a 1-2 they are killed. On a 3+ they are taken prisoner. If the game uses Victory Points, the Warrior yields up double his points cost in Victory Points.",
+    "cost": 1
+  },
+  "glossary": {
+    "Abilities": "Distinctive characteristics and fighting styles represented through Abilities. They provide special rules which alter the way Warriors act. Most Abilities provide bonuses, and occasionally limits or penalties. Some Groups come with Abilities on their profile; others can be purchased at a set cost per Warrior. Abilities may override core rules and can stack with each other.",
+    "Actions": "All Groups have an Action characteristic on their Profile showing the number of Actions they can perform each Game Round. Actions include Move, Run, Charge, Defend, and Attack Back. A Group may only take two Actions (or Reactions) during a game Round and becomes Weary as soon as it declares its second.",
+    "Action Tokens": "Used during a game to indicate the Actions taken by your Groups: Command, Move, Run, Combat, Defend, and Special.",
+    "Attack Dice": "Each Warrior involved in a Combat Action generates a d10 Attack dice. In Ranged combat, each Warrior in range and with LoS generates an Attack dice. In Melee combat, each Warrior in base contact with an enemy or within 1\u201d of a friendly Warrior from the Group in base contact generates an Attack dice. Different circumstances may require separate Attack Dice pools.",
+    "Attack Roll": "In combat, the attacking Warriors' Attack stat indicates the score needed on each Attack dice to hit the enemy. The score on the dice may be modified by Weapons.",
+    "Attacker": "A Group that declares a Combat Action (usually a Shoot Action for ranged combat or a Charge Action to begin melee combat) is the attacker.",
+    "Broken": "When Warriors have had enough, they will turn and run. Broken Groups must be activated in the Compulsory Activation step and attempt to Rally. If they succeed, they become Weary and must be given an Action of your choice. If they fail, they must Run towards the nearest friendly table edge. Melee Attacks automatically hit Broken Warriors.",
+    "Casualties": "Each successful attack which is not defended means a Warrior is removed as a casualty. The player who controls the Group normally chooses which Warriors to remove. Each casualty means the Group takes a Morale Penalty.",
+    "Charge": "A Charge Action allows a Group to launch a Melee combat. The attacker must check that their target is in LoS and potential Charge range (their Movement, modified by Terrain, plus d6\u201d). Charge moves are always made in a straight line, aiming to get as many Warriors into base contact with the enemy as possible.",
+    "Coherency": "Groups must remain in Group Coherency when they Move or Run. Nominate one Warrior: the bases of all others in the Group must be wholly or partly within 2\u201d (for infantry) or 3\u201d (for cavalry). Groups are not required to remain in Coherency when they Charge. A Group not in Coherency when it activates is subject to Compulsory Action and must use a Move Action to return to Coherency. A Group not in Coherency suffers a -1 penalty to its Defence rolls.",
+    "Combat Action / Reaction": "Combat Actions cover both Ranged and Melee combat. The Group initiating combat will take a Shoot or Charge Action. The target Group might choose to make Shoot Back, Reaction Shooting or Attack Back Reaction. All Combat Actions (including Reactions) are marked using a Combat Action token.",
+    "Command Action": "A Commander may use a Command Action on any friendly Group within Command range and LoS. Provided the Group can pass an Order check, it uses the Command Action exactly as if it had an extra Action of its own. This normally allows a Group to make a Reaction. Command Actions given by the Retinue Leader allow Groups to take an additional Action.",
+    "Commander": "The heroes and leaders of your retinue have the Commander Ability. They can use Command Actions on friendly Groups (but must spend at least one Action themselves). Friendly Groups within Command range and LoS may use their Morale value instead of their own. Commanders may be equipped differently to their Command Group, and so may roll separate Attack Dice pools. They can spend Actions to generate extra Attack or Defence dice. Each Commander must be attached to their own Command Group.",
+    "Compulsory Action": "Actions that must be taken by Groups under certain conditions, such as when they are not in Coherency."
+  },
+  "factions": []
+}

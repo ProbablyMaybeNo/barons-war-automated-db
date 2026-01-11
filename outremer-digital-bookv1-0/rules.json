@@ -1,0 +1,839 @@
+{
+  "content": [
+    {
+      "title": "Retinue Lists for Skirmishes in the Crusader States",
+      "description": "The Crusader States, c.1099-1291",
+      "authors": [
+        "Benedict Coffin",
+        "Andy Hobday"
+      ],
+      "developers": [
+        "George Asling",
+        "Benedict Coffin",
+        "Andy Hobday"
+      ],
+      "scenarios": "Tom Mecredy",
+      "artwork": [
+        "Peter Dennis",
+        "Steve Beckett"
+      ],
+      "book_design": "Steve Beckett",
+      "photography": [
+        "Daniel Wegmann",
+        "Ben MacIntyre",
+        "Andy Hobday"
+      ],
+      "miniature_design": "Paul Hicks",
+      "painting": [
+        "Daniel Wegmann",
+        "Darren Linington",
+        "Ben MacIntyre",
+        "Steve Beckett"
+      ],
+      "terrain": "warhost.online",
+      "acknowledgements": [
+        "Peter Dennis",
+        "Paul Hicks",
+        "Mark Farr",
+        "George Asling",
+        "Benedict Coffin",
+        "Tom Mecredy",
+        "Steve Beckett",
+        "Jan Stanis\u0142aw Raszy\u0144ski",
+        "Leila",
+        "Ginny",
+        "Am\u00e9lie"
+      ],
+      "kickstarter_thanks": "The Barons\u2019 War Outremer Kickstarter backers and playtesters",
+      "cover_art": "Peter Dennis",
+      "copyright": "Andy Hobday 2022",
+      "isbn": "978-1-9999514-3-6",
+      "website": "www.warhost.online",
+      "trademarks": [
+        "WARHOST",
+        "Footsore Miniatures & Games"
+      ]
+    },
+    {
+      "title": "Foreword",
+      "author": "Andy Hobday",
+      "year": 2022,
+      "text": "It's time to move away from the muddy fields of Europe and take the action into the desert. Welcome to the Crusader States, also known as Outremer (French: outre-mer, lit. 'overseas'). I hope you've packed your sunblock. A history section kicks us off aimed at transporting us to our new home and a kingdom carved out after the first crusade, which endured from 1098 to 1291. Compiled and written exclusively by Benedict Coffin, it provides valuable insight into the region's historical background and the protagonists involved. Its goal is to help set The Barons' War game against this very different backdrop. The real meat of the book comes next, the Faction lists, Traits and Abilities. The Armies of Outremer collectively offer retinues of Crusaders, Settled Franks and the Military Orders synonymous with the region. The cultured Forces of Islam introduce us to a mixture of lethal warriors from all over the Fertile Crescent. Bandits & Bedouin provide something different and enable you to create truly interesting retinues by recruiting different combinations of local troops. New characters from history are included, labelled Dramatis Personae. There\u2019s also a new Character Creator to design your own Commanders, both historical and not. Peril on the Pilgrim Road is a linked six-scenario campaign designed to help you start gaming in Outremer. Play your way through each scenario in turn, pitting Lorenzo di Firenze of the Knights Hospitaller, the garrison's Commander at the fortified hospital, against Nizar ibn Malik and his retinue of Ayyubid raiders. Or simply choose to play any of the six scenarios as a stand-alone game with any retinue. Finally, there are new rules introducing the local terrain, playing with combined & allied retinues, siege rules for assaulting the fort, including holy relics in your retinue, new equipment (Arms & Armour) and Exhaustion. It is fair to say it was brutal fighting in such a harsh environment. A huge thank you to everyone who has backed this Kickstarter project, helping us take The Barons' War medieval skirmish game to sunnier climes. We wouldn't have gotten this far without you, and I can say this is another positive step on its journey. As always, take these rules and play the games you want to play. We hope you enjoy it as much as us! I want to sign off by saying although they have both been listed in the credits, I must mention that most of the heavy lifting for this book was undertaken by George Asling & Benedict Coffin, for which I am truly grateful."
+    }
+  ],
+  "setting_rules": {
+    "description": "Outremer, also known as The Crusader States, is a political hotbed granting ambitious Frankish Barons the opportunity to make a reputation for themselves. This new battleground is dominated by a scorching sun, inhospitable terrain, and lethal new foes, providing fresh challenges for any Commander.",
+    "environmental_challenges": [
+      "Scorching sun",
+      "Inhospitable terrain"
+    ],
+    "factions": [
+      "Settled Franks",
+      "Crusaders",
+      "Military Orders",
+      "Forces of Islam"
+    ],
+    "leadership": [
+      "Frankish Barons",
+      "Sultan",
+      "Emir"
+    ],
+    "campaign": "Peril on the Pilgrim Road"
+  },
+  "units_factions": [
+    {
+      "name": "Saracens",
+      "description": "Profiles and rules for Saracen units, including special abilities and equipment."
+    },
+    {
+      "name": "Crusaders",
+      "description": "Profiles and rules for Crusader units, including special abilities and equipment."
+    }
+  ],
+  "faction_traits": {
+    "bandit_and_bedouin": {
+      "ambush": {
+        "effect": "A Bandit and Bedouin Retinue may hold back up to half of its Groups. Once deployment has finished, these Groups are deployed anywhere on the table. They must be placed at least 6\" away from an enemy unless they are out of LoS; if out of LoS, they may be up to 3\" away."
+      },
+      "sudden_attack": {
+        "effect": "If a Group from a Bandit and Bedouin Retinue is not Weary and has no Morale dice when it declares a Charge, roll two d6 to determine the Strength of the Charge. Combine the result of the two dice, to a maximum of 6. A combined result of 6 or better gives the same benefit as a natural 6."
+      }
+    }
+  },
+  "abilities": [
+    {
+      "name": "Able Commander",
+      "description": "Frankish retinues in the Kingdom of Outremer often found themselves led by more than one Commander. The Commander can issue one Order each round in addition to any Order Actions made by your chosen Retinue Commander, at the cost of one of their Actions.",
+      "points": 4,
+      "restrictions": "Commander only. May not be purchased by the Retinue Commander. May only be purchased once per 1000 points in the Retinue."
+    },
+    {
+      "name": "Al-Franji",
+      "description": "Lords of Outremer often had close relationships with their Muslim neighbours, even fighting together against mutual enemies. Up to 25% of the points in the Retinue may be spent on Groups from the Armies of Islam lists. Groups chosen in this way may never be Command Groups and receive a -1 penalty to Morale Checks when given a Command order, in addition to any Morale Dice score.",
+      "points": 2,
+      "restrictions": "May only be chosen by a Lord or Baron of Outremer. May not be chosen if the Retinue includes Military Order or Crusader Groups."
+    },
+    {
+      "name": "Armenian",
+      "description": "Once Byzantium\u2019s frontier against the Arabs, Armenia\u2019s soldiers fought bravely for the empire, Antioch, their own kings or even the Fatimids. If a Group with the Armenian Ability fails a Morale check and would be Broken as a result, it may immediately re-roll the test provided the Group has more models than Morale dice.",
+      "points": 1
+    },
+    {
+      "name": "Bishop",
+      "description": "Bishops were important landowners and therefore leaders of armed retinues. A number took the Cross and fought in Outremer. The Commander gains the Man of God Ability, and may be equipped with a Mace.",
+      "points": 5,
+      "restrictions": "May only be taken by a Lord (not a Baron) in a Crusader or Settled Frankish Retinue. May not be chosen by a Military Order Commander."
+    },
+    {
+      "name": "Brother Sergeants",
+      "description": "The eastern Roman empire looked back to the Roman legions, and expected discipline from its soldiers. If a Group of Military Order Knights is within 6\u201d, any Group with this Ability ignores Morale dice when making Morale checks.",
+      "points": 2
+    },
+    {
+      "name": "Byzantine",
+      "description": "Byzantine infantry may re roll failed Order tests.",
+      "points": 1
+    },
+    {
+      "name": "Communal Pride",
+      "description": "Venice, Pisa and Genoa brought their tradition of well-equipped and dedicated communal militias to Outremer. Whenever a Group with the Communal Pride trait is required to take a Morale check, count how many friendly Groups with the Communal Pride trait which are not Broken or Shocked are within 6\u201d. The Group may ignore this many Morale dice.",
+      "points": 2,
+      "restrictions": "May only be chosen by Foot Sergeants or by Local Christian Groups in Settled Frankish Retinue."
+    },
+    {
+      "name": "Devoted",
+      "effect": "If a Group with the Devoted Ability is given an Order by a Lord or Baron of Outremer or a Military Order Commander or Marshal, it may remove one Morale dice.",
+      "points": 1
+    },
+    {
+      "name": "Embattled Land",
+      "effect": "Any group within Command range may roll a Morale check during the Housekeeping phase (where eligible to remove Morale dice). If successful the group reduces its Morale dice by 2 rather than 1.",
+      "points": 1
+    },
+    {
+      "name": "Experienced Knight",
+      "effect": "May only be chosen by a mounted Commander. If the Commander is part of a Group of Mounted Knights, the first time the Command Group declares a Charge, make a Morale test. If passed, the Group gains the Close Ranks Ability in the subsequent Melee.",
+      "points": 2
+    },
+    {
+      "name": "Maronite Arab",
+      "effect": "May re-roll all failed missile attacks in a single Attack action once per game.",
+      "points": 1
+    },
+    {
+      "name": "Multi-Task",
+      "effect": "A Turcopolier and his Command Group may switch weapons during the same round.",
+      "points": 2
+    },
+    {
+      "name": "Sailors",
+      "effect": "May only be taken by Sergeants in a Crusader Retinue. The Group replaces Martial Respect with the Nimble Ability.",
+      "points": 1
+    },
+    {
+      "name": "Seasoned",
+      "effect": "May only be taken by a Military Order or Settled Frankish Group. The Group will never become Exhausted.",
+      "points": 2
+    },
+    {
+      "name": "Squires",
+      "effect": "If a group of Military Order Knights within 6\" suffers a casualty, the Squires may make a Morale check. If successful, remove one Squire instead and apply the Morale modifier to them. This may be repeated if the Knights suffer several casualties, each one requiring a separate Morale check. This Ability may only be purchased as an upgrade by a Group of Mounted Sergeants.",
+      "points": 1
+    },
+    {
+      "name": "Turcopole",
+      "effect": "Groups of Turcopoles can only be used as a Command group for a Mounted Turcopolier.",
+      "points": 0
+    },
+    {
+      "name": "Turcopolier",
+      "effect": "Must join a group of Turcopoles before deployment, creating a Command Group. Cannot start the game as your retinue commander but may become the retinue commander if the original one is removed from play and a successful Morale check is made.",
+      "points": 1
+    },
+    {
+      "name": "Cavalry Warfare: First Charge",
+      "effect": "Mounted Military Order Knights gain Charge bonus on a roll of 5+ instead of 6. If they gain the Charge bonus they also gain 'Close Ranks' ability for this round. For the first Charge of the game they may roll 2d6 and choose the highest result when rolling for Charge distance."
+    },
+    {
+      "name": "Military Order",
+      "effect": "A Retinue commanded by a Military Order Commander is not required to spend 10% on Green troops."
+    },
+    {
+      "name": "Arabian Horses",
+      "description": "Exceptional mounts bred in the East for speed. A Group of Cavalry with this Ability rides particularly fine steeds. The Group increases its Move by 1\u201d provided it is not Weary. This may not be combined with the Fast Ability.",
+      "points": 1
+    },
+    {
+      "name": "Damascus Steel",
+      "description": "The finest weapons forged with cutting-edge Muslim science. Opponents do not receive Shield Rolls.",
+      "points": 2
+    },
+    {
+      "name": "Drilled",
+      "description": "\u2018Train hard, fight easy' has been hammered into this group. May perform a Defence Action for free but not as a Reaction during a Combat Action. This does not count as an Action.",
+      "points": 2
+    },
+    {
+      "name": "Evade",
+      "description": "Quick wits or skill allow these warriors to dodge an incoming charge. May use an unused action to move their movement value away from an Attacker after they have been charged.",
+      "points": 2
+    },
+    {
+      "name": "Feigned Retreat",
+      "description": "These warriors only engage on their own terms. When a charge is declared against this group, this group may move d6\" directly away from the attacker after they have rolled for charge distance but before they move. If this group successfully avoids the attack, their next action must be an attack action (melee or ranged).",
+      "points": 2
+    },
+    {
+      "name": "Ghazi",
+      "description": "Clashing to the bitter end, these warriors always aim to take their foes with them. If a Group with this Ability is Charged and chooses to Attack as a reaction (Melee step 3), resolve these attacks based on the number of models in the Group at that point. Casualties suffered during the Melee are therefore ignored when the Group attacks back.",
+      "points": 1
+    },
+    {
+      "name": "Glancing Attack",
+      "description": "The opportunist always tries to capitalize on their luck. When making a move or run action, the Group may make an Attack Roll against an enemy Group for each model which passes within 1\" of the enemy Group. The target Group may not attack back as a reaction.",
+      "points": 1
+    },
+    {
+      "name": "Horse Archer",
+      "description": "Raised from childhood to shoot accurately from a fast-moving horse. May move full distance and shoot but have a -1 penalty to all Attack Dice rolls. May only be taken by a mounted Group.",
+      "points": 1
+    },
+    {
+      "name": "Massed Ranks",
+      "description": "Trained to fight in larger groups. Strength in numbers. This Group has a coherency of 3\" rather than the usual 2\" for infantry.",
+      "points": 1
+    },
+    {
+      "name": "Master Horseman",
+      "description": "Man and beast understanding each other moving together as one. A Group of cavalry with this Ability treat areas of rough ground which do not offer Cover as causing one less movement penalty than usual, i.e. Cavalry wearing Mail suffer a -25% movement penalty, while Cavalry not wearing Mail treat it as clear.",
+      "points": 2
+    },
+    {
+      "name": "Parthian Shot",
+      "description": "A parting shot as these trained archers melt away. If a Group with this Ability makes an Evade Move, it may reduce its movement by half to shoot with its Composite Bow. This must be declared and resolved in Melee step 3 (Defender reaction), i.e. before the enemy Group rolls its Charge dice. May only be taken by a mounted Group.",
+      "points": 1
+    },
+    {
+      "name": "Pride",
+      "description": "\u201cWe do not walk.\u201d Their rank and demeanor denotes a preference to fight mounted. A Commander and his Command Group must be mounted, unless there are strong scenario-specific reasons for him to dismount.",
+      "points": 0
+    },
+    {
+      "name": "Scholar",
+      "description": "Knowledge is power especially when it is applied calmly. When determining initiative, your Commander adds an extra d10 without spending a Command Action while their Group does not have a Morale Dice.",
+      "points": 2
+    },
+    {
+      "name": "Shower Shooting",
+      "description": "The weight of fire can be used to secure the win. If shooting with a Composite Bow while stationary, the Group may choose to re-roll all of its Attack dice (whether successful or not). The second result must be used.",
+      "points": 2
+    },
+    {
+      "name": "Specialists",
+      "description": "Trained and dedicated to their art, specialists are a rare breed and highly prized. You may take a maximum of one Group of Naffatun per 500pts.",
+      "points": 0
+    },
+    {
+      "name": "Steppe Archery",
+      "description": "Swift of horse and deadly with bow! A Group with this Ability may make a normal Move and may still shoot with a Composite Bow. Reduce the Composite Bow\u2019s Long range to 12\u201d. In addition, the Group may interrupt its movement at any point to resolve its Shoot Action; the remaining movement is then used, in any direction. May only be taken by a mounted Group.",
+      "points": 2
+    },
+    {
+      "name": "Trained Archers",
+      "description": "Long practice has made these warriors superlative with the bow. A Group with this Ability may move 3\u201d and shoot at Long range.",
+      "points": 1
+    },
+    "Chivalry",
+    "Commander",
+    "Inspire",
+    "Swordsman",
+    "Hold...... Loose!",
+    "Cautious",
+    "Hospitallers",
+    "Protect the Weak"
+  ],
+  "factions": [
+    {
+      "name": "Crusading Franks",
+      "traits": [
+        {
+          "name": "Deus lo Vult!",
+          "effect": "Before the beginning of the round make a Morale roll for each Group of Knights in your retinue. Any that fail must charge the closest enemy if in range during the Compulsory Action phase, but gain a bonus Attack dice from the Strength of the Charge on a 4+. Groups with more than one activation only make this test for their first Activation."
+        },
+        {
+          "name": "Take the Cross",
+          "effect": "Any group that is not Weary may choose to re-roll the dice to determine Charge distance. They must use the second result and they become Weary before combat is resolved."
+        }
+      ]
+    },
+    {
+      "name": "Settled Franks",
+      "traits": [
+        {
+          "name": "Cavalry Warfare: Rein In",
+          "effect": "If a Group of Mounted Knights declares a Charge but does not make contact with the enemy (for example because the enemy Group Evades), the Charging Group may take a Morale test using its own Morale (i.e. ignoring Commanders unless they are part of the Group). If passed, the Group moves forwards 1d6\" as normal after a failed Charge, but may then make a Consolidate move in any direction."
+        }
+      ]
+    }
+  ],
+  "military_order_abilities": [
+    {
+      "name": "Templars, Hold the Line",
+      "effect": "The first time the Group of Templar Knights would become Broken or Shocked, it suffers an additional casualty but does not become Broken/Shocked."
+    },
+    {
+      "name": "Hospitallers, Protect the Weak",
+      "effect": "When the Group of Hospitaller Knights activates, one friendly Broken or Shocked group within 6'' may roll to rally."
+    },
+    {
+      "name": "Teutonic, Germanic Fury",
+      "effect": "When a Group of Teutonic Knights Charges, it ignores its Morale dice when calculating the Morale Melee Modifier (Melee step 5b)."
+    },
+    {
+      "name": "Saint Lazarus, Leper Knights",
+      "effect": "When the Group of Leper Knights attacks second, roll attacks for any casualties taken in this round of combat."
+    }
+  ],
+  "military_order_sergeants_abilities": [
+    {
+      "name": "Templars, Steady Ranks",
+      "effect": "If a Group of Templar Sergeants or Squires fails a Morale check and would become Broken or Shocked, it may modify the dice roll by taking a number of additional Morale dice (up to a maximum of six)."
+    },
+    {
+      "name": "Hospitallers, Duty of Care",
+      "effect": "If a friendly Group within 6\" has more Morale dice than the Hospitaller Sergeants or Squires, it is treated as having one less Morale dice than it actually has. The Morale dice are not changed - one dice is simply ignored."
+    },
+    {
+      "name": "Teutonic, For Our Lady",
+      "effect": "When a Group of Teutonic Sergeants or Squires Charges, it may re-roll one Attack dice."
+    }
+  ],
+  "askar": [
+    {
+      "name": "Fatimid",
+      "effect": "Fatimid infantry tactics relied on large numbers of infantry archers shooting volleys from behind a defensive hedge of spearmen. Groups of infantry archers ignore the first friendly Group within 6\u201d when drawing Line of Sight with a Bow or Composite Bow (i.e. the shooting does not count as Hindered if line of sight is drawn through one friendly Group within this range)."
+    },
+    {
+      "name": "Isma\u2019ili",
+      "effect": "The Isma\u2019ili sect of Shia Muslims were a minority in the largely Sunni world of the Fertile Crescent. Heavily outnumbered and regarded as heretics and persecuted by their fellow Muslims, they relied on killing enemy leaders instead of military strength. A Retinue with this Commander may take one Assassin group upgrade per 500 points (see Assassin Upgrade)."
+    },
+    {
+      "name": "Khurasanian",
+      "effect": "The lands of Persia and the Silk Road were home to many immense cities which maintained large, well-ordered armies. Command range is increased by 3\" when issuing orders to Groups in your retinue. This does not apply when calculating range for Inspire or other command group functions."
+    },
+    {
+      "name": "Kurdish",
+      "effect": "The Kurdish tribes of northern Mesopotamia were warlike, and their fighting skills were highly prized. Mounted groups in Inspire range when they declare a Charge gain the Close Ranks Ability for free provided they do not have any Morale dice."
+    },
+    {
+      "name": "Mamluk",
+      "effect": "Turkic slaves were purchased, trained, converted to Islam and then freed, forming regiments dedicated to the military service of their master. Groups mounted on Barded Horses in your retinue gain +2 Attack dice when Inspired but do not receive any bonus Defence dice."
+    },
+    {
+      "name": "Turkic",
+      "effect": "The Turkic tribes of the steppe were masters of mounted archery, loosing arrows at their foes while maintaining a safe distance. When charged, unarmoured cavalry in your retinue may make a Morale roll. If successful they may Evade (see Evade Ability)."
+    }
+  ],
+  "upgrades": [
+    {
+      "name": "Assassin",
+      "points": 5,
+      "effect": "Infantry groups in a Retinue led by an Emir or Sayyid with the Isma'il Askar may select Assassin upgrades for +5 points. One Group may take the Assassin upgrade per 500 points in the Retinue. Replace one figure in the group with an Assassin in the same manner as upgrading a Command Group with a Bannerman. When attacking a Command Group in Melee, the Assassin may target any specific model in that group. The Assassin's Attack dice must be defended by the chosen target if it successfully hits. The chosen target must roll his Defence dice and any Shield Roll separately to the rest of the Group. He will only benefit from weapon special rules (such as Parry) or Abilities if he has them personally."
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Spear",
+      "cost": -2,
+      "modifier": "+1 Attack",
+      "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Lance",
+      "cost": 4,
+      "modifier": "-1 Attack",
+      "effect": "Single use, causes shock if any hits are successful. Lances lost if charged. Ignores Shield rolls. Does not replace sword",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Leather/Padded",
+      "cost": -1,
+      "modifier": "+1 Defence, +1 Movement",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Horse",
+      "cost": 3,
+      "modifier": "+3 Movement",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Barded Horse",
+      "cost": 5,
+      "modifier": "-1 Defence, +3 Movement",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Barded Warhorse",
+      "cost": 16,
+      "modifier": "+1 Attack dice per warrior, -1 Defence, +2 Movement",
+      "effect": "Requires 2 damage to cause a casualty when rider is mounted on Warhorse. When charging subject to Over Charge (see rulebook)",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Small Shield",
+      "cost": 2,
+      "modifier": "9+ Shield roll",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Medium Shield",
+      "cost": 3,
+      "modifier": "8+ Shield roll",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Large Shield",
+      "cost": 5,
+      "modifier": "7+ Shield roll",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Camel",
+      "points": "+3",
+      "move": "+2\"",
+      "special": "Ignores penalties for Difficult Terrain."
+    },
+    {
+      "name": "Composite Bow",
+      "points": "+2",
+      "attack": "+1 Attack at long range",
+      "special": "Long up to 20\"/short up to 6\" range, can move 3\" (infantry) or up to 6\u201d (cavalry) and shoot at short range. Recurve Bow - ignore one Defence die if target is wearing mail at short range."
+    },
+    {
+      "name": "Lamellar",
+      "points": "+1",
+      "defend": "-1",
+      "morale": "-1",
+      "special": "Re-roll 1 Defence dice which scores a 1 against missile attacks."
+    },
+    {
+      "name": "Lamellar and Mail",
+      "points": "+3",
+      "defend": "-2",
+      "morale": "-2",
+      "special": "Re-roll 1 Defence dice which scores a 1 against missile attacks."
+    },
+    {
+      "name": "Naptha Grenades",
+      "points": "+1",
+      "attack": "+1",
+      "special": "Range 10\", a result of 1 will cause a hit against this group, resolve hits as normal. If a casualty is caused to friend or foe, that group must make an immediate Morale check, if failed the group becomes Broken. A natural 10 will cause a fire; place a special action token where the target group was. The area 1\" around this token is impassable and blocks line of sight. During the housekeeping phase make a roll of 1d10, if the result is 4+ the fire dissipates, if not the fire remains in play. Naphtha weapons may not be used in Melee."
+    },
+    {
+      "name": "Naptha Siphon",
+      "points": "+5",
+      "attack": "-1",
+      "special": "Range 12\", a result of 1 will cause a hit against this group, resolve hits as normal. If a casualty is caused to friend or foe, that group must make an immediate Morale check, if failed the group becomes Broken. A natural 10 will cause a fire, place a special action token where the target group was. The area 1\" around this token is impassable and blocks line of sight. During the housekeeping phase make a roll of 1d10, if the result is 4+ the fire dissipates, if not the fire remains in play. Target reduces the score on Shield rolls by -1."
+    },
+    {
+      "name": "Sabre",
+      "points": "+2",
+      "attack": "-1",
+      "special": "Slashing - target suffers -1 Defence if unarmoured or wearing Leather / Padded."
+    }
+  ],
+  "command_group_upgrades": [
+    {
+      "name": "Bannerman Upgrade",
+      "points": 9,
+      "effect": "Increase Order and Inspire range to 12\""
+    },
+    {
+      "name": "Musician Upgrade",
+      "points": 4,
+      "effect": "Any warrior(s) within Order range of Command Group roll two dice for the Morale Check to follow orders and choose the highest"
+    },
+    {
+      "name": "Priest Upgrade",
+      "points": 5,
+      "effect": "Any warrior(s) within Order range of Command Group and including the Command Group ignore Morale Dice for Morale Checks"
+    },
+    {
+      "name": "Muezzin Upgrade",
+      "points": 5,
+      "effect": "Increase the range in which a Commander's Morale may be used by other Groups by 6\", reduced by -1\" for each Morale dice this Command Group has."
+    }
+  ],
+  "supply_rules": {
+    "description": "Both warbands generate 1d6 supply tokens at the end of each scenario. These must be assigned to a group before the next battle. Each unit that is not assigned a supply token must roll 1d10 on the table below. Mounted groups can roll 2 dice and pick the highest result.",
+    "results": [
+      {
+        "roll": "1-5",
+        "result": "Slim Pickings: Despite their best efforts, the group is unable to secure sufficient food. They begin the next battle Weary."
+      },
+      {
+        "roll": "6-7",
+        "result": "Decent Fare: The group finds enough to get by on, but hunger still gnaws at their bellies. No additional effect."
+      },
+      {
+        "roll": "8-9",
+        "result": "A Veritable Feast: The group has more than enough to go around. Gain 1 additional supply token that may be assigned before the next battle."
+      },
+      {
+        "roll": "10",
+        "result": "The Golden Goose: With their bellies full and heads swimming with good wine, the group\u2019s morale has soared. Improve this group\u2019s starting Morale by 1 in the next battle."
+      }
+    ]
+  },
+  "resolve_rules": {
+    "description": "The Hospitaller garrison begins the campaign with 2 Resolve. Use coins or other appropriate tokens to represent this.",
+    "effects": [
+      {
+        "condition": "Frankish player wins a scenario",
+        "effect": "The garrison gains 1 Resolve. If the enemy commander was taken out of action, they gain an additional +1 Resolve."
+      },
+      {
+        "condition": "Frankish player loses a scenario",
+        "effect": "The garrison loses 1 Resolve, with an additional -1 Resolve lost if their commander is taken out of action."
+      },
+      {
+        "condition": "Garrison has 3 or more Resolve",
+        "effect": "The Frankish player rolls 2d10 for all Morale Checks, picking the highest result."
+      },
+      {
+        "condition": "Garrison has 0 Resolve",
+        "effect": "The Ayyubid player rolls 2d10 for all Morale Checks, picking the highest result."
+      }
+    ]
+  },
+  "npc_characters": [
+    {
+      "name": "The Assassin",
+      "description": "Nizar purchased the services of a Hashashin with a large donation of gold, silver, and precious stones to the commander of the castle at Masyaf.",
+      "effect": "At the start of a battle where the assassin is present, the Ayyubid player secretly notes down which of their opponent\u2019s groups conceals the assassin on a piece of scrap paper and passes it to their opponent. During the Housekeeping phase, the Ayyubid player may choose to reveal the assassin. An enemy group within 6\u201d must pass a Defence roll on a single d10 or suffer an immediate casualty of the Ayyubid player\u2019s choice. If this is an enemy commander, they roll 2d10 and pick the best result. Once the assassin has been revealed, they cannot be used again for the remainder of the campaign."
+    },
+    {
+      "name": "The Hospitaller Healer",
+      "description": "Set up to care for travellers making the journey between the Christian kingdoms and Outremer, the Knights Hospitaller boast some of the best healers in Christendom.",
+      "effect": "The defending player places them anywhere within 12\u201d of the fort in any given scenario. During the Housekeeping phase, the healer moves 6\u201d towards the group that suffered the most casualties during the preceding turn. Once the healer has moved, the player controlling the group closest to the Healer makes a Morale check. If they succeed, they may immediately recover one casualty sustained during the preceding turn. If the unit hasn\u2019t sustained any casualties, the Healer has no effect. The Healer may not be targeted by attacks from either side."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "The Pilgrim Road",
+      "points": 500,
+      "description": "Winding its way through every corner of Christendom, the Pilgrim Road is a dangerous place.",
+      "retinue_1": "The Hospitallers - Must include at least two groups of armed pilgrims.",
+      "retinue_2": "Nizar\u2019s Host - No mandatory choices required.",
+      "deployment": "This scenario uses Deployment Map 1 from The Baron\u2019s War core rulebook. The Hospitaller retinue is attacking, while Nizar\u2019s Host is defending.",
+      "objectives": "The Hospitaller player is attempting to escort the pilgrims to the safety of the fort, along with valuable supplies. The Ayyubid player is trying to stop the pilgrims from reaching the defenders.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if any wagon has a chance of reaching the fort.",
+      "special_rules": [
+        {
+          "name": "The Wagons",
+          "effect": "These four-wheeled wooden vehicles are pulled by a team of horses, and are loaded down with plunder from the village. During the Housekeeping phase, each wagon moves 8\u201d in a straight line towards the gates of the fort."
+        },
+        {
+          "name": "The Garrison",
+          "effect": "The fort\u2019s defenders are taking shelter from the swirling mass of Ayyubids ringing their defences, only popping up to take the occasional potshot from the battlements. Any Ayyubid group that ends its turn within 6\u201d of the fort must pass a Defence roll, on one d10, or suffer a casualty."
+        }
+      ],
+      "victory_conditions": "The defender calculates the points values of all the friendly Warriors that reached the inside of the fort, and 150 additional victory points for each wagon. The attacker calculates all the points values of the enemy Warriors their Retinue slays during the battle, and 150 additional victory points for each wagon that they capture. The victor gains 1 campaign victory point."
+    },
+    {
+      "name": "The Challenge",
+      "points": 750,
+      "description": "Besieged, but flush with supplies and fresh bodies to man the battlements, the Hospitaller commander decides to take drastic action to decisively end the siege.",
+      "retinue_1": "The Hospitallers - Must include a group of Hospitaller Knights as a command group.",
+      "retinue_2": "Nizar\u2019s Host - Must include a group of Mamluks as a command group.",
+      "deployment": "This scenario uses Deployment Map 6 from The Baron\u2019s War core rulebook. The Hospitaller retinue is attacking, while Nizar\u2019s Host is defending.",
+      "objectives": "Both sides are attempting to capture prisoners that can be ransomed back to their opponent in exchange for concessions.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if any group has a chance of capturing an enemy.",
+      "special_rules": [
+        {
+          "name": "Prisoners",
+          "effect": "If a group is destroyed in close combat, the attacking player can choose to take the group prisoner. They must detach a model from the victorious group to guard their new captives. This model must remain within 1\u201d of the prisoners until the end of the scenario, or until the prisoners are freed. They use the captive group to determine coherency."
+        },
+        {
+          "name": "The Garrison",
+          "effect": "The fort\u2019s defenders are taking shelter from the swirling mass of Ayyubids ringing their defences, only popping up to take the occasional pot-shot from the battlements. Any Ayyubid group that ends its turn within 6\u201d of the fort must pass a Defence roll on a d10 or suffer a casualty. This rule only applies if a group of Pilgrims reached the fort in the previous scenario."
+        }
+      ],
+      "victory_conditions": "Both players calculate all the points values of the enemy Warriors their Retinue slays during the battle, and 150 additional victory points for each wagon that they capture. The victor gains 1 campaign victory point."
+    },
+    {
+      "name": "Dry Kindling",
+      "points": 500,
+      "retinues": [
+        {
+          "name": "The Hospitallers",
+          "mandatory_choices": []
+        },
+        {
+          "name": "Nizar\u2019s Host",
+          "mandatory_choices": []
+        }
+      ],
+      "deployment": "Deployment Map 2 from the Baron\u2019s War core rulebook",
+      "objectives": "The Ayyubid player is attempting to fire the fort and its outbuildings, reducing the strength of the defensive position ahead of a major assault. The Frankish player is attempting to repel the Ayyubid assault.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if a unit has a chance of firing a building or extinguishing an already burning building.",
+      "special_rules": [
+        {
+          "name": "Light the Torches",
+          "description": "Before the battle begins, the Ayyubid player must designate two of his groups to carry torches. Add a suitable miniature to this group to indicate the torch carriers. Increase the points cost of each model in this group by +1. When one of these groups attempts to fire a building, they roll 2 dice and pick the highest. When they attack another unit, they gain the effect of the Cruelty ability."
+        },
+        {
+          "name": "Burning Buildings",
+          "description": "Any Ayyubid groups may attempt to set fire to a building within 3\u201d by taking a special action. Sections of wall cannot be fired. The group must succeed at an attack roll, increasing the required result by 2 if the building has been fortified by the Hospitallers. If the attacker\u2019s roll succeeds, the building begins to burn."
+        },
+        {
+          "name": "Putting out Fires",
+          "description": "A Frankish group can attempt to extinguish a burning building within 3\u201d by taking a Special action. They must succeed at an attack roll, increasing the required result by 1 for each turn the building has been burning. If they succeed, remove the marker adjacent to the building."
+        }
+      ],
+      "victory_conditions": "The attacker calculates all the points values of the enemy Warriors their Retinue slays during the battle and gain 150 additional victory points for each building on fire at the end of the battle, doubling the total for any fortified buildings which are burning. The defender calculates all the points values of the enemy Warriors their Retinue slays during the battle, doubling the amount of any enemy Warriors that are Commanders. The victor gains 1 campaign victory point."
+    },
+    {
+      "name": "Ride to Freedom",
+      "points": 500,
+      "retinues": [
+        {
+          "name": "The Hospitallers",
+          "mandatory_choices": [
+            "Must include at least one unit of Hospitaller mounted sergeants or Turcoples."
+          ]
+        },
+        {
+          "name": "Nizar\u2019s Host",
+          "mandatory_choices": []
+        }
+      ],
+      "deployment": "Deployment Map 10 from the Baron\u2019s War core rulebook",
+      "objectives": "The Frankish retinue must facilitate the Messenger\u2019s escape, while the Ayyubid retinue must try and kill or capture all the defenders.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if any unit has a chance of exiting the table.",
+      "special_rules": [
+        {
+          "name": "The Messenger",
+          "description": "At the start of the battle, the Frankish player selects up to three groups and secretly notes down which of the groups is carrying the message to the nearby garrison. If this group moves off the table by the western table edge, they have escaped the area and are free to deliver the message."
+        },
+        {
+          "name": "Reserves",
+          "description": "The Ayyubid player must hold at least a third of their force in reserve. From Turn 2 onwards, make a Command roll for each of these groups. On a success, that group may enter the battlefield from either of the short board edges."
+        }
+      ],
+      "victory_conditions": "The attacker calculates all the points values of the enemy Warriors their Retinue slays during the battle and gains 150 additional victory points if the messenger escapes. The defender calculates all the points values of the enemy Warriors their Retinue slays during the battle, doubling the amount of any enemy Warriors that are Commanders. The victor gains 1 campaign victory point."
+    },
+    {
+      "name": "The Assault",
+      "points": 750,
+      "retinues": [
+        {
+          "name": "The Hospitallers",
+          "mandatory_choices": [
+            "Must include Hospitaller foot knights as a command group."
+          ]
+        },
+        {
+          "name": "Nizar\u2019s Host",
+          "mandatory_choices": [
+            "Must include one mobile siege tower. At least two groups of warriors must be equipped with ladders."
+          ]
+        }
+      ],
+      "deployment": "Deployment Map 12 from the Baron\u2019s War core rulebook",
+      "objectives": "The Frankish retinue must prevent the Ayyubids from gaining access to the keep, while the Ayyubid retinue must storm the fortification and slay the defenders.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if any unit has a chance of entering the keep.",
+      "special_rules": [
+        {
+          "name": "Siege Equipment",
+          "description": "The Ayyubid retinue must contain one mobile siege tower, use a suitable model. Place the siege tower up against a section of the double wall where it remains for the duration of the game. It functions like any other Tower, but may be entered from outside the fort. At least two groups of warriors must be equipped with ladders."
+        },
+        {
+          "name": "Control Points",
+          "description": "Take six objective markers placing one at each gate, one on the roof of the round tower, one on the roof of the square tower, one on a castle wall and one on the ground at the centre of the fort. Rules for capturing these control points is the same as for capturing objectives."
+        }
+      ],
+      "victory_conditions": "Both players total up the control points in their possession at the end of the battle. The player with the highest total is the victor. The victor gains 1 campaign victory point."
+    },
+    {
+      "name": "Rescuers at Hand",
+      "points": 1000,
+      "retinues": [
+        {
+          "name": "The Hospitallers",
+          "mandatory_choices": [
+            "Must include Hospitaller foot knights as a command group.",
+            "Must include a Frankish commander leading a Settled Frankish retinue comprising 75% of the total points value."
+          ]
+        },
+        {
+          "name": "Nizar\u2019s Host",
+          "mandatory_choices": [
+            "Must include an Improvised Battering Ram."
+          ]
+        }
+      ],
+      "deployment": "Custom deployment map based on control points from the previous scenario",
+      "objectives": "The Frankish retinue must destroy the Ayyubid attackers, while the Ayyubid retinue must capture the fortified hospital before the reinforcements overwhelm them.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if any group has a chance of destroying another group.",
+      "special_rules": [
+        {
+          "name": "Siege Equipment",
+          "description": "The Ayyubid retinue must contain one battering ram."
+        },
+        {
+          "name": "Reserves",
+          "description": "75% of the Frankish retinue is held in reserve. This must be the portion drawn from the Settled Franks list. From Turn 2 onwards, make a Morale check for each of these groups. On a success, that group may enter the battlefield from either of the short board edges."
+        }
+      ],
+      "victory_conditions": "Both players calculate all the points values of the enemy Warriors their Retinue slays during the battle, doubling the amount of any enemy Warriors that are Commanders. The victor gains 3 campaign victory points."
+    }
+  ],
+  "terrain": [
+    {
+      "name": "Craggy Hills",
+      "type": "Area Terrain",
+      "cover": "No Cover",
+      "rules": [
+        "Craggy Hills are treated as Rocky Hills.",
+        "Vertical crags are impassable to mounted warriors.",
+        "Warriors on foot require 2\u201d of Move for every 1\u201d of climbing.",
+        "Cannot climb using a Run move.",
+        "Group becomes Weary if climbing more than 2\u201d upwards.",
+        "Groups not fully on the crag are out of coherency."
+      ]
+    },
+    {
+      "name": "Fields with Irrigation Ditches",
+      "type": "Area Terrain",
+      "cover": "Soft Cover",
+      "rules": [
+        "Infantry reduce movement by 2\u201d and cavalry by 1\u201d when crossing.",
+        "Count as Obstacles providing Soft Cover against Melee attacks.",
+        "+1 to Defence rolls if Charged by a Group from outside.",
+        "May provide Soft Cover against shooting if crops are high enough."
+      ]
+    },
+    {
+      "name": "Rocky Hills",
+      "type": "Area Terrain",
+      "cover": "Soft Cover",
+      "rules": [
+        "Block Line of Sight for Warriors at opposite sides on ground level.",
+        "Hills are Higher Ground: +1 Attack Dice when attacking or +1 Defence Dice when defending.",
+        "Count as Rough Ground: move at half distance.",
+        "Provide Soft Cover for Warriors on foot, not mounted."
+      ]
+    },
+    {
+      "name": "Rocky Outcrops",
+      "type": "Area Terrain",
+      "cover": "Hard Cover",
+      "rules": [
+        "Block line of sight.",
+        "Players agree height and Line of Sight rules.",
+        "Higher Ground: +1 Attack Dice when attacking or +1 Defence Dice when defending.",
+        "Vertical crags are impassable to mounted warriors.",
+        "Warriors on foot require 2\u201d of Move for every 1\u201d of climbing."
+      ]
+    },
+    {
+      "name": "Soft Sand or Salt Marshes",
+      "type": "Area Terrain",
+      "cover": "No Cover",
+      "rules": [
+        "Count as Rough Ground: move at half distance.",
+        "Must take a Morale check when moving through.",
+        "If failed, Group becomes stuck.",
+        "Stuck Group is pushed back as a result of casualties as normal.",
+        "If Broken, treat as Shocked instead."
+      ]
+    },
+    {
+      "name": "Sandy Hill",
+      "type": "Area Terrain",
+      "cover": "No Cover",
+      "rules": [
+        "Players agree height and Line of Sight rules.",
+        "Higher Ground: +1 Attack Dice when attacking or +1 Defence Dice when defending.",
+        "Count as Rough Ground: move at half distance.",
+        "Do not provide cover unless containing Thorn Bushes."
+      ]
+    },
+    {
+      "name": "Thorn Bushes",
+      "type": "Area Terrain",
+      "cover": "Soft Cover",
+      "rules": [
+        "Impassable to all Warriors."
+      ]
+    },
+    {
+      "name": "Wadi",
+      "type": "Area Terrain",
+      "cover": "Hard Cover",
+      "rules": [
+        "Treated as open ground between two sets of Craggy Hills.",
+        "Warriors in a Wadi are on lower ground.",
+        "Line of Sight over Craggy Hills.",
+        "Players agree depth and Line of Sight rules."
+      ]
+    }
+  ],
+  "holy_relics": [
+    {
+      "name": "Holy Relic",
+      "effect": "Retinue Leader's Command Group with a Priest or Muezzin can carry a Holy Relic for +10 points. All Groups with line of sight gain Devoted Faith. If the carrier is a casualty, Groups with line of sight gain +1 Morale dice. If at 6 Morale dice, test Morale or become Broken."
+    },
+    {
+      "name": "Sacred Banner",
+      "effect": "Retinue Leader's Command Group with a Banner or Pennant can upgrade to a Sacred Banner for +5 points. All Groups with line of sight gain Calming Presence. If a casualty, Groups with line of sight gain +1 Morale dice. If at 6 Morale dice, test Morale or become Broken."
+    },
+    {
+      "name": "The True Cross",
+      "effect": "Guarded by a Command Group with a Commander with the Bishop Ability. Cannot Run, Charge, leave, or claim Objectives. Never pushed back from casualties. Ignores Morale dice, never Broken, treat as Shocked. Friendly Christian Groups with line of sight benefit from Inspire and may re-roll failed Morale checks. If captured, enemy gains 1d6 Morale dice. Compulsory Action phase: must Charge to recapture or pass Morale check not to."
+    }
+  ]
+}

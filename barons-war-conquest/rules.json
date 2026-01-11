@@ -1,0 +1,1134 @@
+{
+  "campaign_rules": {
+    "command_group_upgrades": [
+      {
+        "name": "Bannerman Upgrade",
+        "points": 9,
+        "effect": "Increase order and inspire range to 12\u201d"
+      },
+      {
+        "name": "Musician Upgrade",
+        "points": 4,
+        "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+      },
+      {
+        "name": "Priest Upgrade",
+        "points": 5,
+        "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale dice for Morale Checks"
+      }
+    ],
+    "commanders": [
+      {
+        "name": "Edwin, Earl of Mercia",
+        "points": 37,
+        "veteran": 4,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Rebellious Spirit",
+          "Dual Commanders",
+          "Shield Training"
+        ],
+        "equipment": [
+          {
+            "name": "Sword",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Parry",
+            "effect": "Gain an extra defence dice against sword, mace or hand weapon",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": "Equipped",
+            "modifier": "-2 Movement",
+            "effect": "(applied)",
+            "required_experience": "All"
+          }
+        ],
+        "options": [
+          {
+            "name": "Dane Axe",
+            "cost_per_warrior": 0,
+            "modifier": "-1 Attack",
+            "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+            "required_experience": "All"
+          },
+          {
+            "name": "Small Shield",
+            "cost_per_warrior": 2,
+            "modifier": "9+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Medium Shield",
+            "cost_per_warrior": 3,
+            "modifier": "8+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Large Shield",
+            "cost_per_warrior": 5,
+            "modifier": "7+ Shield roll",
+            "required_experience": "All"
+          }
+        ],
+        "command_group_upgrades": [
+          {
+            "name": "Bannerman Upgrade",
+            "points": 9,
+            "effect": "Increase order and inspire range to 12\u201d"
+          },
+          {
+            "name": "Musician Upgrade",
+            "points": 4,
+            "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+          },
+          {
+            "name": "Priest Upgrade",
+            "points": 5,
+            "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale dice for Morale Checks"
+          }
+        ]
+      },
+      {
+        "name": "Morcar, Earl of Northumbria",
+        "points": 37,
+        "veteran": 4,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Hot Headed",
+          "Dual Commanders",
+          "Shield Training"
+        ],
+        "equipment": [
+          {
+            "name": "Sword",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Parry",
+            "effect": "Gain an extra defence dice against sword, mace or hand weapon",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": "Equipped",
+            "modifier": "-2 Movement",
+            "effect": "(applied)",
+            "required_experience": "All"
+          }
+        ],
+        "options": [
+          {
+            "name": "Dane Axe",
+            "cost_per_warrior": 0,
+            "modifier": "-1 Attack",
+            "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+            "required_experience": "All"
+          },
+          {
+            "name": "Small Shield",
+            "cost_per_warrior": 2,
+            "modifier": "9+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Medium Shield",
+            "cost_per_warrior": 3,
+            "modifier": "8+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Large Shield",
+            "cost_per_warrior": 5,
+            "modifier": "7+ Shield roll",
+            "required_experience": "All"
+          }
+        ],
+        "command_group_upgrades": [
+          {
+            "name": "Bannerman Upgrade",
+            "points": 9,
+            "effect": "Increase order and inspire range to 12\u201d"
+          },
+          {
+            "name": "Musician Upgrade",
+            "points": 4,
+            "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+          },
+          {
+            "name": "Priest Upgrade",
+            "points": 5,
+            "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale dice for Morale Checks"
+          }
+        ]
+      },
+      {
+        "name": "Hereward the Wake",
+        "points": 48,
+        "veteran": 5,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Sweyn\u2019s Danes",
+          "Hidden Causeway",
+          "Local Knowledge"
+        ],
+        "equipment": [
+          {
+            "name": "Spear",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Reach",
+            "effect": "Cannot counter Attack against spear/bill unless armed with spear/bill",
+            "required_experience": "All"
+          },
+          {
+            "name": "Leather/Padded",
+            "cost_per_warrior": "Equipped",
+            "modifier": "+1 Movement",
+            "effect": "(Applied)",
+            "required_experience": "All"
+          }
+        ],
+        "options": [
+          {
+            "name": "Sword",
+            "cost_per_warrior": 2,
+            "modifier": "-1 Attack",
+            "effect": "Parry - Gain an extra defence dice against sword, mace or hand weapon",
+            "required_experience": "All"
+          },
+          {
+            "name": "Dane Axe",
+            "cost_per_warrior": 2,
+            "modifier": "-2 Attack",
+            "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+            "required_experience": "All"
+          },
+          {
+            "name": "Bow",
+            "cost_per_warrior": 0,
+            "modifier": "+1 Attack at Long Range",
+            "effect": "Long upto 20\"/short upto 10\" range, can move 3\" and shoot at short range",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": 1,
+            "modifier": "-1 Defence",
+            "effect": "-1 Movement",
+            "required_experience": "All"
+          },
+          {
+            "name": "Small Shield",
+            "cost_per_warrior": 2,
+            "modifier": "9+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Medium Shield",
+            "cost_per_warrior": 3,
+            "modifier": "8+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Kite Shield",
+            "cost_per_warrior": 5,
+            "modifier": "7+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Horse",
+            "cost_per_warrior": 3,
+            "modifier": "+3 Movement",
+            "required_experience": "All"
+          }
+        ],
+        "command_group_upgrades": [
+          {
+            "name": "Bannerman Upgrade",
+            "points": 9,
+            "effect": "Increase order and inspire range to 12\u201d"
+          },
+          {
+            "name": "Musician Upgrade",
+            "points": 4,
+            "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+          },
+          {
+            "name": "Priest Upgrade",
+            "points": 5,
+            "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale dice for Morale Checks"
+          }
+        ]
+      },
+      {
+        "name": "Leofric the Deacon",
+        "points": 44,
+        "veteran": 6,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Priest",
+          "Hero\u2019s Chronicler"
+        ],
+        "equipment": [
+          {
+            "name": "Spear",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Reach",
+            "effect": "Cannot counter Attack against spear/bill unless armed with spear/bill",
+            "required_experience": "All"
+          }
+        ],
+        "options": [
+          {
+            "name": "Sword",
+            "cost_per_warrior": 2,
+            "modifier": "-1 Attack",
+            "effect": "Parry - Gain an extra defence dice against sword, mace or hand weapon",
+            "required_experience": "All"
+          },
+          {
+            "name": "Leather/Padded",
+            "cost_per_warrior": 1,
+            "modifier": "-1 Defence",
+            "effect": "-1 Movement",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": 2,
+            "modifier": "-2 Defence",
+            "effect": "-2 Movement",
+            "required_experience": "All"
+          },
+          {
+            "name": "Small Shield",
+            "cost_per_warrior": 2,
+            "modifier": "9+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Medium Shield",
+            "cost_per_warrior": 3,
+            "modifier": "8+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Kite Shield",
+            "cost_per_warrior": 5,
+            "modifier": "7+ Shield roll",
+            "required_experience": "All"
+          }
+        ],
+        "command_group_upgrades": [
+          {
+            "name": "Bannerman Upgrade",
+            "points": 9,
+            "effect": "Increase order and inspire range to 12\u201d"
+          },
+          {
+            "name": "Musician Upgrade",
+            "points": 4,
+            "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+          }
+        ]
+      },
+      {
+        "name": "William Duke of Normandy",
+        "points": 47,
+        "veteran": 4,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Couched Spear",
+          "All or Nothing"
+        ],
+        "equipment": [
+          {
+            "name": "Sword",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Parry",
+            "effect": "Gain an extra defence dice against sword, mace or hand weapon",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": "Equipped",
+            "modifier": "-2 Movement",
+            "effect": "(applied)",
+            "required_experience": "All"
+          }
+        ],
+        "options": [
+          {
+            "name": "Spear",
+            "cost_per_warrior": -2,
+            "modifier": "+1 Attack if on Foot",
+            "effect": "Reach - Cannot counter Attack against spear/bill unless armed with spear/bill",
+            "required_experience": "All"
+          },
+          {
+            "name": "Small Shield",
+            "cost_per_warrior": 2,
+            "modifier": "9+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Medium Shield",
+            "cost_per_warrior": 3,
+            "modifier": "8+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Large Shield",
+            "cost_per_warrior": 5,
+            "modifier": "7+ Shield roll",
+            "required_experience": "All"
+          },
+          {
+            "name": "Horse",
+            "cost_per_warrior": 3,
+            "modifier": "+3 Movement",
+            "required_experience": "All"
+          }
+        ],
+        "command_group_upgrades": [
+          {
+            "name": "Bannerman Upgrade",
+            "points": 9,
+            "effect": "Increase order and inspire range to 12\u201d"
+          },
+          {
+            "name": "Musician Upgrade",
+            "points": 4,
+            "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+          },
+          {
+            "name": "Priest Upgrade",
+            "points": 5,
+            "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale dice for Morale Checks"
+          }
+        ]
+      },
+      {
+        "name": "Odo of Bayeux",
+        "points": 53,
+        "veteran": 4,
+        "abilities": [
+          "Commander",
+          "Inspire",
+          "Couched Spear",
+          "All or Nothing",
+          "Man of God"
+        ],
+        "equipment": [
+          {
+            "name": "Club",
+            "cost_per_warrior": "Equipped",
+            "modifier": "Blunt Trauma",
+            "effect": "If the target takes casualties from a club the target Groups Movement is halved for the remainder of the round.",
+            "required_experience": "All"
+          },
+          {
+            "name": "Mail",
+            "cost_per_warrior": "Equipped",
+            "modifier": "-2 Movement",
+            "effect": "(applied)",
+            "required_experience": "All"
+          }
+        ]
+      }
+    ],
+    "character_creator": {
+      "steps": [
+        {
+          "step": 1,
+          "description": "Decide if you are creating a Warlord or a Noble. A Warlord can have up to 8 individual points of stat increases; a Noble may only have up to 5 single points of stat increases."
+        },
+        {
+          "step": 2,
+          "description": "Add Equipment from the armour, weapon and mount tables. Apply any modifiers to their stat line for equipment choices and add the points to their current points total."
+        },
+        {
+          "step": 3,
+          "description": "Choose extra Abilities. A Warlord can select up to three additional Abilities, and a Noble can select up to two additional Abilities."
+        }
+      ],
+      "command_actions": "These commanders that you create are eligible to enact Command Actions as described on p.73 of The Barons\u2019 War rulebook."
+    },
+    "champions": {
+      "description": "Champions are victors in many trials of combat, perfect for bolstering a group where you don\u2019t add a Commander.",
+      "creation": "Use the character creator to build a champion and after selecting equipment, roll on their ability table to see which ability they bring when they join their group.",
+      "abilities": {
+        "norman": [
+          "The Champion and his group do not become wearied",
+          "The Champion and his group may reroll one die from any roll once per round",
+          "The Champion and his group ignore difficult terrain penalties",
+          "The Champion and his group may make a free, immediate, move action towards an objective if it is taken by an opponent",
+          "The Champion and his group may receive an order without it counting towards the commander's used actions once per game.",
+          "You may choose the ability"
+        ],
+        "viking": [
+          "The Champion and his group cause Fear",
+          "The Champion and his group always attack first in melee combat",
+          "The Champion and his group gain an extra attack dice if the group is below 50% of its starting strength",
+          "The Champion and his group do not generate morale pips when a member of the group is killed",
+          "The Champion and his group must roll 2d6 and choose the highest when making a charge action",
+          "You may choose the ability"
+        ],
+        "saxon": [
+          "The Champion and his group can defend against '0' results with normal defence successes",
+          "The Champion and his group may defend for free whilst holding an objective but cannot charge in the same game round",
+          "The Champion and his group gain an extra defence dice if the group is below 50% of its starting strength",
+          "The Champion and his group automatically rally in the compulsory action phase",
+          "The Champion and his group may choose to push the opponent back d6'' after winning a combat",
+          "You may choose the ability"
+        ]
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Territorial Skirmish",
+      "description": "A battle to control a key territory on the campaign map.",
+      "objectives": "Capture and hold the central objective for a set number of turns."
+    },
+    {
+      "name": "Resource Raid",
+      "description": "A mission to raid enemy resources and weaken their campaign position.",
+      "objectives": "Destroy or capture enemy resource points."
+    },
+    {
+      "name": "Anglo-Dane Archers",
+      "points": [
+        {
+          "type": "Regular",
+          "value": 15
+        },
+        {
+          "type": "Irregular",
+          "value": 12
+        },
+        {
+          "type": "Green",
+          "value": 9
+        }
+      ],
+      "abilities": [
+        "Settled"
+      ],
+      "equipment": [
+        {
+          "name": "Bow",
+          "equipped": true,
+          "effect": "Long up to 20\"/short up to 10\" range, can move 3\" and shoot at short range",
+          "required_experience": "ALL"
+        }
+      ],
+      "options": [
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "modifier": "-1 Defence",
+          "effect": "-1 Movement",
+          "required_experience": "REGULAR +"
+        }
+      ]
+    },
+    {
+      "name": "Anglo-Dane Slingers",
+      "points": [
+        {
+          "type": "Regular",
+          "value": 12
+        },
+        {
+          "type": "Green",
+          "value": 9
+        }
+      ],
+      "abilities": [
+        "Settled"
+      ],
+      "equipment": [
+        {
+          "name": "Sling",
+          "equipped": true,
+          "effect": "10\" range. Quick shot - can fire twice if stationary, can move full distance and shoot",
+          "required_experience": "ALL"
+        }
+      ],
+      "options": [
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "modifier": "+9 Shield Roll",
+          "required_experience": "ALL"
+        }
+      ]
+    },
+    {
+      "name": "Anglo-Dane Huscarl",
+      "points": [
+        {
+          "type": "Veteran",
+          "value": 22
+        },
+        {
+          "type": "Regular",
+          "value": 19
+        }
+      ],
+      "abilities": [
+        "Saxon Shield Wall",
+        "Loyalty",
+        "Shield Training"
+      ],
+      "equipment": [
+        {
+          "name": "Spear",
+          "equipped": true,
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "ALL"
+        },
+        {
+          "name": "Leather/Padded",
+          "equipped": true,
+          "effect": "-1 Movement (applied)",
+          "required_experience": "ALL"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sword",
+          "cost_per_warrior": 2,
+          "modifier": "-1 Attack",
+          "effect": "PARRY - Gain an extra defence dice against sword, mace or hand weapon",
+          "required_experience": "REGULAR +"
+        },
+        {
+          "name": "Dane Axe",
+          "cost_per_warrior": 2,
+          "modifier": "-2 Attack",
+          "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+          "required_experience": "ALL"
+        },
+        {
+          "name": "Mail",
+          "cost_per_warrior": 1,
+          "modifier": "-1 Defence",
+          "effect": "-1 Movement",
+          "required_experience": "REGULAR +"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "modifier": "8+ Shield roll",
+          "required_experience": "ALL"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "modifier": "7+ Shield roll",
+          "required_experience": "REGULAR +"
+        }
+      ]
+    }
+  ],
+  "forces": [
+    {
+      "name": "Eorl",
+      "points": {
+        "veteran": 43,
+        "regular": 40,
+        "irregular": 37,
+        "green": 34
+      },
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Shield Training"
+      ],
+      "equipment": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": "Equipped",
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Mail",
+          "cost_per_warrior": "Equipped",
+          "effect": "-2 Movement (applied)",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sword",
+          "cost_per_warrior": 2,
+          "effect": "PARRY - Gain an extra defence dice against sword, mace or hand weapon",
+          "required_experience": "All"
+        },
+        {
+          "name": "Dane Axe",
+          "cost_per_warrior": 2,
+          "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": -1,
+          "effect": "+1 Defence, +1 Movement",
+          "required_experience": "All"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "effect": "7+ Shield roll",
+          "required_experience": "All"
+        }
+      ],
+      "command_group_upgrades": [
+        {
+          "name": "Bannerman Upgrade",
+          "points": 9,
+          "effect": "Increase order and inspire range to 12\u201d"
+        },
+        {
+          "name": "Musician Upgrade",
+          "points": 4,
+          "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+        },
+        {
+          "name": "Priest Upgrade",
+          "points": 5,
+          "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale Dice for Morale Checks"
+        }
+      ]
+    },
+    {
+      "name": "King\u2019s Thegn",
+      "points": {
+        "veteran": 33,
+        "regular": 30,
+        "irregular": 27,
+        "green": 24
+      },
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Shield Training"
+      ],
+      "equipment": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": "Equipped",
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Mail",
+          "cost_per_warrior": "Equipped",
+          "effect": "-2 Movement (applied)",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sword",
+          "cost_per_warrior": 2,
+          "effect": "PARRY - Gain an extra defence dice against sword, mace or hand weapon",
+          "required_experience": "All"
+        },
+        {
+          "name": "Dane Axe",
+          "cost_per_warrior": 2,
+          "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": -1,
+          "effect": "+1 Defence, +1 Movement",
+          "required_experience": "All"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "effect": "7+ Shield roll",
+          "required_experience": "All"
+        }
+      ],
+      "command_group_upgrades": [
+        {
+          "name": "Musician Upgrade",
+          "points": 4,
+          "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest"
+        },
+        {
+          "name": "Priest Upgrade",
+          "points": 5,
+          "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale Dice for Morale Checks"
+        }
+      ]
+    },
+    {
+      "name": "Huscarl",
+      "points": {
+        "veteran": 22,
+        "regular": 19,
+        "irregular": 16
+      },
+      "abilities": [
+        "Saxon Shield Wall",
+        "Loyalty",
+        "Shield Training"
+      ],
+      "equipment": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": "Equipped",
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": "Equipped",
+          "effect": "-1 Movement (applied)",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sword",
+          "cost_per_warrior": 2,
+          "effect": "PARRY - Gain an extra defence dice against sword, mace or hand weapon",
+          "required_experience": "Regular+"
+        },
+        {
+          "name": "Dane Axe",
+          "cost_per_warrior": 2,
+          "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Battle Axe",
+          "cost_per_warrior": 0,
+          "effect": "Target receives -1 on shield roll.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Mail",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence, -1 Movement",
+          "required_experience": "Regular+"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "effect": "7+ Shield roll",
+          "required_experience": "Regular+"
+        }
+      ]
+    },
+    {
+      "name": "Thegn",
+      "points": {
+        "veteran": 24,
+        "regular": 21
+      },
+      "abilities": [
+        "Inspire",
+        "Saxon Shield Wall",
+        "Noble Warriors"
+      ],
+      "equipment": [
+        {
+          "name": "Sword",
+          "cost_per_warrior": "Equipped",
+          "effect": "PARRY - Gain an extra defence dice against sword, mace or hand weapon",
+          "required_experience": "All"
+        },
+        {
+          "name": "Mail",
+          "cost_per_warrior": "Equipped",
+          "effect": "-2 Movement (applied)",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": -2,
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Dane Axe",
+          "cost_per_warrior": 0,
+          "effect": "SLOW - Will always act second if counter attacked. Cannot equip shield with this weapon. Cannot be equipped when mounted.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Battle Axe",
+          "cost_per_warrior": -2,
+          "effect": "Target receives -1 on shield roll.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "effect": "7+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Horse",
+          "cost_per_warrior": 3,
+          "effect": "+3 Movement",
+          "required_experience": "All"
+        }
+      ]
+    },
+    {
+      "name": "Fyrd",
+      "points": {
+        "regular": 16,
+        "irregular": 11,
+        "green": 8
+      },
+      "abilities": [
+        "Saxon Shield Wall"
+      ],
+      "equipment": [
+        {
+          "name": "Hand Weapon",
+          "cost_per_warrior": "Equipped"
+        }
+      ],
+      "options": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": 1,
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Battle Axe",
+          "cost_per_warrior": 1,
+          "effect": "Target receives -1 on shield roll.",
+          "required_experience": "All"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence, -1 Movement",
+          "required_experience": "Irregular+"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll",
+          "required_experience": "Regular+"
+        }
+      ]
+    },
+    {
+      "name": "Bowmen",
+      "points": {
+        "regular": 15,
+        "irregular": 12,
+        "green": 9
+      },
+      "equipment": [
+        {
+          "name": "Bow",
+          "cost_per_warrior": "Equipped",
+          "effect": "Long upto 20\"/short upto 10\" range, can move 3\" and shoot at short range",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence, -1 Movement",
+          "required_experience": "Regular+"
+        }
+      ]
+    },
+    {
+      "name": "Gebur",
+      "points": {
+        "regular": 17,
+        "irregular": 14
+      },
+      "abilities": [
+        "Crack Shot"
+      ],
+      "equipment": [
+        {
+          "name": "Sling",
+          "cost_per_warrior": "Equipped",
+          "effect": "10\" range. Quick shot - can fire twice if stationary, can move full distance and shoot",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence, -1 Movement",
+          "required_experience": "Regular+"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        }
+      ]
+    },
+    {
+      "name": "Youngling",
+      "points": {
+        "irregular": 11,
+        "green": 8
+      },
+      "equipment": [
+        {
+          "name": "Hand Weapon",
+          "cost_per_warrior": "Equipped",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Sling",
+          "cost_per_warrior": 1,
+          "effect": "10\" range. Quick shot - can fire twice if stationary, can move full distance and shoot",
+          "required_experience": "All"
+        },
+        {
+          "name": "Spear",
+          "cost_per_warrior": 1,
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Improvised Two Handed Weapon",
+          "cost_per_warrior": 2,
+          "effect": "SLOW - Will always act second if counter Attacked. Cannot equip shield with this weapon",
+          "required_experience": "All"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        }
+      ]
+    },
+    {
+      "name": "Mounted Scouts",
+      "points": {
+        "regular": 20,
+        "irregular": 17,
+        "green": 12
+      },
+      "abilities": [
+        "Evade"
+      ],
+      "equipment": [
+        {
+          "name": "Spear",
+          "cost_per_warrior": "Equipped",
+          "effect": "REACH - Cannot counter Attack against spear/bill unless armed with spear/bill",
+          "required_experience": "All"
+        },
+        {
+          "name": "Pony",
+          "cost_per_warrior": "Equipped",
+          "effect": "Increase javelin range by 2\", can move through woods at the usual penalties",
+          "required_experience": "All"
+        }
+      ],
+      "options": [
+        {
+          "name": "Javelin",
+          "cost_per_warrior": 0,
+          "effect": "6+d10\" range, must end Movement closer to target to gain the d10 range",
+          "required_experience": "All"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence, -1 Movement",
+          "required_experience": "Regular+"
+        },
+        {
+          "name": "Horse",
+          "cost_per_warrior": 0,
+          "effect": "+1 Movement",
+          "required_experience": "All"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "9+ Shield roll",
+          "required_experience": "All"
+        }
+      ]
+    }
+  ],
+  "factions": []
+}

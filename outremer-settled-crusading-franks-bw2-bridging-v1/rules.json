@@ -1,0 +1,52 @@
+{
+  "faction": "Settled Crusading Franks",
+  "abilities": [
+    {
+      "name": "Armenian",
+      "effect": "If a Group with the Armenian Ability fails a Morale Check and would be Broken as a result, it may immediately re-roll the test provided the Group has more models than Morale Penalties.",
+      "points": 1
+    },
+    {
+      "name": "Byzantine",
+      "effect": "Byzantine infantry may re-roll failed Order tests.",
+      "points": 1
+    },
+    {
+      "name": "Devoted",
+      "effect": "If a Group with the Devoted Ability is given an Order by an Outremer Lord or Baron or a Military Order Commander or Marshal, it may remove one Morale Penalty.",
+      "points": 1
+    },
+    {
+      "name": "Embattled Land",
+      "effect": "Any Group within Command Range may roll a Morale check during the Housekeeping phase (where eligible to remove Morale Dice). If successful, the Group reduces its Morale Penalties by 2 rather than 1.",
+      "points": 1
+    },
+    {
+      "name": "Maronite Arab",
+      "effect": "May re-roll all failed Ranged Attack Dice in a single Action once per game.",
+      "points": 1
+    },
+    {
+      "name": "Shower Shooting",
+      "effect": "If shooting with a Composite Bow while stationary, the Group may choose to re-roll all of its Attack dice (whether successful or not). The second result must be used.",
+      "points": 2
+    },
+    {
+      "name": "Turcopole",
+      "effect": "Groups of Turcopoles can only be used as a Command Group for a Mounted Turcopolier.",
+      "points": 0
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Composite Bow",
+      "attack_modifier": {
+        "long": -1,
+        "short": 0
+      },
+      "effect": "RANGED - 20\" Long range, 6\" Short range. MOVE AND SHOOT - Can move 3\" and shoot at short range. RECURVE BOW - Targets wearing Mail suffer a -1 modifier to Defence rolls.",
+      "points": 2
+    }
+  ],
+  "factions": []
+}

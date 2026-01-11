@@ -1,0 +1,49 @@
+{
+  "faction": "Military Orders",
+  "abilities": [
+    {
+      "name": "Brother Serjeants",
+      "effect": "If a Group of Military Order Knights is within 6\", any Group with this Ability ignores its Morale Penalties when making Morale Checks.",
+      "points": 2
+    },
+    {
+      "name": "Devoted Faith",
+      "effect": "The Group ignore their Morale Penalties when making Morale checks.",
+      "points": 2
+    },
+    {
+      "name": "Multi-task",
+      "effect": "A Turcopolier and his Command Group may switch weapons during the same round.",
+      "points": 2
+    },
+    {
+      "name": "Squires",
+      "effect": "If a Group of Military Order Knights within 6\" suffers a casualty, the Squires may make a Morale Check. If successful, remove one Squire instead (adding a Morale Penalty to them). This may be repeated if the Knights suffer several casualties, each one requiring a separate Morale Check. This Ability may only be purchased as an upgrade by a Group of Mounted Sergeants.",
+      "points": 1
+    },
+    {
+      "name": "Turcopolier",
+      "effect": "Cannot start the game as your Retinue Leader but may become the Retinue Leader if the original one is removed from play and a successful Morale check is made.",
+      "points": 1
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Composite Bow",
+      "attackModifier": {
+        "long": "-1",
+        "short": "0"
+      },
+      "effect": "RANGED - 20\" Long range, 6\" Short range. MOVE AND SHOOT - Can move 3\" and shoot at short range. RECURVE BOW - Targets wearing Mail suffer a -1 modifier to Defence rolls.",
+      "points": 2
+    }
+  ],
+  "commandGroupUpgrades": [
+    {
+      "name": "Scout",
+      "effect": "After both sides have finished deploying, one Group within Command range may immediately make a normal Move action. While the Scout is alive, the Turcopolier\u2019s Command Group ignores the effects of Exhaustion.",
+      "points": 4
+    }
+  ],
+  "factions": []
+}

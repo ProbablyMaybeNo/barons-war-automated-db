@@ -1,0 +1,115 @@
+{
+  "faction": "Welsh",
+  "traits": [
+    {
+      "name": "Melt Away",
+      "description": "Welsh Groups may choose to voluntarily flee if they lose combat. This must be declared before any Morale Checks are rolled and a player can still choose this action even if their group meets the requirements for shocked. Carry out the required steps for fleeing and place a broken counter next to the group. Any group which voluntarily fled must still activate during the compulsory actions phase as normal and still require a Morale Check to rally."
+    },
+    {
+      "name": "No Shame in Defeat",
+      "description": "All Welsh groups roll 2 Morale Dice when making a Morale Check and use the highest result when testing to rally."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Mountain Men",
+      "description": "Group gains the Ambush ability.",
+      "type": "Group",
+      "points": 1
+    },
+    {
+      "name": "The Lure",
+      "description": "If within charge range of an enemy group making an Attack action, the enemy must try and charge this group even if not the closest group.",
+      "type": "Group",
+      "points": 2
+    },
+    {
+      "name": "Chosen Ground",
+      "description": "Once per game, either when charged or making a charge, this group counts as though it has the high ground.",
+      "type": "Group",
+      "points": 1
+    },
+    {
+      "name": "The Hare",
+      "description": "If the group voluntarily flees, they move double their movement value directly away from their enemy.",
+      "type": "Group",
+      "points": 1
+    },
+    {
+      "name": "Mountain Mist",
+      "description": "When charging this Command Group, the enemy reduces its charge range by the score of its Morale Dice in inches.",
+      "type": "Commander",
+      "points": 3
+    },
+    {
+      "name": "Ambush",
+      "description": "The Welsh landscape favoured the nimble and lightly equipped. The Welsh were masters of their terrain and would seemingly appear out of nowhere to pepper their enemies with Javelins."
+    },
+    {
+      "name": "Lightning Raid",
+      "description": "As personal bodyguards to their Lord, their loyalty was without question, as was their skill in battle. A lifetime of court intrigue and raids and skirmishes made them deadly opponents."
+    },
+    {
+      "name": "Faith",
+      "description": "Some monks sought solitude rather than life in a monastery, but they could be roused to battle if localised events threatened their 'idle'. When this was the case, they would defend their homes or join a defending force bringing their religious fury onto the battlefield, which local commanders always welcomed."
+    },
+    {
+      "name": "Berserk",
+      "description": "Some monks sought solitude rather than life in a monastery, but they could be roused to battle if localised events threatened their 'idle'. When this was the case, they would defend their homes or join a defending force bringing their religious fury onto the battlefield, which local commanders always welcomed."
+    }
+  ],
+  "inherentAbilities": [
+    {
+      "name": "Imposter",
+      "effect": "If the Welsh Retinue Leader is slain, make a Morale Check using their current Morale score. If successful, you prove the now dead Commander was an imposter. Choose and replace any other Welsh Commander in your Retinue with the slain Retinue Leader's figure. They remain as your Retinue Leader in the Command Group you have chosen, now revealed on the battlefield, keeping their original profile."
+    },
+    {
+      "name": "Ambush",
+      "effect": "Deployed after all other groups. May be deployed anywhere on the table must be 6\" away from an enemy unless out of LoS, if out of LoS may be up to 3\" away."
+    },
+    {
+      "name": "Wall of Spines",
+      "effect": "Cavalry must take a morale test to charge this group."
+    },
+    {
+      "name": "Volley",
+      "effect": "May fire over a friendly unit but take a -1 penalty to attack dice, always counts as long range."
+    },
+    {
+      "name": "Lightning Raid",
+      "effect": "If this group chooses to flee after losing combat, They may choose the direction of the flee move as long as it ends closer to their table edge."
+    }
+  ],
+  "championAbilities": [
+    {
+      "name": "Welsh Champion Abilities",
+      "abilities": [
+        {
+          "id": 1,
+          "description": "The Champion and his Group ignore their morale dice when rolling to rally."
+        },
+        {
+          "id": 2,
+          "description": "The Champion and his Group gain 2\" to movement."
+        },
+        {
+          "id": 3,
+          "description": "The Champion and his Group do not have to flee in a straight line as long as their move ends closer to their table edge."
+        },
+        {
+          "id": 4,
+          "description": "The Champion and his Group may use 'Evade' once per game."
+        },
+        {
+          "id": 5,
+          "description": "The champion and his Group may attack an enemy that isn't the closest without a morale check."
+        },
+        {
+          "id": 6,
+          "description": "You may choose the ability."
+        }
+      ]
+    }
+  ],
+  "factions": []
+}

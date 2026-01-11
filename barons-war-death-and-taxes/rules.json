@@ -1,0 +1,781 @@
+{
+  "optional_rules": [
+    {
+      "name": "Accusation of Crime",
+      "description": "Someone accuses one of your Commanders of a crime. Make a Morale Check. If they have 3 or more chivalry, roll 2 dice and pick the highest result. If they succeed, they have exonerated themselves. If they fail, they must spend the remainder of the season trying to find a way to clear their name. They return to duty at the start of next season from their camp tile."
+    },
+    {
+      "name": "The Favourite",
+      "description": "While you do not lose a Battle, you are regarded as the favourite Commander at court. Gain +2 Chivalry Rating until you lose a Battle, in defeat you lose this bonus."
+    },
+    {
+      "name": "The Holy Land",
+      "description": "One of your Commanders has been left land and a title in the Kingdom of Jerusalem and must leave immediately to claim it. Choose which Banner and bid them farewell on their journey. They may be replaced at the start of a new season. Your Retinue Leader increases their Chivalry Rating by 2 for allowing them to leave."
+    },
+    {
+      "name": "Disgraced",
+      "description": "Any Commander who does not take part in a Battle all season and refused a challenge is sent home in disgrace!"
+    },
+    {
+      "name": "Fresh Blood",
+      "description": "Any Commander who was routed regroups and starts the new season on their camp square. Any Commander who was killed or sent home in disgrace can be replaced by a new Commander and starts the new season on the player\u2019s camp square."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "The Dawn Raid",
+      "points": 500
+    },
+    {
+      "name": "Spring The Trap",
+      "points": 750
+    },
+    {
+      "name": "Bullying the Bishop",
+      "points": 500
+    },
+    {
+      "name": "A Spilled Pint",
+      "points": 500
+    },
+    {
+      "name": "The Soul of Wimentun",
+      "points": 500
+    },
+    {
+      "name": "The Final Battle",
+      "points": 1000
+    },
+    {
+      "name": "The Factions",
+      "description": "The campaign involves the villagers of Wimentun and Outlaws against the High Sheriff of Nottinghamshire's soldiers. Each scenario includes example retinue lists created by adhering to the Building your Retinue section of The Barons' War rulebook."
+    },
+    {
+      "name": "The Dawn Raid",
+      "points": 500,
+      "description": "Wimentun is attacked by the Undersheriff\u2019s men. The villagers and outlaws must decide whether to fight or flee.",
+      "retinues": [
+        {
+          "name": "Robin and the Merry Men",
+          "points": 497,
+          "forces": [
+            "Robin Hood - 51pts",
+            "4x Outlaw Bowmen (Regular) - 68pts",
+            "Blacksmith - 47pts",
+            "5x Villagers (Irregular) - 70pts",
+            "8x Villagers (Green) - 64pts",
+            "7x Outlaws (Veteran) - 133pts"
+          ]
+        },
+        {
+          "name": "Undersheriff Eustace de Lowdham",
+          "points": 498,
+          "forces": [
+            "Eustace de Lowdham (Commander) - 66pts",
+            "4x Sergeants (Regular) - 76pts",
+            "5x Sergeants (Regular) - 95pts",
+            "5x Sergeants (Regular) - 95pts",
+            "4x Sergeants (Regular) - 76pts",
+            "10x Spearmen (Green) - 90pts"
+          ]
+        }
+      ],
+      "deployment": "Uses Deployment Map 2 from The Barons\u2019 War core rulebook. The attacker sets up in the red area, while the defender sets up in the blue area.",
+      "objectives": "The Undersheriff\u2019s men are ransacking the village, gathering the sheriff\u2019s dues while also attempting to smoke out the outlaws. The Outlaws are attempting to flee the area before they are discovered.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if an Outlaw group has a chance of escaping, or the Sheriff\u2019s men have an opportunity to ransack a building or shakedown some villagers.",
+      "victory_conditions": "The defender calculates the points values of all the friendly Warriors that escaped the battlefield, doubling the amount of any friendly warriors that are Commanders. The attacker calculates all the points values of the enemy Warriors their Retinue slays during the battle, doubling the amount of any enemy Warriors that are Commanders. The attacker gains additional 150 victory points if they capture the Outlaw Spy."
+    },
+    {
+      "name": "Spring the Trap",
+      "points": 750,
+      "description": "The sheriff\u2019s soldiers have ransacked Wimentun. The outlaws, driven off, plan to strike back.",
+      "retinues": [
+        {
+          "name": "Robin and the Merry Men",
+          "points": 749,
+          "forces": [
+            "Robin Hood - 51pts",
+            "4x Outlaw Bowmen (Regular) - 68pts",
+            "7x Outlaws (Veteran) - 133pts",
+            "5x Outlaw Bowmen (Regular) - 80pts",
+            "7x Bandits (Green) - 70pts",
+            "Blacksmith (Commander) - 47pts",
+            "5x Villagers (Irregular) - 70pts",
+            "10x Villagers (Green) - 90pts"
+          ]
+        },
+        {
+          "name": "Undersheriff Eustace de Lowdham",
+          "points": 747,
+          "forces": [
+            "Eustace de Lowdham (Commander) - 66pts",
+            "4x Sergeants (Regular) - 76pts",
+            "Knight Errant - 42pts",
+            "3x Mounted Sergeants (Veteran) - 81pts",
+            "6x Sergeants (Regular) - 126pts",
+            "6x Sergeants (Regular) - 114pts",
+            "4x Sergeants (Regular) - 76pts",
+            "4x Sergeants (Regular) - 76pts",
+            "10x Spearmen (Green) - 90pts"
+          ]
+        }
+      ],
+      "deployment": "Uses Deployment Map 11 from The Barons\u2019 War core rulebook."
+    },
+    {
+      "name": "Bully the Bishop",
+      "points": 500,
+      "deployment": "Deployment Map 9 from The Barons\u2019 War core rulebook. Robin Hood\u2019s retinue is attacking, Philippe Marc\u2019s retinue is defending.",
+      "objectives": "Defender must fight off ambushers and escape via the opposite board edge. Attacker must kill all defenders.",
+      "game_duration": "Five turns, with a sixth if any unit can exit the table.",
+      "victory_conditions": "Defender calculates points of escaped Warriors, doubling Commanders. Attacker calculates slain enemy Warriors, doubling Commanders. Victor gains 1 campaign victory point.",
+      "next_scenario": "Outlaw player gains 4 Wealth Tokens if the Sheriff\u2019s command group is taken out. Sheriff\u2019s player gains 2 Wealth Tokens if the command group escapes. Flemish mercenaries form the Sheriff\u2019s command group in the next scenario if hired."
+    },
+    {
+      "name": "A Spilled Pint",
+      "points": 500,
+      "deployment": "Deployment Map 12 from The Barons\u2019 War core rulebook. Eustace\u2019s retinue is attacking, Priest of Wimentun\u2019s retinue is defending.",
+      "objectives": "Defender must evade capture and escape via short board edges. Attacker must kill or capture all defenders.",
+      "game_duration": "Five turns, with a sixth if any unit can exit the table.",
+      "special_rules": "Reserves: From Turn 2 onwards, make a Morale Check for each group. On success, the group may enter the battlefield from either short board edge.",
+      "victory_conditions": "Defender calculates points of escaped Warriors, doubling Commanders. Attacker calculates slain enemy Warriors, doubling Commanders. Victor gains 1 campaign victory point.",
+      "next_scenario": "Sheriff\u2019s player captures Priest or Blacksmith if taken out, becoming objectives in the next scenario. Templars join Outlaw\u2019s retinue. Blacksmith leads Outlaws if evaded capture, otherwise becomes a hostage."
+    },
+    {
+      "name": "The Soul of Wimentun",
+      "points": 500,
+      "deployment": "Deployment Map 6 from The Barons\u2019 War core rulebook. Undersheriff\u2019s retinue is defending, Blacksmith of Wimentun or Robin Hood\u2019s retinue is attacking.",
+      "objectives": "Defender must retain control of hostages and drive off attackers. Attacker must recover hostages.",
+      "game_duration": "Five turns, with a sixth if any unit can control a hostage.",
+      "special_rules": "Hostages: Captured commanders and Outlaw Spy are chained in the center. Players with most figures within 3\u201d can move prisoners 6\u201d. If no figures are within 3\u201d, prisoners move 6\u201d towards Outlaw commander during Housekeeping phase. Buildings: Outlaws can ransack buildings for 2 wealth tokens each.",
+      "victory_conditions": "Calculate points of slain enemy Warriors, gain 150 additional victory points for each prisoner controlled at battle end. Victor gains 1 campaign victory point.",
+      "next_scenario": "Villagers may spend wealth tokens to fortify buildings and build defences. Flemish mounted sergeants can be added to retinue for 5 wealth tokens. Templars join Villagers. Blacksmith gains +1 ATK if family are hostages."
+    },
+    {
+      "name": "Battle for Wimentun",
+      "deployment": "This scenario uses Deployment Map 1 from The Barons\u2019 War core rulebook. Philippe Marc\u2019s retinue is attacking, while Robin Hood\u2019s retinue is the defender. If you\u2019re playing with different forces, each player rolls a d10. The winner can choose whether they want to play as the attacker or the defender. The attacker sets up in the red area, while the defender sets up in the blue area.",
+      "objectives": "The Sheriff\u2019s men are trying to burn down the village, while the outlaws are trying to defend it.",
+      "game_duration": "The game lasts five turns, with a sixth turn played if a unit has a chance of firing a building or extinguishing an already burning building.",
+      "victory_conditions": "The attacker calculates all the points values of the enemy Warriors their Retinue slays during the battle and gain 150 additional victory points for each building on fire at the end of the battle, doubling the total for any burning special buildings. The defender calculates all the points values of the enemy Warriors their Retinue slays during the battle, doubling the amount of any enemy Warriors that are Commanders. The victor gains 3 campaign victory points."
+    },
+    {
+      "name": "Cutthroats",
+      "description": "Merciless, ruthless and cruel, their name is simply derived from the fact that these are the types who cut the throats of others. Murderers, the meanest of the mean who look to come out on top in any and all situations they find themselves. They will always use underhand strategies applied in the most unpleasant and unfair way."
+    },
+    {
+      "name": "Bandits & Petty Criminals",
+      "description": "Many bandits came from the lowest level of the society, commoners, peasants, serfs or any other low-born. These are impoverished people who had a tough life, helping them decide to take a risk. Others just wanted to seek adventure, forbidden to leave their villages and their work, banditry is an easy way out."
+    },
+    {
+      "name": "Forest Slingers",
+      "description": "A sling was light to carry and cheap to produce with ammunition in the form of stones being readily available. A perfect weapon for an outlaw who is adept at using them to bring down game while hunting in the woods. It is said that slingers from Sherwood Forest were recruited by Edward I for his campaign against Scotland as they were the most skilled."
+    },
+    {
+      "name": "Outlaw Bowman",
+      "description": "A medieval archer, often described as a bowman, were a necessary part of every medieval army and special attention was paid to their training by their Lords. This training was extremely time consuming as it was necessary to become an expert marksman and because of this these lower-class men were required to practice archery by law. Now outside the law they continue with their practice as this very skill is instrumental in their survival."
+    },
+    {
+      "name": "Outlaw Leaders",
+      "description": "Popular stories from this period set the Outlaw Leader as the romantic hero who directly defied medieval law to serve the greater justice. The reality was the outlaws of medieval England, and Europe had much more in common with an organised crime boss than they did with the gallant heroes of legend. For The Barons' War game, we have focused on three types, the Outlawed Noble, the Outlaw Commander and the Deserter Kapitan, all of whom would be charismatic or wealthy enough to lead a retinue."
+    },
+    {
+      "name": "Fulk Fitz Warin",
+      "points": 49,
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Chivalry",
+        "Live by the sword",
+        "Grudge",
+        "Bishops Blessing"
+      ],
+      "equipment": [
+        {
+          "name": "Sword",
+          "effect": "PARRY - Gain an extra Defence dice against sword, mace or hand weapon"
+        },
+        {
+          "name": "Mail",
+          "effect": "-2 Movement (applied)"
+        }
+      ],
+      "options": [
+        {
+          "name": "Horse",
+          "cost_per_warrior": 3,
+          "effect": "If equipped with a horse increase by +3"
+        },
+        {
+          "name": "Battle Axe",
+          "cost_per_warrior": 0,
+          "effect": "Target receives -1 to Shield Rolls."
+        },
+        {
+          "name": "Mace",
+          "cost_per_warrior": -1,
+          "effect": "BLUNT TRAUMA - If the target takes casualties from a mace the target Group Movement is halved for the remainder of the round"
+        },
+        {
+          "name": "Falchion",
+          "cost_per_warrior": 1,
+          "effect": "SLASHING - Target suffers -1 to Defence rolls if unarmoured or wearing leather/padded"
+        },
+        {
+          "name": "Two Handed Weapon",
+          "cost_per_warrior": 0,
+          "effect": "-1 Attack SLOW - Will always act second if counter Attacked. Cannot equip shield with this weapon"
+        },
+        {
+          "name": "Leather/Padded",
+          "cost_per_warrior": 1,
+          "effect": "+1 Defence -1 Movement"
+        },
+        {
+          "name": "Small Shield",
+          "cost_per_warrior": 2,
+          "effect": "-1 Defence -1 Movement"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll"
+        },
+        {
+          "name": "Large Shield",
+          "cost_per_warrior": 5,
+          "effect": "7+ Shield roll"
+        },
+        {
+          "name": "Hunting Hound",
+          "cost_per_warrior": 2,
+          "effect": "The Noble gains an extra attack dice with an attack value of 6+"
+        }
+      ]
+    },
+    {
+      "name": "William of Cassingham",
+      "points": 48,
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Weapon Choice",
+        "Watchers in the Woods",
+        "Ambush"
+      ],
+      "equipment": [
+        {
+          "name": "Bow",
+          "effect": "LONG - upto 20\"/ SHORT upto 10\" range, can move 3\" and shoot at short range"
+        },
+        {
+          "name": "Sword",
+          "effect": "PARRY - Gain an extra Defence dice against sword, mace or hand weapon"
+        },
+        {
+          "name": "Leather/Padded",
+          "effect": "-1 Movement (applied)"
+        }
+      ],
+      "options": [
+        {
+          "name": "Mail",
+          "cost_per_warrior": 1,
+          "effect": "-1 Defence -1 Movement"
+        },
+        {
+          "name": "Medium Shield",
+          "cost_per_warrior": 3,
+          "effect": "8+ Shield roll"
+        }
+      ]
+    },
+    {
+      "name": "Feudalism",
+      "objective": "Capture and hold the most village tiles by the end of the campaign year."
+    },
+    {
+      "name": "Challenged Honour",
+      "objective": "Defeat the same enemy retinue commander in three consecutive battles by the end of the campaign year."
+    },
+    {
+      "name": "Debt Collecting",
+      "objective": "Successfully loot the most supplies from opponents over the campaign year."
+    },
+    {
+      "name": "Land Grab",
+      "objective": "End the campaign year with more tiles under control than any opponents."
+    },
+    {
+      "name": "Secure Resources",
+      "objective": "Capture and hold the most Forest and Rocky Outcrop tiles until the end of the campaign year."
+    },
+    {
+      "name": "Warrior Knights",
+      "objective": "Remove the greater total number of enemy Commanders from the campaign before the end of the campaign year."
+    },
+    {
+      "name": "Campaign Setup",
+      "description": "Players create a hex map using tiles to represent different terrains. Each player places their camp and claims adjacent tiles as their territory."
+    },
+    {
+      "name": "Campaign Duration",
+      "description": "The campaign lasts 12 rounds, each representing a month. Players move, expand territories, and battle each other."
+    },
+    {
+      "name": "Campaign Round",
+      "phases": [
+        {
+          "name": "Phase 1: Weather, Events & Movement",
+          "steps": [
+            "Roll for initiative (d10).",
+            "Determine the weather.",
+            "Resolve random events.",
+            "Consume supplies.",
+            "Move all banners."
+          ]
+        },
+        {
+          "name": "Phase 2: Battle",
+          "steps": [
+            "Challenge neighbors.",
+            "Resolve battles.",
+            "Determine victory or defeat.",
+            "Contest territory."
+          ]
+        },
+        {
+          "name": "Phase 3: Foraging, Intrigues & Housekeeping",
+          "steps": [
+            "Forage for supplies.",
+            "Resolve intrigues and plots.",
+            "Perform housekeeping."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Campaign Round",
+      "description": "With the housekeeping taken care of for the round, check to see if the season is at an end. If not, move on to a new Campaign Round. If the season is at an end, all players take part in Ending the Season."
+    },
+    {
+      "name": "Ending the Season",
+      "description": "At the end of each season all players involved in the conflict are obliged to send word back to court updating either John or Louis on how goes the campaign."
+    },
+    {
+      "name": "Ending the Campaign",
+      "description": "A campaign runs for twelve Campaign Rounds signifying one year. At the end of twelve rounds and four seasons, it is time to determine the winner based on your previously agreed campaign objectives."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Philippe Marc, High Sheriff of Nottinghamshire",
+      "points": 49,
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Dishonourable",
+        "Live by the sword",
+        "Cruelty"
+      ],
+      "special_rules": [
+        {
+          "name": "Covetous",
+          "effect": "Warriors in the Sheriff\u2019s retinue gain +1 to Defence Rolls but lose -1 on Attack Rolls when holding an objective."
+        },
+        {
+          "name": "Cruel Lord",
+          "effect": "If a green or irregular group fails a Morale check when receiving an order they take a casualty, if the order is successful they may reroll one Attack dice."
+        }
+      ]
+    },
+    {
+      "name": "Eustace de Lowdham, The Undersheriff",
+      "points": 49,
+      "abilities": [
+        "Commander",
+        "Inspire",
+        "Dishonourable",
+        "Live by the sword",
+        "Skilled Mounted Commander",
+        "King\u2019s Tax Collector"
+      ],
+      "special_rules": [
+        {
+          "name": "Eustace\u2019s Guard",
+          "effect": "Any warriors who serve Eustace gain +1 to Morale Checks when testing to receive an Order Action from him."
+        }
+      ]
+    },
+    {
+      "name": "Walter de Gray, Archbishop of York",
+      "points": 47,
+      "abilities": [
+        "Commander",
+        "Mounted Commander",
+        "Inspire",
+        "Devoted Faith"
+      ],
+      "special_rules": [
+        {
+          "name": "Priest",
+          "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale Dice for Morale Checks."
+        },
+        {
+          "name": "Pious Air",
+          "effect": "Any group within the Bishop's order range gain God Protects."
+        }
+      ]
+    },
+    {
+      "name": "Priest of Wimentun",
+      "points": 52,
+      "abilities": [
+        "Commander",
+        "Inspire"
+      ],
+      "special_rules": [
+        {
+          "name": "Priest",
+          "effect": "Any warrior(s) within order range of Command Group and including the Command Group ignore Morale Dice for Morale Checks."
+        },
+        {
+          "name": "Armour of Faith",
+          "effect": "+1 to all shield rolls."
+        },
+        {
+          "name": "Templar Secrets",
+          "effect": "The priest counts as an objective, if he is slain your opponent gains one victory point where applicable, if he remains alive you gain one victory point."
+        }
+      ]
+    }
+  ],
+  "command_group_upgrades": [
+    {
+      "name": "Bannerman Upgrade",
+      "points": 9,
+      "effect": "Increase order and inspire range to 12\u201d"
+    },
+    {
+      "name": "Musician Upgrade",
+      "points": 4,
+      "effect": "Any warrior(s) within order range of Command Group roll two dice for the Morale Check to follow out orders and choose highest."
+    },
+    {
+      "name": "Priest Upgrade",
+      "points": 5,
+      "effect": "Any warrior(s) within order range of Command Group ignore Morale Dice for Morale Checks."
+    }
+  ],
+  "equipment_options": [
+    {
+      "name": "Mace",
+      "cost_per_warrior": -1,
+      "modifier": "Equipped",
+      "effect": "BLUNT TRAUMA - If the target takes casualties from a mace the target Group Movement is halved for the remainder of the round."
+    },
+    {
+      "name": "Falchion",
+      "cost_per_warrior": -1,
+      "modifier": "Equipped",
+      "effect": "SLASHING - Target suffers -1 to Defence rolls if unarmoured or wearing leather/padded."
+    },
+    {
+      "name": "Two Handed Weapon",
+      "cost_per_warrior": 0,
+      "modifier": "-1 Attack",
+      "effect": "SLOW - Will always act second if counter Attacked. Cannot equip shield with this weapon. Cannot use mounted."
+    },
+    {
+      "name": "Leather/Padded",
+      "cost_per_warrior": -1,
+      "modifier": "+1 Defence",
+      "effect": "-1 Movement"
+    },
+    {
+      "name": "Small Shield",
+      "cost_per_warrior": 2,
+      "modifier": "Equipped",
+      "effect": "9+ Shield roll"
+    },
+    {
+      "name": "Medium Shield",
+      "cost_per_warrior": 3,
+      "modifier": "Equipped",
+      "effect": "8+ Shield roll"
+    },
+    {
+      "name": "Large Shield",
+      "cost_per_warrior": 5,
+      "modifier": "Equipped",
+      "effect": "7+ Shield roll"
+    },
+    {
+      "name": "Horse",
+      "cost_per_warrior": 3,
+      "modifier": "+3 Movement",
+      "effect": "N/A"
+    },
+    {
+      "name": "Barded Horse",
+      "cost_per_warrior": 5,
+      "modifier": "-1 Defence",
+      "effect": "+3 Movement"
+    },
+    {
+      "name": "Barded Warhorse",
+      "cost_per_warrior": 16,
+      "modifier": "+1 Attack dice per warrior, -1 Defence",
+      "effect": "+2 Movement, requires 2 damage to cause a casualty when rider is mounted on Warhorse. When charging subject to Over Charge (see rulebook)"
+    },
+    {
+      "name": "Sword",
+      "cost_per_warrior": "Equipped",
+      "modifier": "Equipped",
+      "effect": "PARRY - Gain an extra Defence dice against sword, mace or hand weapon"
+    },
+    {
+      "name": "Mail",
+      "cost_per_warrior": "Equipped",
+      "modifier": "Equipped",
+      "effect": "-2 Movement"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Bow",
+      "cost_per_warrior": -2,
+      "modifier": "+2 Attack at long range, +1 Attack at short range",
+      "effect": "LONG - upto 20\"/ SHORT upto 10\" range, can move 3\" and shoot at short range",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Battle Axe",
+      "cost_per_warrior": 0,
+      "modifier": "Target receives -1 to Shield Rolls.",
+      "effect": "+0",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Falchion",
+      "cost_per_warrior": -1,
+      "modifier": "SLASHING",
+      "effect": "Target suffers -1 to Defence rolls if unarmoured or wearing leather/padded",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Two Handed Weapon",
+      "cost_per_warrior": 0,
+      "modifier": "-1 Attack",
+      "effect": "SLOW - Will always act second if counter Attacked. Cannot equip shield with this weapon",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Spear",
+      "cost_per_warrior": -3,
+      "modifier": "REACH",
+      "effect": "Cannot counter Attack against spear/bill unless armed with spear/bill",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Mail",
+      "cost_per_warrior": 1,
+      "modifier": "-1 Defence",
+      "effect": "-1 Movement",
+      "required_experience": "Regular +"
+    },
+    {
+      "name": "Small Shield",
+      "cost_per_warrior": 2,
+      "modifier": "9+ Shield roll",
+      "effect": "",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Medium Shield",
+      "cost_per_warrior": 3,
+      "modifier": "8+ Shield roll",
+      "effect": "",
+      "required_experience": "ALL"
+    },
+    {
+      "name": "Large Shield",
+      "cost_per_warrior": 5,
+      "modifier": "7+ Shield roll",
+      "effect": "",
+      "required_experience": "ALL"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Cornered Dogs",
+      "description": "If a group of outlaws become \u2018trapped\u2019 after melee combat, they can make a free attack to fight their way out before losing the extra casualty.",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Crack Shot",
+      "description": "Reroll all failed Attack Dice from a ranged attack action once per game",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Dagger in the Dark",
+      "description": "If an enemy group that was out of Line of Sight ends a Movement Action in Line of Sight, the Assassin\u2019s Command Group may immediately make a Combat Action and engage the group in Melee Combat.",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Dirty Fighters",
+      "description": "Block Attack Rolls of 0 with any successful Defence Rolls, for every Attack blocked in this way they make an immediate free Attack Roll back.",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Every Bloody Sunday",
+      "description": "Can move and fire even at long range.",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Followed into Exile",
+      "description": "May take knights or sergeants as a single Command Group, they become Outlawed Knights or Outlawed Sergeants.",
+      "ability_type": "PASSIVE",
+      "points": 2
+    },
+    {
+      "name": "Hunting Hound",
+      "description": "The Noble gains an extra Attack Dice with an attack value of 6+ in Melee Combat.",
+      "ability_type": "ACTION",
+      "points": 2
+    },
+    {
+      "name": "Live for the Hunt",
+      "description": "Forest slingers suffer no penalty for shots that would be hindered by terrain or friendly models.",
+      "ability_type": "ACTION",
+      "points": 1
+    },
+    {
+      "name": "Masters of the Wild",
+      "description": "Not affected by difficult terrain. Always gain heavy cover bonus when in any area terrain that would give cover.",
+      "ability_type": "PASSIVE",
+      "points": 2
+    },
+    {
+      "name": "Melt Away",
+      "description": "If there is a piece of area terrain within movement range of this group, they will automatically become Broken and flee towards it if they lose combat, follow normal fleeing rules.",
+      "ability_type": "PASSIVE",
+      "points": 1
+    },
+    {
+      "name": "Poacher",
+      "description": "The Command Group may move through difficult terrain with no penalty and gain heavy cover whilst in difficult terrain.",
+      "ability_type": "PASSIVE",
+      "points": 1
+    },
+    {
+      "name": "Signallers",
+      "description": "May pass on a commander\u2019s order to another group within 9\", this can chain along groups containing Signallers as long as each signaller is within 9\u201d of another.",
+      "ability_type": "PASSIVE",
+      "points": 1
+    },
+    {
+      "name": "Watchers in the Woods",
+      "description": "May choose to sacrifice the action of any Group in area terrain to gain initiative this round",
+      "ability_type": "PASSIVE",
+      "points": 2
+    },
+    {
+      "name": "Weapon Choice",
+      "description": "May fight with ranged or melee, must use the chosen of weapon for the remainder of the round. Pay the cost for both weapons.",
+      "ability_type": "PASSIVE",
+      "points": 2
+    }
+  ],
+  "campaign_rules": [
+    {
+      "name": "Campaign Setup",
+      "description": "Players link battles to tell a commander's story, simulating a feud for dominance in a region."
+    },
+    {
+      "name": "Campaign Objectives",
+      "description": "Players roll a d6 to determine campaign objectives, such as capturing village tiles or defeating enemy commanders."
+    },
+    {
+      "name": "Creating Commanders",
+      "description": "Each player starts with three Commanders, each leading a 'Banner'. Commanders have a Chivalry Rating and other attributes."
+    },
+    {
+      "name": "Chivalry Rating",
+      "description": "Represents honour and renown. Affects battle initiative and can lead to becoming an outlaw if too low."
+    },
+    {
+      "name": "Royalist or Rebel",
+      "description": "Players choose or roll for allegiance, affecting morale bonuses and campaign dynamics."
+    },
+    {
+      "name": "Supplies",
+      "description": "Banners use supplies each round. Supplies are generated by controlled hexes and affect campaign movement."
+    },
+    {
+      "name": "Victory or Defeat",
+      "description": "Players record wins and losses, affecting campaign progression and Commander status."
+    },
+    {
+      "name": "Campaign Map",
+      "description": "Uses a hex map system. Players cooperatively build or randomly generate the map, determining starting territories."
+    }
+  ],
+  "titles_rewards_table": [
+    {
+      "roll": 1,
+      "name": "Count of\u2026",
+      "effect": "+2 Chivalry Rating. You now roll 3d6 on the Intrigue table and pick the highest two results."
+    },
+    {
+      "roll": 2,
+      "name": "Duke of\u2026",
+      "effect": "+2 to Chivalry Rating. Roll 2 dice on the Captured table and pick the highest result to reflect their status."
+    },
+    {
+      "roll": 3,
+      "name": "Household Knight of the King",
+      "effect": "+2 to Chivalry Rating. Lose this title if your Retinue Leader\u2019s Chivalry is reduced to 5 or less."
+    },
+    {
+      "roll": 4,
+      "name": "Royal Commander",
+      "effect": "+1 to all initiative rolls during a Battle."
+    },
+    {
+      "roll": 5,
+      "name": "Sheriff of \u2026",
+      "effect": "When rolling for movement within their domains, which is territory the player owns, roll 2d6 and pick the highest result."
+    },
+    {
+      "roll": 6,
+      "name": "Lord of\u2026",
+      "effect": "Choose an uncontested village on the map as this Lord's new fief. Double the supplies it produces while the player controls it. The Commander with this title loses -3 Chivalry Rating if the village is lost."
+    },
+    {
+      "roll": 7,
+      "name": "Constable of the Tower of London",
+      "effect": "1d3 additional supply for each of their banners per campaign season."
+    },
+    {
+      "roll": 8,
+      "name": "Baron of\u2026",
+      "effect": "+1 to Chivalry Rating."
+    },
+    {
+      "roll": 9,
+      "name": "Bishop of\u2026",
+      "effect": "+2 to Chivalry Rating. Gain the Divine Intervention special rule at no additional cost."
+    },
+    {
+      "roll": 10,
+      "name": "Earl of\u2026",
+      "effect": "+3 to Chivalry Rating. Gain the For the Realm special rule at no additional cost."
+    }
+  ],
+  "factions": []
+}
