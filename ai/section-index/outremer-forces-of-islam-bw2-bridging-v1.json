@@ -1,0 +1,72 @@
+{
+  "module_id": "outremer-forces-of-islam-bw2-bridging-v1",
+  "module_title": "Outremer Forces of Islam (BW2 Bridging v1)",
+  "source": {
+    "path": "outremer-forces-of-islam-bw2-bridging-v1/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "forces",
+      "title": "Forces",
+      "json_pointer": "/forces",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "forces.name",
+          "title": "Name",
+          "json_pointer": "/forces/name",
+          "content_type": "subsection"
+        },
+        {
+          "id": "forces.abilities",
+          "title": "Abilities",
+          "json_pointer": "/forces/abilities",
+          "content_type": "abilities"
+        },
+        {
+          "id": "forces.askars",
+          "title": "Askars",
+          "json_pointer": "/forces/askars",
+          "content_type": "subsection"
+        },
+        {
+          "id": "forces.units",
+          "title": "Units",
+          "json_pointer": "/forces/units",
+          "content_type": "subsection"
+        },
+        {
+          "id": "forces.weapons",
+          "title": "Weapons",
+          "json_pointer": "/forces/weapons",
+          "content_type": "weapons"
+        },
+        {
+          "id": "forces.armour",
+          "title": "Armour",
+          "json_pointer": "/forces/armour",
+          "content_type": "subsection"
+        },
+        {
+          "id": "forces.mounts",
+          "title": "Mounts",
+          "json_pointer": "/forces/mounts",
+          "content_type": "mounts"
+        },
+        {
+          "id": "forces.commandGroupUpgrades",
+          "title": "Command Group Upgrades",
+          "json_pointer": "/forces/commandGroupUpgrades",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "module_id": "the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05",
+  "module_title": "The Barons' War 2nd Edition Rulebook (OEF 2025-05)",
+  "source": {
+    "path": "the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "core_rules",
+      "title": "Core Rules",
+      "json_pointer": "/core_rules",
+      "content_type": "core_rules",
+      "subsections": [
+        {
+          "id": "core_rules.introduction",
+          "title": "Introduction",
+          "json_pointer": "/core_rules/introduction",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.key_concepts",
+          "title": "Key Concepts",
+          "json_pointer": "/core_rules/key_concepts",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.roll_off",
+          "title": "Roll Off",
+          "json_pointer": "/core_rules/roll_off",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.gamesmanship",
+          "title": "Gamesmanship",
+          "json_pointer": "/core_rules/gamesmanship",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.warriors_characteristics",
+          "title": "Warriors Characteristics",
+          "json_pointer": "/core_rules/warriors_characteristics",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.experience_levels",
+          "title": "Experience Levels",
+          "json_pointer": "/core_rules/experience_levels",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.warrior_profiles",
+          "title": "Warrior Profiles",
+          "json_pointer": "/core_rules/warrior_profiles",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.groups",
+          "title": "Groups",
+          "json_pointer": "/core_rules/groups",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.commanders",
+          "title": "Commanders",
+          "json_pointer": "/core_rules/commanders",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.game_round",
+          "title": "Game Round",
+          "json_pointer": "/core_rules/game_round",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.activations",
+          "title": "Activations",
+          "json_pointer": "/core_rules/activations",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.combat_actions_reactions",
+          "title": "Combat Actions Reactions",
+          "json_pointer": "/core_rules/combat_actions_reactions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.compulsory_actions",
+          "title": "Compulsory Actions",
+          "json_pointer": "/core_rules/compulsory_actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.actions_per_round",
+          "title": "Actions Per Round",
+          "json_pointer": "/core_rules/actions_per_round",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.bonus_actions_reactions",
+          "title": "Bonus Actions Reactions",
+          "json_pointer": "/core_rules/bonus_actions_reactions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.movement_actions",
+          "title": "Movement Actions",
+          "json_pointer": "/core_rules/movement_actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.group_coherency",
+          "title": "Group Coherency",
+          "json_pointer": "/core_rules/group_coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.restrictions_on_movement",
+          "title": "Restrictions On Movement",
+          "json_pointer": "/core_rules/restrictions_on_movement",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.line_of_sight",
+          "title": "Line of Sight",
+          "json_pointer": "/core_rules/line_of_sight",
+          "content_type": "line_of_sight"
+        },
+        {
+          "id": "core_rules.combat_actions",
+          "title": "Combat Actions",
+          "json_pointer": "/core_rules/combat_actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.ranged_combat",
+          "title": "Ranged Combat",
+          "json_pointer": "/core_rules/ranged_combat",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.melee_combat",
+          "title": "Melee Combat",
+          "json_pointer": "/core_rules/melee_combat",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.defend_action_reaction",
+          "title": "Defend Action Reaction",
+          "json_pointer": "/core_rules/defend_action_reaction",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.morale",
+          "title": "Morale",
+          "json_pointer": "/core_rules/morale",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.rallying",
+          "title": "Rallying",
+          "json_pointer": "/core_rules/rallying",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.weary",
+          "title": "Weary",
+          "json_pointer": "/core_rules/weary",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.retinue_leader",
+          "title": "Retinue Leader",
+          "json_pointer": "/core_rules/retinue_leader",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.command_range",
+          "title": "Command Range",
+          "json_pointer": "/core_rules/command_range",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.multiple_actions",
+          "title": "Multiple Actions",
+          "json_pointer": "/core_rules/multiple_actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.command_actions",
+          "title": "Command Actions",
+          "json_pointer": "/core_rules/command_actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.command_groups",
+          "title": "Command Groups",
+          "json_pointer": "/core_rules/command_groups",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.combat",
+          "title": "Combat",
+          "json_pointer": "/core_rules/combat",
+          "content_type": "combat"
+        },
+        {
+          "id": "core_rules.compulsory_activation_phase",
+          "title": "Compulsory Activation Phase",
+          "json_pointer": "/core_rules/compulsory_activation_phase",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.cover",
+          "title": "Cover",
+          "json_pointer": "/core_rules/cover",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.defence_dice",
+          "title": "Defence Dice",
+          "json_pointer": "/core_rules/defence_dice",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.defence_roll",
+          "title": "Defence Roll",
+          "json_pointer": "/core_rules/defence_roll",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.defender",
+          "title": "Defender",
+          "json_pointer": "/core_rules/defender",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.defensive_position",
+          "title": "Defensive Position",
+          "json_pointer": "/core_rules/defensive_position",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.dice_rolls",
+          "title": "Dice Rolls",
+          "json_pointer": "/core_rules/dice_rolls",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.experience",
+          "title": "Experience",
+          "json_pointer": "/core_rules/experience",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.failed_charge",
+          "title": "Failed Charge",
+          "json_pointer": "/core_rules/failed_charge",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.forced_back",
+          "title": "Forced Back",
+          "json_pointer": "/core_rules/forced_back",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.higher_ground",
+          "title": "Higher Ground",
+          "json_pointer": "/core_rules/higher_ground",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.hindered",
+          "title": "Hindered",
+          "json_pointer": "/core_rules/hindered",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.housekeeping",
+          "title": "Housekeeping",
+          "json_pointer": "/core_rules/housekeeping",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.morale_checks",
+          "title": "Morale Checks",
+          "json_pointer": "/core_rules/morale_checks",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.morale_melee_modifier",
+          "title": "Morale Melee Modifier",
+          "json_pointer": "/core_rules/morale_melee_modifier",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.morale_penalties",
+          "title": "Morale Penalties",
+          "json_pointer": "/core_rules/morale_penalties",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.mount",
+          "title": "Mount",
+          "json_pointer": "/core_rules/mount",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.move_action",
+          "title": "Move Action",
+          "json_pointer": "/core_rules/move_action",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.movement",
+          "title": "Movement",
+          "json_pointer": "/core_rules/movement",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.new_activations_phase",
+          "title": "New Activations Phase",
+          "json_pointer": "/core_rules/new_activations_phase",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.order_checks",
+          "title": "Order Checks",
+          "json_pointer": "/core_rules/order_checks",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.points_value",
+          "title": "Points Value",
+          "json_pointer": "/core_rules/points_value",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.rally",
+          "title": "Rally",
+          "json_pointer": "/core_rules/rally",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.reaction",
+          "title": "Reaction",
+          "json_pointer": "/core_rules/reaction",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.regroup",
+          "title": "Regroup",
+          "json_pointer": "/core_rules/regroup",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.retinue",
+          "title": "Retinue",
+          "json_pointer": "/core_rules/retinue",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.run_action",
+          "title": "Run Action",
+          "json_pointer": "/core_rules/run_action",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.shield_roll",
+          "title": "Shield Roll",
+          "json_pointer": "/core_rules/shield_roll",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.sudden_death",
+          "title": "Sudden Death",
+          "json_pointer": "/core_rules/sudden_death",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.tabletop",
+          "title": "Tabletop",
+          "json_pointer": "/core_rules/tabletop",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.terrain",
+          "title": "Terrain",
+          "json_pointer": "/core_rules/terrain",
+          "content_type": "terrain"
+        },
+        {
+          "id": "core_rules.trait",
+          "title": "Trait",
+          "json_pointer": "/core_rules/trait",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.warrior",
+          "title": "Warrior",
+          "json_pointer": "/core_rules/warrior",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.warrior_profile",
+          "title": "Warrior Profile",
+          "json_pointer": "/core_rules/warrior_profile",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.combat_reactions",
+          "title": "Combat Reactions",
+          "json_pointer": "/core_rules/combat_reactions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "core_rules.when_to_test_morale",
+          "title": "When To Test Morale",
+          "json_pointer": "/core_rules/when_to_test_morale",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Rules",
+      "json_pointer": "/rules",
+      "content_type": "rules"
+    },
+    {
+      "id": "combat",
+      "title": "Combat",
+      "json_pointer": "/combat",
+      "content_type": "combat",
+      "subsections": [
+        {
+          "id": "combat.remove_casualties",
+          "title": "Remove Casualties",
+          "json_pointer": "/combat/remove_casualties",
+          "content_type": "subsection"
+        },
+        {
+          "id": "combat.bonus_attacks",
+          "title": "Bonus Attacks",
+          "json_pointer": "/combat/bonus_attacks",
+          "content_type": "subsection"
+        },
+        {
+          "id": "combat.defender_reaction",
+          "title": "Defender Reaction",
+          "json_pointer": "/combat/defender_reaction",
+          "content_type": "subsection"
+        },
+        {
+          "id": "combat.combat_resolution",
+          "title": "Combat Resolution",
+          "json_pointer": "/combat/combat_resolution",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "json_pointer": "/equipment",
+      "content_type": "equipment"
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "json_pointer": "/abilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "terrain",
+      "title": "Terrain",
+      "json_pointer": "/terrain",
+      "content_type": "terrain",
+      "subsections": [
+        {
+          "id": "terrain.buildings",
+          "title": "Buildings",
+          "json_pointer": "/terrain/buildings",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.core_terrain",
+          "title": "Core Terrain",
+          "json_pointer": "/terrain/core_terrain",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.waterway_terrain",
+          "title": "Waterway Terrain",
+          "json_pointer": "/terrain/waterway_terrain",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.settlement_terrain",
+          "title": "Settlement Terrain",
+          "json_pointer": "/terrain/settlement_terrain",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.terrain_special_rules",
+          "title": "Terrain Special Rules",
+          "json_pointer": "/terrain/terrain_special_rules",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.terrain_types",
+          "title": "Terrain Types",
+          "json_pointer": "/terrain/terrain_types",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain.terrain_effects",
+          "title": "Terrain Effects",
+          "json_pointer": "/terrain/terrain_effects",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "terrain_rules",
+      "title": "Terrain Rules",
+      "json_pointer": "/terrain_rules",
+      "content_type": "terrain_rules",
+      "subsections": [
+        {
+          "id": "terrain_rules.obstacles",
+          "title": "Obstacles",
+          "json_pointer": "/terrain_rules/obstacles",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.steps_and_stairs",
+          "title": "Steps And Stairs",
+          "json_pointer": "/terrain_rules/steps_and_stairs",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.ladders",
+          "title": "Ladders",
+          "json_pointer": "/terrain_rules/ladders",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.climbing",
+          "title": "Climbing",
+          "json_pointer": "/terrain_rules/climbing",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.falling",
+          "title": "Falling",
+          "json_pointer": "/terrain_rules/falling",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.terrain_and_los",
+          "title": "Terrain And Los",
+          "json_pointer": "/terrain_rules/terrain_and_los",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.higher_ground",
+          "title": "Higher Ground",
+          "json_pointer": "/terrain_rules/higher_ground",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.cover",
+          "title": "Cover",
+          "json_pointer": "/terrain_rules/cover",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.defensive_positions",
+          "title": "Defensive Positions",
+          "json_pointer": "/terrain_rules/defensive_positions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "terrain_rules.buildings",
+          "title": "Buildings",
+          "json_pointer": "/terrain_rules/buildings",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "objectives",
+      "title": "Objectives",
+      "json_pointer": "/objectives",
+      "content_type": "objectives",
+      "subsections": [
+        {
+          "id": "objectives.base_size",
+          "title": "Base Size",
+          "json_pointer": "/objectives/base_size",
+          "content_type": "subsection"
+        },
+        {
+          "id": "objectives.line_of_sight",
+          "title": "Line of Sight",
+          "json_pointer": "/objectives/line_of_sight",
+          "content_type": "line_of_sight"
+        },
+        {
+          "id": "objectives.distance_measurement",
+          "title": "Distance Measurement",
+          "json_pointer": "/objectives/distance_measurement",
+          "content_type": "subsection"
+        },
+        {
+          "id": "objectives.deployment_distance",
+          "title": "Deployment Distance",
+          "json_pointer": "/objectives/deployment_distance",
+          "content_type": "subsection"
+        },
+        {
+          "id": "objectives.control",
+          "title": "Control",
+          "json_pointer": "/objectives/control",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment",
+      "json_pointer": "/deployment",
+      "content_type": "deployment",
+      "subsections": [
+        {
+          "id": "deployment.setup",
+          "title": "Setup",
+          "json_pointer": "/deployment/setup",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.area",
+          "title": "Area",
+          "json_pointer": "/deployment/area",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.order",
+          "title": "Order",
+          "json_pointer": "/deployment/order",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.coherency",
+          "title": "Coherency",
+          "json_pointer": "/deployment/coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.restrictions",
+          "title": "Restrictions",
+          "json_pointer": "/deployment/restrictions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.additional_groups",
+          "title": "Additional Groups",
+          "json_pointer": "/deployment/additional_groups",
+          "content_type": "subsection"
+        },
+        {
+          "id": "deployment.table_edge",
+          "title": "Table Edge",
+          "json_pointer": "/deployment/table_edge",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "reserves",
+      "title": "Reserves",
+      "json_pointer": "/reserves",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "reserves.definition",
+          "title": "Definition",
+          "json_pointer": "/reserves/definition",
+          "content_type": "subsection"
+        },
+        {
+          "id": "reserves.availability",
+          "title": "Availability",
+          "json_pointer": "/reserves/availability",
+          "content_type": "subsection"
+        },
+        {
+          "id": "reserves.effect",
+          "title": "Effect",
+          "json_pointer": "/reserves/effect",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "game_flow",
+      "title": "Game Flow",
+      "json_pointer": "/game_flow",
+      "content_type": "game_flow",
+      "subsections": [
+        {
+          "id": "game_flow.start",
+          "title": "Start",
+          "json_pointer": "/game_flow/start",
+          "content_type": "subsection"
+        },
+        {
+          "id": "game_flow.end",
+          "title": "End",
+          "json_pointer": "/game_flow/end",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "victory_points",
+      "title": "Victory Points",
+      "json_pointer": "/victory_points",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "victory_points.calculation",
+          "title": "Calculation",
+          "json_pointer": "/victory_points/calculation",
+          "content_type": "subsection"
+        },
+        {
+          "id": "victory_points.group_upgrades",
+          "title": "Group Upgrades",
+          "json_pointer": "/victory_points/group_upgrades",
+          "content_type": "subsection"
+        },
+        {
+          "id": "victory_points.command_group_upgrades",
+          "title": "Command Group Upgrades",
+          "json_pointer": "/victory_points/command_group_upgrades",
+          "content_type": "subsection"
+        },
+        {
+          "id": "victory_points.bonus_points",
+          "title": "Bonus Points",
+          "json_pointer": "/victory_points/bonus_points",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenarios",
+      "json_pointer": "/scenarios",
+      "content_type": "scenarios"
+    },
+    {
+      "id": "retinue_selection",
+      "title": "Retinue Selection",
+      "json_pointer": "/retinue_selection",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "retinue_selection.building_a_group",
+          "title": "Building A Group",
+          "json_pointer": "/retinue_selection/building_a_group",
+          "content_type": "subsection"
+        },
+        {
+          "id": "retinue_selection.building_a_command_group",
+          "title": "Building A Command Group",
+          "json_pointer": "/retinue_selection/building_a_command_group",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "title": "Content",
+      "json_pointer": "/content",
+      "content_type": "content"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapons",
+      "json_pointer": "/weapons",
+      "content_type": "weapons",
+      "subsections": [
+        {
+          "id": "weapons.melee",
+          "title": "Melee",
+          "json_pointer": "/weapons/melee",
+          "content_type": "subsection"
+        },
+        {
+          "id": "weapons.missile",
+          "title": "Missile",
+          "json_pointer": "/weapons/missile",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "armour_and_shields",
+      "title": "Armour & Shields",
+      "json_pointer": "/armour_and_shields",
+      "content_type": "section"
+    },
+    {
+      "id": "mounts",
+      "title": "Mounts",
+      "json_pointer": "/mounts",
+      "content_type": "mounts"
+    },
+    {
+      "id": "command_group_upgrades",
+      "title": "Command Group Upgrades",
+      "json_pointer": "/command_group_upgrades",
+      "content_type": "section"
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "json_pointer": "/glossary",
+      "content_type": "glossary",
+      "subsections": [
+        {
+          "id": "glossary.Abilities",
+          "title": "Abilities",
+          "json_pointer": "/glossary/Abilities",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Actions",
+          "title": "Actions",
+          "json_pointer": "/glossary/Actions",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Action Tokens",
+          "title": "Action Tokens",
+          "json_pointer": "/glossary/Action Tokens",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Attack Dice",
+          "title": "Attack Dice",
+          "json_pointer": "/glossary/Attack Dice",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Attack Roll",
+          "title": "Attack Roll",
+          "json_pointer": "/glossary/Attack Roll",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Attacker",
+          "title": "Attacker",
+          "json_pointer": "/glossary/Attacker",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Broken",
+          "title": "Broken",
+          "json_pointer": "/glossary/Broken",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Casualties",
+          "title": "Casualties",
+          "json_pointer": "/glossary/Casualties",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Charge",
+          "title": "Charge",
+          "json_pointer": "/glossary/Charge",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Coherency",
+          "title": "Coherency",
+          "json_pointer": "/glossary/Coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Combat Action / Reaction",
+          "title": "Combat Action / Reaction",
+          "json_pointer": "/glossary/Combat Action / Reaction",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Command Action",
+          "title": "Command Action",
+          "json_pointer": "/glossary/Command Action",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Commander",
+          "title": "Commander",
+          "json_pointer": "/glossary/Commander",
+          "content_type": "subsection"
+        },
+        {
+          "id": "glossary.Compulsory Action",
+          "title": "Compulsory Action",
+          "json_pointer": "/glossary/Compulsory Action",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "actions_and_reactions",
+      "title": "Actions & Reactions",
+      "json_pointer": "/actions_and_reactions",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "actions_and_reactions.move",
+          "title": "Move",
+          "json_pointer": "/actions_and_reactions/move",
+          "content_type": "subsection"
+        },
+        {
+          "id": "actions_and_reactions.run",
+          "title": "Run",
+          "json_pointer": "/actions_and_reactions/run",
+          "content_type": "subsection"
+        },
+        {
+          "id": "actions_and_reactions.combat",
+          "title": "Combat",
+          "json_pointer": "/actions_and_reactions/combat",
+          "content_type": "combat"
+        },
+        {
+          "id": "actions_and_reactions.defend",
+          "title": "Defend",
+          "json_pointer": "/actions_and_reactions/defend",
+          "content_type": "subsection"
+        },
+        {
+          "id": "actions_and_reactions.command",
+          "title": "Command",
+          "json_pointer": "/actions_and_reactions/command",
+          "content_type": "subsection"
+        },
+        {
+          "id": "actions_and_reactions.special",
+          "title": "Special",
+          "json_pointer": "/actions_and_reactions/special",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "compulsory_actions",
+      "title": "Compulsory Actions",
+      "json_pointer": "/compulsory_actions",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "compulsory_actions.broken",
+          "title": "Broken",
+          "json_pointer": "/compulsory_actions/broken",
+          "content_type": "subsection"
+        },
+        {
+          "id": "compulsory_actions.out_of_coherency",
+          "title": "Out Of Coherency",
+          "json_pointer": "/compulsory_actions/out_of_coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "compulsory_actions.specific_abilities",
+          "title": "Specific Abilities",
+          "json_pointer": "/compulsory_actions/specific_abilities",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "coherency",
+      "title": "Coherency",
+      "json_pointer": "/coherency",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "coherency.coherency",
+          "title": "Coherency",
+          "json_pointer": "/coherency/coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "coherency.determine_coherency",
+          "title": "Determine Coherency",
+          "json_pointer": "/coherency/determine_coherency",
+          "content_type": "subsection"
+        },
+        {
+          "id": "coherency.coherency_distance",
+          "title": "Coherency Distance",
+          "json_pointer": "/coherency/coherency_distance",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "line_of_sight",
+      "title": "Line of Sight",
+      "json_pointer": "/line_of_sight",
+      "content_type": "line_of_sight",
+      "subsections": [
+        {
+          "id": "line_of_sight.drawing_los",
+          "title": "Drawing Los",
+          "json_pointer": "/line_of_sight/drawing_los",
+          "content_type": "subsection"
+        },
+        {
+          "id": "line_of_sight.clear_los",
+          "title": "Clear Los",
+          "json_pointer": "/line_of_sight/clear_los",
+          "content_type": "subsection"
+        },
+        {
+          "id": "line_of_sight.terrain_in_path",
+          "title": "Terrain In Path",
+          "json_pointer": "/line_of_sight/terrain_in_path",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}

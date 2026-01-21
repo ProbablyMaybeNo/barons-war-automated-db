@@ -1,0 +1,70 @@
+{
+  "module_id": "barons-war-death-and-taxes",
+  "module_title": "Barons War: Death and Taxes",
+  "source": {
+    "path": "barons-war-death-and-taxes/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "optional_rules",
+      "title": "Optional Rules",
+      "json_pointer": "/optional_rules",
+      "content_type": "section"
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenarios",
+      "json_pointer": "/scenarios",
+      "content_type": "scenarios"
+    },
+    {
+      "id": "characters",
+      "title": "Characters",
+      "json_pointer": "/characters",
+      "content_type": "section"
+    },
+    {
+      "id": "command_group_upgrades",
+      "title": "Command Group Upgrades",
+      "json_pointer": "/command_group_upgrades",
+      "content_type": "section"
+    },
+    {
+      "id": "equipment_options",
+      "title": "Equipment Options",
+      "json_pointer": "/equipment_options",
+      "content_type": "section"
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "json_pointer": "/equipment",
+      "content_type": "equipment"
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "json_pointer": "/abilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "campaign_rules",
+      "title": "Campaign Rules",
+      "json_pointer": "/campaign_rules",
+      "content_type": "campaign_rules"
+    },
+    {
+      "id": "titles_rewards_table",
+      "title": "Titles & Rewards Table",
+      "json_pointer": "/titles_rewards_table",
+      "content_type": "section"
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}

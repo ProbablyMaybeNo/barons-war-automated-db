@@ -78,3 +78,12 @@ Each game is represented by **one JSON file**:
 - [Outremer-Settled-Crusading-Franks-BW2-bridging-v1](./outremer-settled-crusading-franks-bw2-bridging-v1/rules.json)
 - [The Barons' War Welsh Supplement](./the-barons-war-welsh-supplement/rules.json)
 - [The_Barons'_War_Andy_Hobday_Second_Edition_Rulebook_OEF,_2025_05](./the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05/rules.json)
+
+## AI Integration Index
+
+For conversational UI integrations, use the AI index in `./ai`:
+
+- `ai/catalog.json` lists modules and their section index files.
+- `ai/section-index/*.json` maps stable section titles to JSON pointers in each `rules.json`.
+- `ai/section-templates.json` defines canonical section labels to keep multiple repositories aligned.
+- `ai/schema/*.schema.json` provides validation schemas.

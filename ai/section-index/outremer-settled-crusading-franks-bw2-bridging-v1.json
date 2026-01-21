@@ -1,0 +1,34 @@
+{
+  "module_id": "outremer-settled-crusading-franks-bw2-bridging-v1",
+  "module_title": "Outremer Settled Crusading Franks (BW2 Bridging v1)",
+  "source": {
+    "path": "outremer-settled-crusading-franks-bw2-bridging-v1/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "faction",
+      "title": "Faction",
+      "json_pointer": "/faction",
+      "content_type": "faction"
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "json_pointer": "/abilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapons",
+      "json_pointer": "/weapons",
+      "content_type": "weapons"
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}

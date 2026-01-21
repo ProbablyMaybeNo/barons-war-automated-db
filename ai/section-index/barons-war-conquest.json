@@ -1,0 +1,60 @@
+{
+  "module_id": "barons-war-conquest",
+  "module_title": "Barons War: Conquest",
+  "source": {
+    "path": "barons-war-conquest/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "campaign_rules",
+      "title": "Campaign Rules",
+      "json_pointer": "/campaign_rules",
+      "content_type": "campaign_rules",
+      "subsections": [
+        {
+          "id": "campaign_rules.command_group_upgrades",
+          "title": "Command Group Upgrades",
+          "json_pointer": "/campaign_rules/command_group_upgrades",
+          "content_type": "subsection"
+        },
+        {
+          "id": "campaign_rules.commanders",
+          "title": "Commanders",
+          "json_pointer": "/campaign_rules/commanders",
+          "content_type": "subsection"
+        },
+        {
+          "id": "campaign_rules.character_creator",
+          "title": "Character Creator",
+          "json_pointer": "/campaign_rules/character_creator",
+          "content_type": "subsection"
+        },
+        {
+          "id": "campaign_rules.champions",
+          "title": "Champions",
+          "json_pointer": "/campaign_rules/champions",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenarios",
+      "json_pointer": "/scenarios",
+      "content_type": "scenarios"
+    },
+    {
+      "id": "forces",
+      "title": "Forces",
+      "json_pointer": "/forces",
+      "content_type": "section"
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}

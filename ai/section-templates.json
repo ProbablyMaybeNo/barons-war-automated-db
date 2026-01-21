@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "description": "Canonical section templates for AI retrieval. Use these IDs and titles when generating section indexes.",
+  "templates": [
+    {
+      "id": "core_rules",
+      "title": "Core Rules",
+      "description": "Primary gameplay rules and foundational procedures.",
+      "aliases": ["core rules", "basic rules"]
+    },
+    {
+      "id": "game_flow",
+      "title": "Game Flow",
+      "description": "Turn structure, phases, and round sequencing.",
+      "aliases": ["turn sequence", "round sequence"]
+    },
+    {
+      "id": "actions",
+      "title": "Actions",
+      "description": "Actions, reactions, and action economy details.",
+      "aliases": ["actions per round", "actions and reactions"]
+    },
+    {
+      "id": "combat",
+      "title": "Combat",
+      "description": "Attack, defense, modifiers, and combat procedures.",
+      "aliases": ["combat actions", "combat modifiers"]
+    },
+    {
+      "id": "movement",
+      "title": "Movement",
+      "description": "Movement rules, restrictions, and coherency.",
+      "aliases": ["movement actions", "group coherency"]
+    },
+    {
+      "id": "line_of_sight",
+      "title": "Line of Sight",
+      "description": "Visibility, line of sight, and blocking rules.",
+      "aliases": ["los"]
+    },
+    {
+      "id": "terrain",
+      "title": "Terrain",
+      "description": "Terrain rules, features, and battlefield effects.",
+      "aliases": ["terrain rules"]
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenarios",
+      "description": "Scenario list, objectives, and deployment instructions.",
+      "aliases": ["missions"]
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "description": "Faction lists, traits, and special rules.",
+      "aliases": ["faction traits", "forces"]
+    },
+    {
+      "id": "units",
+      "title": "Units",
+      "description": "Unit profiles, forces, and roster entries.",
+      "aliases": ["forces", "units_factions"]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "description": "Weapons, armour, and gear options.",
+      "aliases": ["weapons", "armour and shields", "mounts"]
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "description": "Abilities, upgrades, and special rules for models or factions.",
+      "aliases": ["inherent abilities", "purchasable abilities", "military order abilities"]
+    },
+    {
+      "id": "campaign_rules",
+      "title": "Campaign Rules",
+      "description": "Campaign systems, titles, and rewards.",
+      "aliases": ["campaign", "titles and rewards"]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "description": "Defined terms and rule definitions.",
+      "aliases": ["definitions"]
+    }
+  ]
+}

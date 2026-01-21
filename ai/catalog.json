@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "description": "Canonical catalog of rules modules with AI-friendly section indexes.",
+  "modules": [
+    {
+      "id": "barons-war-2nd-edition-digital",
+      "title": "Barons War 2nd Edition (Digital)",
+      "rules_path": "barons-war-2nd-edition-digital/rules.json",
+      "section_index_path": "ai/section-index/barons-war-2nd-edition-digital.json"
+    },
+    {
+      "id": "barons-war-conquest",
+      "title": "Barons War: Conquest",
+      "rules_path": "barons-war-conquest/rules.json",
+      "section_index_path": "ai/section-index/barons-war-conquest.json"
+    },
+    {
+      "id": "barons-war-death-and-taxes",
+      "title": "Barons War: Death and Taxes",
+      "rules_path": "barons-war-death-and-taxes/rules.json",
+      "section_index_path": "ai/section-index/barons-war-death-and-taxes.json"
+    },
+    {
+      "id": "outremer-digital-bookv1-0",
+      "title": "Outremer Digital Book v1.0",
+      "rules_path": "outremer-digital-bookv1-0/rules.json",
+      "section_index_path": "ai/section-index/outremer-digital-bookv1-0.json"
+    },
+    {
+      "id": "outremer-forces-of-islam-bw2-bridging-v1",
+      "title": "Outremer Forces of Islam (BW2 Bridging v1)",
+      "rules_path": "outremer-forces-of-islam-bw2-bridging-v1/rules.json",
+      "section_index_path": "ai/section-index/outremer-forces-of-islam-bw2-bridging-v1.json"
+    },
+    {
+      "id": "outremer-military-orders-bw2-bridging-v1",
+      "title": "Outremer Military Orders (BW2 Bridging v1)",
+      "rules_path": "outremer-military-orders-bw2-bridging-v1/rules.json",
+      "section_index_path": "ai/section-index/outremer-military-orders-bw2-bridging-v1.json"
+    },
+    {
+      "id": "outremer-settled-crusading-franks-bw2-bridging-v1",
+      "title": "Outremer Settled Crusading Franks (BW2 Bridging v1)",
+      "rules_path": "outremer-settled-crusading-franks-bw2-bridging-v1/rules.json",
+      "section_index_path": "ai/section-index/outremer-settled-crusading-franks-bw2-bridging-v1.json"
+    },
+    {
+      "id": "the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05",
+      "title": "The Barons' War 2nd Edition Rulebook (OEF 2025-05)",
+      "rules_path": "the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05/rules.json",
+      "section_index_path": "ai/section-index/the-barons-war-andy-hobday-second-edition-rulebook-oef-2025-05.json"
+    },
+    {
+      "id": "the-barons-war-welsh-supplement",
+      "title": "The Barons’ War Welsh Supplement",
+      "rules_path": "the-barons-war-welsh-supplement/rules.json",
+      "section_index_path": "ai/section-index/the-barons-war-welsh-supplement.json"
+    }
+  ]
+}
