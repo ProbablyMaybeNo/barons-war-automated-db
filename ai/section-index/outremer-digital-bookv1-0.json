@@ -1,0 +1,186 @@
+{
+  "module_id": "outremer-digital-bookv1-0",
+  "module_title": "Outremer Digital Book v1.0",
+  "source": {
+    "path": "outremer-digital-bookv1-0/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "content",
+      "title": "Content",
+      "json_pointer": "/content",
+      "content_type": "content"
+    },
+    {
+      "id": "setting_rules",
+      "title": "Setting Rules",
+      "json_pointer": "/setting_rules",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "setting_rules.description",
+          "title": "Description",
+          "json_pointer": "/setting_rules/description",
+          "content_type": "subsection"
+        },
+        {
+          "id": "setting_rules.environmental_challenges",
+          "title": "Environmental Challenges",
+          "json_pointer": "/setting_rules/environmental_challenges",
+          "content_type": "subsection"
+        },
+        {
+          "id": "setting_rules.factions",
+          "title": "Factions",
+          "json_pointer": "/setting_rules/factions",
+          "content_type": "factions"
+        },
+        {
+          "id": "setting_rules.leadership",
+          "title": "Leadership",
+          "json_pointer": "/setting_rules/leadership",
+          "content_type": "subsection"
+        },
+        {
+          "id": "setting_rules.campaign",
+          "title": "Campaign",
+          "json_pointer": "/setting_rules/campaign",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "units_factions",
+      "title": "Units Factions",
+      "json_pointer": "/units_factions",
+      "content_type": "units_factions"
+    },
+    {
+      "id": "faction_traits",
+      "title": "Faction Traits",
+      "json_pointer": "/faction_traits",
+      "content_type": "faction_traits",
+      "subsections": [
+        {
+          "id": "faction_traits.bandit_and_bedouin",
+          "title": "Bandit And Bedouin",
+          "json_pointer": "/faction_traits/bandit_and_bedouin",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "json_pointer": "/abilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    },
+    {
+      "id": "military_order_abilities",
+      "title": "Military Order Abilities",
+      "json_pointer": "/military_order_abilities",
+      "content_type": "section"
+    },
+    {
+      "id": "military_order_sergeants_abilities",
+      "title": "Military Order Sergeants Abilities",
+      "json_pointer": "/military_order_sergeants_abilities",
+      "content_type": "section"
+    },
+    {
+      "id": "askar",
+      "title": "Askar",
+      "json_pointer": "/askar",
+      "content_type": "section"
+    },
+    {
+      "id": "upgrades",
+      "title": "Upgrades",
+      "json_pointer": "/upgrades",
+      "content_type": "section"
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "json_pointer": "/equipment",
+      "content_type": "equipment"
+    },
+    {
+      "id": "command_group_upgrades",
+      "title": "Command Group Upgrades",
+      "json_pointer": "/command_group_upgrades",
+      "content_type": "section"
+    },
+    {
+      "id": "supply_rules",
+      "title": "Supply Rules",
+      "json_pointer": "/supply_rules",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "supply_rules.description",
+          "title": "Description",
+          "json_pointer": "/supply_rules/description",
+          "content_type": "subsection"
+        },
+        {
+          "id": "supply_rules.results",
+          "title": "Results",
+          "json_pointer": "/supply_rules/results",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "resolve_rules",
+      "title": "Resolve Rules",
+      "json_pointer": "/resolve_rules",
+      "content_type": "section",
+      "subsections": [
+        {
+          "id": "resolve_rules.description",
+          "title": "Description",
+          "json_pointer": "/resolve_rules/description",
+          "content_type": "subsection"
+        },
+        {
+          "id": "resolve_rules.effects",
+          "title": "Effects",
+          "json_pointer": "/resolve_rules/effects",
+          "content_type": "subsection"
+        }
+      ]
+    },
+    {
+      "id": "npc_characters",
+      "title": "Npc Characters",
+      "json_pointer": "/npc_characters",
+      "content_type": "section"
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenarios",
+      "json_pointer": "/scenarios",
+      "content_type": "scenarios"
+    },
+    {
+      "id": "terrain",
+      "title": "Terrain",
+      "json_pointer": "/terrain",
+      "content_type": "terrain"
+    },
+    {
+      "id": "holy_relics",
+      "title": "Holy Relics",
+      "json_pointer": "/holy_relics",
+      "content_type": "section"
+    }
+  ]
+}

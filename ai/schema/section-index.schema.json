@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rules Section Index",
+  "type": "object",
+  "required": ["module_id", "module_title", "source", "sections"],
+  "properties": {
+    "module_id": {"type": "string"},
+    "module_title": {"type": "string"},
+    "source": {
+      "type": "object",
+      "required": ["path", "format"],
+      "properties": {
+        "path": {"type": "string"},
+        "format": {"type": "string"}
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "json_pointer", "content_type"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "json_pointer": {"type": "string"},
+          "content_type": {"type": "string"},
+          "subsections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "title", "json_pointer", "content_type"],
+              "properties": {
+                "id": {"type": "string"},
+                "title": {"type": "string"},
+                "json_pointer": {"type": "string"},
+                "content_type": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

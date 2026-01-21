@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rules Catalog",
+  "type": "object",
+  "required": ["version", "modules"],
+  "properties": {
+    "version": {"type": "string"},
+    "description": {"type": "string"},
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "rules_path", "section_index_path"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "rules_path": {"type": "string"},
+          "section_index_path": {"type": "string"}
+        }
+      }
+    }
+  }
+}

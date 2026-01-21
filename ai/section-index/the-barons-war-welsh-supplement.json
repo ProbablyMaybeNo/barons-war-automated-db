@@ -1,0 +1,46 @@
+{
+  "module_id": "the-barons-war-welsh-supplement",
+  "module_title": "The Barons’ War Welsh Supplement",
+  "source": {
+    "path": "the-barons-war-welsh-supplement/rules.json",
+    "format": "rules-json"
+  },
+  "sections": [
+    {
+      "id": "faction",
+      "title": "Faction",
+      "json_pointer": "/faction",
+      "content_type": "faction"
+    },
+    {
+      "id": "traits",
+      "title": "Traits",
+      "json_pointer": "/traits",
+      "content_type": "section"
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "json_pointer": "/abilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "inherentAbilities",
+      "title": "Inherent Abilities",
+      "json_pointer": "/inherentAbilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "championAbilities",
+      "title": "Champion Abilities",
+      "json_pointer": "/championAbilities",
+      "content_type": "abilities"
+    },
+    {
+      "id": "factions",
+      "title": "Factions",
+      "json_pointer": "/factions",
+      "content_type": "factions"
+    }
+  ]
+}
